@@ -160,6 +160,34 @@
                     "isPartOfComposite": true
                 }
             ]
+        },
+        {
+            "name": "ReturnArea",
+            "id": "fee64d3b-5a62-4427-93ea-776832468c00",
+            "actions": [
+                {
+                    "name": "Return",
+                    "type": "Button",
+                    "id": "95dfb464-22f6-4c97-99d2-1769b237fa7e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8d756aba-b607-4280-ac80-e162a95b7adb",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Return",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

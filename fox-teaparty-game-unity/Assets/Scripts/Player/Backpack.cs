@@ -16,19 +16,18 @@ public class Backpack : MonoBehaviour
     {
         if (!BackpackHasSpace) return false;
         _collectibles.Add(collectible);
+        collectible.CollectionState = CollectionState.InPlayerInventory;
         return true;
     }
     
-    public bool RemoveCollectible(Collectible collectible)
-    {
-        if (!_collectibles.Contains(collectible)) return false;
-        _collectibles.Remove(collectible);
-        return true;
-    }
     
-    public bool RemoveAllCollectibles()
+    public bool ReturnCollectibles()
     {
         if (_collectibles.Count == 0) return false;
+        foreach (Collectible collectible in _collectibles)
+        {
+            collectible.CollectionState = CollectionState.Returned;
+        }
         _collectibles.Clear();
         return true;
     }

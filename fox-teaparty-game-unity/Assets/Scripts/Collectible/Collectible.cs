@@ -19,7 +19,7 @@ public class Collectible : MonoBehaviour
 {
     [SerializeField] private float weight;
     private bool _isActive;
-    private CollectionState _collectionState = CollectionState.NotCollected;
+    public CollectionState CollectionState = CollectionState.NotCollected;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -31,7 +31,6 @@ public class Collectible : MonoBehaviour
                 backpack.AddCollectible(this);
                 gameObject.SetActive(false);
                 _isActive = false;
-                _collectionState = CollectionState.InPlayerInventory;
             }
         }
     }
