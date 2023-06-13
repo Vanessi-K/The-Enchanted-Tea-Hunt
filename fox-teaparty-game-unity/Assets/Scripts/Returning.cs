@@ -6,6 +6,7 @@ public class Returning : MonoBehaviour
     [SerializeField] private Backpack backpack;
     [SerializeField] private Material inactiveMaterial;
     [SerializeField] private Material activeMaterial;
+    [SerializeField] private Material activeAllItemsReturnedMaterial;
     [SerializeField] private Renderer displayArea;
     private bool _playerIsInside;
 
@@ -31,5 +32,6 @@ public class Returning : MonoBehaviour
     {
         if (!_playerIsInside) return;
         backpack.ReturnCollectibles();
+        displayArea.material = activeAllItemsReturnedMaterial;
     }
 }

@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Backpack _backpack;
     [SerializeField] private float _speed;
     [SerializeField] private float _jumpForce;
-    [SerializeField] private float _decreaseValuePerWeightUnit = 0.4;
+    [SerializeField] private float _decreaseValuePerWeightUnit;
 
     private void Start()
     {
@@ -23,7 +23,8 @@ public class PlayerMovement : MonoBehaviour
         _isJumpingOrFalling = GetComponent<Rigidbody>().velocity.y < -.035 || GetComponent<Rigidbody>().velocity.y > 0.00001;
         if (_walkingPressed)
         {
-            transform.Translate(Vector3.forward * (Time.deltaTime * _speed));
+            float weightModifier = 1 - (_backpack.TotalWeight * _decreaseValuePerWeightUnit);
+            transform.Translate(Vector3.forward * (Time.deltaTime * _speed * weightModifier));
         }
     }
 
@@ -41,7 +42,8 @@ public class PlayerMovement : MonoBehaviour
     private void OnJump(InputValue inputValue)
     {
         if (_isJumpingOrFalling) return;
-        GetComponent<Rigidbody>().AddForce(Vector3.up * 5, ForceMode.Impulse);
+        float weightModifier = 1 - (_backpack.TotalWeight * _decreaseValuePerWeightUnit);
+        GetComponent<Rigidbody>().AddForce(Vector3.up * 5 * weightModifier, ForceMode.Impulse);
     }
 
     private void RotateHorizontal(float angle)
