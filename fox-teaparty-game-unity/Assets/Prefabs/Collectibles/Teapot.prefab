@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weight: 1
+  CollectionState: 0
 --- !u!114 &802498780651301753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,6 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88cc220c197a01d4fa1bce9eac1e2b65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotationAngle: 0.25
 --- !u!1 &3390837394923313543
 GameObject:
   m_ObjectHideFlags: 0

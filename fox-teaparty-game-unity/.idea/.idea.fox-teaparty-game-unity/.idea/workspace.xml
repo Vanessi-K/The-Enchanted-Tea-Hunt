@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29d0297c-7bc0-468f-85ee-b4d148011cec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.fox-teaparty-game-unity/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.fox-teaparty-game-unity/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.fox-teaparty-game-unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.fox-teaparty-game-unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Downloads/SimpleNaturePack/SimpleNaturePack_2020.3_HDRP_v1.24.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Downloads/SimpleNaturePack/SimpleNaturePack_2020.3_URP_v1.24.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Inputs/Inputs.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inputs/Inputs.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Collectible/Collectible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Collectible/Collectible.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Collectible/Hovering.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Collectible/Hovering.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Backpack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Backpack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Collectibles/Cupcakes.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Collectibles/Cupcakes.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Collectibles/Teacup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Collectibles/Teacup.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Collectibles/Teapot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Collectibles/Teapot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +25,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Collectible/Collectible.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Curve/Curve2D.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Backpack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Returning.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
