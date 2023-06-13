@@ -1,20 +1,5 @@
 using System;
 using UnityEngine;
-
-public enum CollectibleType
-{
-    Teapot,
-    Cupcake,
-    Teacup
-}
-
-public enum CollectionState 
-{
-    NotCollected,
-    InPlayerInventory,
-    Returned
-}
-
 public class Collectible : MonoBehaviour
 {
     [SerializeField] public float Weight;
