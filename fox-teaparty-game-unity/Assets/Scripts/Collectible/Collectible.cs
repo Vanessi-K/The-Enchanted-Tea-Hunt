@@ -17,7 +17,7 @@ public enum CollectionState
 
 public class Collectible : MonoBehaviour
 {
-    [SerializeField] private float weight;
+    [SerializeField] public float Weight;
     private bool _isActive;
     public CollectionState CollectionState = CollectionState.NotCollected;
 

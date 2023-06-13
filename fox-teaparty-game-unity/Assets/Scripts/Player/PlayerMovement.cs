@@ -2,14 +2,22 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(Backpack))]
 public class PlayerMovement : MonoBehaviour
 {
     private bool _isJumpingOrFalling;
     private bool _isWalking;
     private bool _walkingPressed;
+    private Backpack _backpack;
     [SerializeField] private float _speed;
     [SerializeField] private float _jumpForce;
+    [SerializeField] private float _decreaseValuePerWeightUnit = 0.4;
 
+    private void Start()
+    {
+        _backpack = GetComponent<Backpack>();
+    }
+    
     private void Update()
     {
         _isJumpingOrFalling = GetComponent<Rigidbody>().velocity.y < -.035 || GetComponent<Rigidbody>().velocity.y > 0.00001;

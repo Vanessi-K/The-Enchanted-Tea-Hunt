@@ -6,6 +6,19 @@ public class Backpack : MonoBehaviour
 {
     [SerializeField] private int size;
     private List<Collectible> _collectibles = new List<Collectible>();
+    
+    public float TotalWeight
+    {
+        get
+        {
+            float totalWeight = 0;
+            foreach (Collectible collectible in _collectibles)
+            {
+                totalWeight += collectible.Weight;
+            }
+            return totalWeight;
+        }
+    }
 
     public bool BackpackHasSpace
     {
