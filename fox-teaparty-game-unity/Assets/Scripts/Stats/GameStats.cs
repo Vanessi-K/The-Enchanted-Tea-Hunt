@@ -45,8 +45,11 @@ public class GameStats : MonoBehaviour
         List<GameObject> collectibles = GetObjectsInLayer(gameObject, LayerMask.NameToLayer(sceneLayer));
         foreach (GameObject collectible in collectibles)
         {
-            if(collectible.GetComponent<Collectible>().CollectionState == CollectionState.NotCollected)
-                collectible.SetActive(true);
+            if (collectible.GetComponent<CollectionStateManager>() != null)
+            {
+                if(collectible.GetComponent<CollectionStateManager>().State == CollectionState.NotCollected)
+                    collectible.SetActive(true);
+            } 
         }
     }
     

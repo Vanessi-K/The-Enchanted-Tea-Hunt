@@ -1,10 +1,10 @@
 using System;
 using UnityEngine;
+
+[RequireComponent(typeof(CollectionStateManager))]
 public class Collectible : MonoBehaviour
 {
     [SerializeField] public float Weight;
-    private bool _isActive;
-    public CollectionState CollectionState = CollectionState.NotCollected;
     private Backpack _backpack;
 
     private void Start()
@@ -20,7 +20,6 @@ public class Collectible : MonoBehaviour
             {
                 _backpack.AddCollectible(this);
                 gameObject.SetActive(false);
-                _isActive = false;
             }
         }
     }
