@@ -1,8 +1,6 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
-[RequireComponent(typeof(Backpack))]
 public class PlayerMovement : MonoBehaviour
 {
     private bool _isJumpingOrFalling;
@@ -15,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        _backpack = GetComponent<Backpack>();
+        _backpack = GameStats.Instance.Backpack;
     }
     
     private void Update()

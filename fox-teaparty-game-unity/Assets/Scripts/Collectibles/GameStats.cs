@@ -19,17 +19,27 @@ public enum CollectionState
 public class GameStats : MonoBehaviour
 {
     public static GameStats Instance;
+    private Backpack _backpack;
+    public Backpack Backpack
+    {
+        get { return _backpack; }
+        private set { _backpack = value; }
+    }
     
     void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
-        
         if (Instance == null)
         {
             GameStats.Instance = this;
+            _backpack = GetComponent<Backpack>();
+            DontDestroyOnLoad(gameObject); 
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
-    
+
     public void LoadSceneCollectibles(string sceneLayer)
     {
         List<GameObject> collectibles = GetObjectsInLayer(gameObject, LayerMask.NameToLayer(sceneLayer));

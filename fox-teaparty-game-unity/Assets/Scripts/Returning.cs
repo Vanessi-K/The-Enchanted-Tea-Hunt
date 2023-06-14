@@ -1,14 +1,20 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Returning : MonoBehaviour
 {
-    [SerializeField] private Backpack backpack;
+    private Backpack _backpack;
     [SerializeField] private Material inactiveMaterial;
     [SerializeField] private Material activeMaterial;
     [SerializeField] private Material activeAllItemsReturnedMaterial;
     [SerializeField] private Renderer displayArea;
     private bool _playerIsInside;
+
+    private void Start()
+    {
+        _backpack = GameStats.Instance.Backpack;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -31,7 +37,7 @@ public class Returning : MonoBehaviour
     private void OnReturn(InputValue value)
     {
         if (!_playerIsInside) return;
-        backpack.ReturnCollectibles();
+        _backpack.ReturnCollectibles();
         displayArea.material = activeAllItemsReturnedMaterial;
     }
 }
