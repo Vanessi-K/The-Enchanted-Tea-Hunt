@@ -2,14 +2,29 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Backpack : MonoBehaviour
 {
     [SerializeField] private int size;
+    [SerializeField] private GameObject slot;
+    [SerializeField] private GameObject panel;
     private SpeedBoost _speedBoost = null;
     private bool _activeSpeedBoost = false;
     private float _speedBoostTimer = 0;
     private List<Collectible> _collectibles = new List<Collectible>();
+    private GameObject[] _slots;
+
+    private void Awake()
+    {
+        _slots = new GameObject[size];
+        for(int i = 0; i < size; i++)
+        {
+            GameObject slotInstance = Instantiate(slot, panel.transform);
+            slotInstance.SetActive(true);
+            _slots[i] = slotInstance;
+        }
+    }
 
     private void Update()
     {
@@ -24,7 +39,6 @@ public class Backpack : MonoBehaviour
                 _speedBoost.GetComponent<CollectionStateManager>().State = CollectionState.Returned;
                 _speedBoost = null;
             }
-            
         }
     }
     
@@ -68,6 +82,7 @@ public class Backpack : MonoBehaviour
         if (!BackpackHasSpace) return false;
         _collectibles.Add(collectible);
         collectible.GetComponent<CollectionStateManager>().State = CollectionState.InPlayerInventory;
+        _slots[_collectibles.Count - 1].GetComponentInChildren<RectTransform>().GetChild(0).gameObject.SetActive(true);
         return true;
     }
 
@@ -79,6 +94,12 @@ public class Backpack : MonoBehaviour
             collectible.GetComponent<CollectionStateManager>().State = CollectionState.Returned;
         }
         _collectibles.Clear();
+
+        foreach (GameObject item in _slots)
+        {
+            item.GetComponentInChildren<RectTransform>().GetChild(0).gameObject.SetActive(false);
+        }
+        
         return true;
     }
     

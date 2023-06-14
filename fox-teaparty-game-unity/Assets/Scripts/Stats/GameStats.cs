@@ -20,6 +20,7 @@ public class GameStats : MonoBehaviour
 {
     public static GameStats Instance;
     private Backpack _backpack;
+
     public Backpack Backpack
     {
         get { return _backpack; }
