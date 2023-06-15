@@ -3,13 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class DialoguePopup : MonoBehaviour
 {
-    [SerializeField] private string[] mockingText;
+    [TextAreaAttribute]
+    [SerializeField] private string[] dialogueText;
     [SerializeField] private GameObject dialogueBox;
-    [SerializeField] private TMP_Text dialogueText;
+    [SerializeField] private TMP_Text dialogueTextField;
     [SerializeField] private float dialogueDuration;
+    [SerializeField] private int probabilityOfShowingDialogue; 
     private float _dialogueTimer = 0;
 
     private void Update()
@@ -29,13 +32,12 @@ public class DialoguePopup : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            int randomValue = UnityEngine.Random.Range(0, 10);
+            int randomValue = UnityEngine.Random.Range(0, 100);
             
-            //Adjust how often the owl is mocking the player
-            if (randomValue < 4)
+            if (randomValue <= probabilityOfShowingDialogue)
             {
-                int randomMockingText = UnityEngine.Random.Range(0, mockingText.Length);
-                dialogueText.text = mockingText[randomMockingText];
+                int randomDialogueText = UnityEngine.Random.Range(0, dialogueText.Length);
+                dialogueTextField.text = dialogueText[randomDialogueText];
                 dialogueBox.SetActive(true);
             }
         }
