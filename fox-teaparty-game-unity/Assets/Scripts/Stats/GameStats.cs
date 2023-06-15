@@ -90,6 +90,17 @@ public class GameStats : MonoBehaviour
         return objectsInLayer;        
     }
 
+    public List<GameObject> Collectibles()
+    {
+        List<GameObject> collectibles = new List<GameObject>();
+        foreach (Collectible collectible in this.GetComponentsInChildren<Collectible>(true))
+        {  
+            collectibles.Add(collectible.gameObject);
+            
+        }
+        return collectibles;
+    }
+    
     public List<GameObject> Collectibles(CollectibleType collectibleType)
     {
         List<GameObject> collectibles = new List<GameObject>();
@@ -103,6 +114,11 @@ public class GameStats : MonoBehaviour
         return collectibles;
     }
     
+    public int NumberOfCollectibles()
+    {
+        return Collectibles().Count;
+    }
+    
     public int NumberOfCollectibles(CollectibleType collectibleType)
     {
         return Collectibles(collectibleType).Count;
@@ -111,5 +127,10 @@ public class GameStats : MonoBehaviour
     public int NumberOfCollectibles(CollectibleType collectibleType, CollectionState[] states)
     {
         return Collectibles(collectibleType).Count(collectible => states.Contains(collectible.GetComponent<CollectionStateManager>().State));
+    }
+    
+    public int NumberOfCollectibles(CollectionState[] states)
+    {
+        return Collectibles().Count(collectible => states.Contains(collectible.GetComponent<CollectionStateManager>().State));
     }
 }
