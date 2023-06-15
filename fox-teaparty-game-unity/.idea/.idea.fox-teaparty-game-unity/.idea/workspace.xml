@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="29d0297c-7bc0-468f-85ee-b4d148011cec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.fox-teaparty-game-unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.fox-teaparty-game-unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Forest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Forest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inputs/Inputs.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inputs/Inputs.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/HouseInterior.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/HouseInterior.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Owl/DialoguePopup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Owl/DialoguePopup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,11 +23,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Collectible/Collectible.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Collectible/CollectionState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Collectible/DiscoverDiary.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Collectible/SpeedBoost.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Owl/Mocking.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Backpack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Returning.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Inactivate.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2R8wRbtNiryxmQ8WJHhqEHnxLtZ" />
@@ -102,7 +101,7 @@
       <workItem from="1686653854307" duration="248000" />
       <workItem from="1686655881952" duration="7577000" />
       <workItem from="1686724259532" duration="13095000" />
-      <workItem from="1686807992269" duration="10280000" />
+      <workItem from="1686807992269" duration="11068000" />
     </task>
     <servers />
   </component>
