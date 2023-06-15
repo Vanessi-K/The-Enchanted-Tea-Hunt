@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6322679845894673094}
   - component: {fileID: 6260240071446074091}
   - component: {fileID: 1800630596867308057}
+  - component: {fileID: 2607307777627605579}
   m_Layer: 0
   m_Name: Spoon
   m_TagString: Collectible
@@ -49,7 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Weight: 1
-  CollectionState: 0
+  Type: 3
 --- !u!114 &6322679845894673094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,6 +91,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationAngle: 0.25
+--- !u!114 &2607307777627605579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010527575247099524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 007189daa48fffd4397e0e1106ce7cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  State: 0
 --- !u!1 &3390837394923313543
 GameObject:
   m_ObjectHideFlags: 0

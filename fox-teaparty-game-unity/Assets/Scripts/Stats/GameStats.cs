@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,7 +8,8 @@ public enum CollectibleType
 {
     Teapot,
     Cupcake,
-    Teacup
+    Teacup,
+    Spoon,
 }
 
 public enum CollectionState 
@@ -86,5 +88,28 @@ public class GameStats : MonoBehaviour
             }
         }
         return objectsInLayer;        
+    }
+
+    public List<GameObject> Collectibles(CollectibleType collectibleType)
+    {
+        List<GameObject> collectibles = new List<GameObject>();
+        foreach (Collectible collectible in this.GetComponentsInChildren<Collectible>(true))
+        {
+            if (collectible.Type == collectibleType)
+            {
+                collectibles.Add(collectible.gameObject);
+            }
+        }
+        return collectibles;
+    }
+    
+    public int NumberOfCollectibles(CollectibleType collectibleType)
+    {
+        return Collectibles(collectibleType).Count;
+    }
+    
+    public int NumberOfCollectibles(CollectibleType collectibleType, CollectionState[] states)
+    {
+        return Collectibles(collectibleType).Count(collectible => states.Contains(collectible.GetComponent<CollectionStateManager>().State));
     }
 }

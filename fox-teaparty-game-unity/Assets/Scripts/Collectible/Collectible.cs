@@ -5,6 +5,7 @@ using UnityEngine;
 public class Collectible : MonoBehaviour
 {
     [SerializeField] public float Weight;
+    [SerializeField] public CollectibleType Type;
     private Backpack _backpack;
 
     private void Start()
