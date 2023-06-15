@@ -9,6 +9,7 @@ public class Backpack : MonoBehaviour
     [SerializeField] private int size;
     [SerializeField] private GameObject slot;
     [SerializeField] private GameObject panel;
+    [SerializeField] private Image speedBoostImage;
     private SpeedBoost _speedBoost = null;
     private bool _activeSpeedBoost = false;
     private float _speedBoostTimer = 0;
@@ -38,6 +39,7 @@ public class Backpack : MonoBehaviour
                 _speedBoostTimer = 0;
                 _speedBoost.GetComponent<CollectionStateManager>().State = CollectionState.Returned;
                 _speedBoost = null;
+                speedBoostImage.gameObject.SetActive(false);
             }
         }
     }
@@ -108,6 +110,7 @@ public class Backpack : MonoBehaviour
         if (HasSpeedBoost) return false;
         _speedBoost = speedBoost;
         _speedBoost.GetComponent<CollectionStateManager>().State = CollectionState.InPlayerInventory;
+        speedBoostImage.gameObject.SetActive(true);
         return true;
     }
     
