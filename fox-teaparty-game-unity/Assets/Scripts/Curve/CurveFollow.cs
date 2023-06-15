@@ -5,12 +5,10 @@ using UnityEngine;
 public class CurveFollow : MonoBehaviour
 {
     [SerializeField] private Transform[] routes;
-    
-    //Setting Cube Position
+    [SerializeField] private float speedModifier = 0.3f;
     private int _routeToGo;
     private float _tParam;
     private Vector3 _objectPosition;
-    private float _speedModifier;
     private bool _coroutineAllowed;
     private int _routeDirection = 1;
 
@@ -18,7 +16,6 @@ public class CurveFollow : MonoBehaviour
     {
         _routeToGo = 0;
         _tParam = 0f;
-        _speedModifier = 0.3f;
         _coroutineAllowed = true;
     }
     
@@ -38,7 +35,7 @@ public class CurveFollow : MonoBehaviour
         
         while (_tParam < 1)
         {
-            _tParam += Time.deltaTime * _speedModifier;
+            _tParam += Time.deltaTime * speedModifier;
 
             if (_routeDirection > 0)
             {
