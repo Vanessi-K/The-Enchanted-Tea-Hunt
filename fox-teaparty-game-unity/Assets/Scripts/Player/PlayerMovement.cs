@@ -1,8 +1,6 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
-[RequireComponent(typeof(Backpack))]
 public class PlayerMovement : MonoBehaviour
 {
     private bool _isJumpingOrFalling;
@@ -15,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        _backpack = GetComponent<Backpack>();
+        _backpack = GameStats.Instance.Backpack;
     }
     
     private void Update()
@@ -24,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
         if (_walkingPressed)
         {
             float weightModifier = 1 - (_backpack.TotalWeight * _decreaseValuePerWeightUnit);
-            transform.Translate(Vector3.forward * (Time.deltaTime * _speed * weightModifier));
+            transform.Translate(Vector3.forward * (Time.deltaTime * _speed * weightModifier * _backpack.SpeedBoost));
         }
     }
 
@@ -46,8 +44,14 @@ public class PlayerMovement : MonoBehaviour
         GetComponent<Rigidbody>().AddForce(Vector3.up * 5 * weightModifier, ForceMode.Impulse);
     }
 
+    private void OnActivateBoost(InputValue inputValue)
+    {
+        _backpack.UseSpeedBoost();
+    }
+
     private void RotateHorizontal(float angle)
     {
         transform.Rotate(Vector3.up, angle);
     }
+    
 }

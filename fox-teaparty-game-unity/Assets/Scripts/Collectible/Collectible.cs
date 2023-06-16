@@ -1,36 +1,26 @@
 using System;
 using UnityEngine;
 
-public enum CollectibleType
-{
-    Teapot,
-    Cupcake,
-    Teacup
-}
-
-public enum CollectionState 
-{
-    NotCollected,
-    InPlayerInventory,
-    Returned
-}
-
+[RequireComponent(typeof(CollectionStateManager))]
 public class Collectible : MonoBehaviour
 {
     [SerializeField] public float Weight;
-    private bool _isActive;
-    public CollectionState CollectionState = CollectionState.NotCollected;
+    [SerializeField] public CollectibleType Type;
+    private Backpack _backpack;
+
+    private void Start()
+    {
+        _backpack = GameStats.Instance.Backpack;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            Backpack backpack = other.GetComponent<Backpack>();
-            if (backpack.BackpackHasSpace)
+            if (_backpack.BackpackHasSpace)
             {
-                backpack.AddCollectible(this);
+                _backpack.AddCollectible(this);
                 gameObject.SetActive(false);
-                _isActive = false;
             }
         }
     }

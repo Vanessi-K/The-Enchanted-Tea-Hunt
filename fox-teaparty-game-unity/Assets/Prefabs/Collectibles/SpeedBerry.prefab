@@ -9,13 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3415508528995624814}
-  - component: {fileID: 8397466969789459958}
   - component: {fileID: 6322679845894673094}
   - component: {fileID: 6260240071446074091}
   - component: {fileID: 1800630596867308057}
+  - component: {fileID: -8630630056707835767}
   m_Layer: 0
-  m_Name: Cupcakes
-  m_TagString: Collectible
+  m_Name: SpeedBerry
+  m_TagString: Booster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,20 +36,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8397466969789459958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2010527575247099524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c048a41815f33f642ad311d134a7aab3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Weight: 1
-  CollectionState: 0
 --- !u!114 &6322679845894673094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,6 +76,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationAngle: 0.25
+--- !u!114 &-8630630056707835767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010527575247099524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdcb7e82c491c984d9c70460f45c8bec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedBoost: 1.5
+  speedBoostDuration: 3
 --- !u!1 &3390837394923313543
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,7 +151,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0e9f0bf16a63cc34fb295d5dd77d2603, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
