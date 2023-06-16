@@ -6,14 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="29d0297c-7bc0-468f-85ee-b4d148011cec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.fox-teaparty-game-unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.fox-teaparty-game-unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene2.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene2.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Returning.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Returning.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/GameStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/GameStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Downloads/WorldMaterialsFree/Built-In_RPMaterials/SimpleRedBricks_StandardShader.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Downloads/WorldMaterialsFree/Built-In_RPMaterials/SimpleRedBricks_StandardShader.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/HouseInterior.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/HouseInterior.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,23 +37,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\vanes\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\vanes\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\vanes\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\A_Bla\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\A_Bla\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\A_Bla\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.24f1\Editor\Unity.exe" />
@@ -109,6 +105,7 @@
       <workItem from="1686655881952" duration="7577000" />
       <workItem from="1686724259532" duration="13095000" />
       <workItem from="1686807992269" duration="14265000" />
+      <workItem from="1686921977292" duration="455000" />
     </task>
     <servers />
   </component>
