@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     private bool _isWalking;
     private bool _walkingPressed;
     private Backpack _backpack;
+    [SerializeField] private GameObject boostEffect;
     [SerializeField] private float _speed;
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _decreaseValuePerWeightUnit;
@@ -23,6 +24,15 @@ public class PlayerMovement : MonoBehaviour
         {
             float weightModifier = 1 - (_backpack.TotalWeight * _decreaseValuePerWeightUnit);
             transform.Translate(Vector3.forward * (Time.deltaTime * _speed * weightModifier * _backpack.SpeedBoost));
+        }
+        
+        if(_backpack.SpeedBoost > 1)
+        {
+            boostEffect.SetActive(true);
+        }
+        else
+        {
+            boostEffect.SetActive(false);
         }
     }
 
