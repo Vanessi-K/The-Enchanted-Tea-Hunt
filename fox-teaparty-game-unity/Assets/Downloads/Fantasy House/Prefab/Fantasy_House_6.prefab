@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4017359017749981955}
   - component: {fileID: 4017359017747114787}
   - component: {fileID: 4017359017748081123}
-  - component: {fileID: 4017359017752172931}
+  - component: {fileID: 6153991230817721674}
   m_Layer: 0
   m_Name: Fantasy_House_6
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4017359017752172931
-MeshCollider:
+--- !u!65 &6153991230817721674
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,7 +94,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 318351b249902a44ea6748a84674a269, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 7.408853, y: 9.138434, z: 3.45}
+  m_Center: {x: 0.00002002716, y: 4.5557218, z: -0.14}
