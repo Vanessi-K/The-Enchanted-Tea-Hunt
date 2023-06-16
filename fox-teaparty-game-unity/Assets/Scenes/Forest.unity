@@ -36508,7 +36508,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   routes:
   - {fileID: 2062290136}
-  speedModifier: 0.1
+  speedModifier: 0.2
 --- !u!1001 &1507472291
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40767,7 +40767,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   routes:
   - {fileID: 62202372}
-  speedModifier: 0.1
+  speedModifier: 0.2
 --- !u!4 &1664184537 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4661435515762813124, guid: e289bf5debb17f6459818c207d781953, type: 3}
@@ -47582,7 +47582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   routes:
   - {fileID: 1896075353}
-  speedModifier: 0.1
+  speedModifier: 0.18
 --- !u!1001 &1890811025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49131,7 +49131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   routes:
   - {fileID: 1870069514}
-  speedModifier: 0.1
+  speedModifier: 0.15
 --- !u!1001 &1962126720
 PrefabInstance:
   m_ObjectHideFlags: 0
