@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public enum CollectibleType
 {
@@ -26,6 +25,13 @@ public class GameStats : MonoBehaviour
     private Backpack _backpack;
     private float _timer;
 
+    public string GetTime()
+    {
+        int minutes = Mathf.FloorToInt(_timer / 60);
+        int seconds = Mathf.FloorToInt( _timer - minutes * 60);
+        return $"{minutes:00}:{seconds:00}";
+    }
+    
     public Backpack Backpack
     {
         get { return _backpack; }
@@ -50,9 +56,7 @@ public class GameStats : MonoBehaviour
     private void Update()
     {
         _timer += Time.deltaTime;
-        int minutes = Mathf.FloorToInt(_timer / 60);
-        int seconds = Mathf.FloorToInt( _timer - minutes * 60);
-        timerText.text = $"{minutes:00}:{seconds:00}";
+        timerText.text = GetTime();
     }
 
     public void LoadSceneCollectibles(string sceneLayer)
