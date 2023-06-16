@@ -8,28 +8,28 @@ public class MenuActions : MonoBehaviour
         SceneManager.LoadScene("Start");
     }
     
-    // public void LoadEnd()
-    // {
-    //     SceneManager.LoadScene("End");
-    // }
-    //
-    // public void LoadControls()
-    // {
-    //     SceneManager.LoadScene("Controls");
-    // }
-    //
-    // public void LoadStory()
-    // {
-    //     SceneManager.LoadScene("Story");
-    // }
-    //
-    // public void LoadLeaderboard()
-    // {
-    //     SceneManager.LoadScene("Leaderboard");
-    // }
-    //
-    // public void LoadGame()
-    // {
-    //     SceneManager.LoadScene("Forest");
-    // }
+    public void LoadEnd()
+    {
+        SceneManager.LoadScene("End");
+    }
+    
+    public void LoadControls()
+    {
+        SceneManager.LoadScene("Controls");
+    }
+    
+    public void LoadStory()
+    {
+        SceneManager.LoadScene("Story");
+    }
+    
+    public void LoadLeaderboard()
+    {
+        SceneManager.LoadScene("Leaderboard");
+    }
+    
+    public void LoadGame()
+    {
+        SceneManager.LoadScene("Forest");
+    }
 }
