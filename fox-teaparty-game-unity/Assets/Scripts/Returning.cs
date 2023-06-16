@@ -1,6 +1,9 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Returning : MonoBehaviour
 {
@@ -10,10 +13,15 @@ public class Returning : MonoBehaviour
     [SerializeField] private Material activeAllItemsReturnedMaterial;
     [SerializeField] private Renderer displayArea;
     private bool _playerIsInside;
+    private int _totalCollectibles;
+    private CollectionState[] _collectibleStates;
 
     private void Start()
     {
+        _totalCollectibles = GameStats.Instance.NumberOfCollectibles();
         _backpack = GameStats.Instance.Backpack;
+        _collectibleStates = new CollectionState[1];
+        _collectibleStates[0] = CollectionState.Returned;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -39,5 +47,16 @@ public class Returning : MonoBehaviour
         if (!_playerIsInside) return;
         _backpack.ReturnCollectibles();
         displayArea.material = activeAllItemsReturnedMaterial;
+
+        if (_totalCollectibles == GameStats.Instance.NumberOfCollectibles(_collectibleStates))
+        {
+            StartCoroutine(WaitForEndSceneLoad());
+        }
+    }
+    
+    private IEnumerator WaitForEndSceneLoad()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("End");
     }
 }
