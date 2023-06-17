@@ -24,6 +24,13 @@ public class GameStats : MonoBehaviour
     public static GameStats Instance;
     private Backpack _backpack;
     private float _timer;
+    private bool _isPaused = false;
+    
+    public bool IsPaused
+    {
+        get { return _isPaused; }
+        set { _isPaused = value; }
+    }
 
     public string GetTime()
     {
@@ -55,8 +62,11 @@ public class GameStats : MonoBehaviour
     
     private void Update()
     {
-        _timer += Time.deltaTime;
-        timerText.text = GetTime();
+        if (!_isPaused)
+        {
+            _timer += Time.deltaTime;
+            timerText.text = GetTime();
+        }
     }
 
     public void LoadSceneCollectibles(string sceneLayer)

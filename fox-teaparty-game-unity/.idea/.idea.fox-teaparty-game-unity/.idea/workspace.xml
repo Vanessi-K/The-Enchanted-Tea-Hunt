@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="29d0297c-7bc0-468f-85ee-b4d148011cec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.fox-teaparty-game-unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.fox-teaparty-game-unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/End.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/End.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Collectible/DiscoverDiary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Collectible/DiscoverDiary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Backpack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Backpack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Scroll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Scroll.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Returning.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Returning.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/GameStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/GameStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Inactivate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inactivate.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

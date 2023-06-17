@@ -8,5 +8,6 @@ public class Inactivate : MonoBehaviour
     private void OnClose(InputValue inputValue)
     {
         gameObject.SetActive(false);
+        GameStats.Instance.IsPaused = false;
     }
 }

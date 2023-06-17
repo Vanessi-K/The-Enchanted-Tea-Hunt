@@ -1,8 +1,26 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
+[Serializable]
+public class IconToCollectibleType
+{
+    [SerializeField] private Sprite sprites;
+    [SerializeField] private CollectibleType types;
+
+    public Sprite Sprites
+    {
+        get => sprites;
+        private set => sprites = value;
+    }
+    
+    public CollectibleType Types
+    {
+        get => types;
+        private set => types = value;
+    }
+}
 
 public class Backpack : MonoBehaviour
 {
@@ -10,12 +28,13 @@ public class Backpack : MonoBehaviour
     [SerializeField] private GameObject slot;
     [SerializeField] private GameObject panel;
     [SerializeField] private Image speedBoostImage;
+    [SerializeField] private IconToCollectibleType[] iconToCollectibleTypes;
     private SpeedBoost _speedBoost = null;
     private bool _activeSpeedBoost = false;
     private float _speedBoostTimer = 0;
     private List<Collectible> _collectibles = new List<Collectible>();
     private GameObject[] _slots;
-
+    
     private void Awake()
     {
         _slots = new GameObject[size];

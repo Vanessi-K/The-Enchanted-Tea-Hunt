@@ -50,6 +50,7 @@ public class Returning : MonoBehaviour
 
         if (_totalCollectibles == GameStats.Instance.NumberOfCollectibles(_collectibleStates))
         {
+            GameStats.Instance.IsPaused = true;
             StartCoroutine(WaitForEndSceneLoad());
         }
     }
