@@ -18,7 +18,9 @@ public class DialoguePopup : MonoBehaviour
 
     private void Update()
     {
-        if (dialogueBox.activeSelf)
+        Debug.Log(_dialogueTimer + " " + dialogueBox.activeSelf);
+        
+        if (dialogueBox.activeInHierarchy)
         {
             _dialogueTimer += Time.deltaTime;
             if (_dialogueTimer >= dialogueDuration)
