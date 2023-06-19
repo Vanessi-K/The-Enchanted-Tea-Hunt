@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 0a73716ae73e9a4468c96965d55b0bb2
+guid: 2812b0078e3006042b95274e93b2f329
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 3f753345fd7bf854dbda7f6a618563fc, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Plate Base Color
+    second: {fileID: 2800000, guid: c86804e56944490468861bcbea4a9ac2, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
