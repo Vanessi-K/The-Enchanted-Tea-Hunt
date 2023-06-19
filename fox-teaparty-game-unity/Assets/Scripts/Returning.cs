@@ -12,10 +12,12 @@ public class Returning : MonoBehaviour
     [SerializeField] private Material activeMaterial;
     [SerializeField] private Material activeAllItemsReturnedMaterial;
     [SerializeField] private Renderer displayArea;
+    [SerializeField] private GameObject celebrationConfetti;
     private bool _playerIsInside;
     private int _totalCollectibles;
     private CollectionState[] _collectibleStates;
-
+    private bool _firstTime = true;
+    
     private void Start()
     {
         _totalCollectibles = GameStats.Instance.NumberOfCollectibles();
@@ -30,6 +32,12 @@ public class Returning : MonoBehaviour
         {
             _playerIsInside = true;
             displayArea.material = activeMaterial;
+
+            if (_firstTime)
+            {
+                gameObject.GetComponent<DialoguePopup>().showDialogue();
+                _firstTime = false;
+            }
         }
     }
 
@@ -51,6 +59,7 @@ public class Returning : MonoBehaviour
         if (_totalCollectibles == GameStats.Instance.NumberOfCollectibles(_collectibleStates))
         {
             GameStats.Instance.IsPaused = true;
+            celebrationConfetti.SetActive(true);
             StartCoroutine(WaitForEndSceneLoad());
         }
     }

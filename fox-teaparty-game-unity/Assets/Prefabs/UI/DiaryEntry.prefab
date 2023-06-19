@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150, y: -300}
-  m_SizeDelta: {x: 500, y: 50}
+  m_AnchoredPosition: {x: 195, y: -250}
+  m_SizeDelta: {x: 1000, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &4528409478178041093
 CanvasRenderer:
@@ -66,7 +66,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I am so mad at Felix, how could he dare to not invite me to the teaparty!
+  m_text: "today, was a sad day for me. My neighbor Felix planned a grand tea party,
+    but I wasn't invited. \nHooo :(\n\nSo, I decided to do something mischievous.
+    I used my magic to hide his stuff in the forest and made the teacups come to
+    live and run away from him.\n\nNow Felix is never going to find all those teacups.
+    HAHAHA"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 869d0b95ed01efb47a9984812f282a5a, type: 2}
   m_sharedMaterial: {fileID: -7674842776808125698, guid: 869d0b95ed01efb47a9984812f282a5a, type: 2}
@@ -93,8 +97,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42
-  m_fontSizeBase: 42
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -336,7 +340,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dear Diary
+  m_text: Dear Diary,
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f00c5b1a8c405840b1defc7a17371b2, type: 2}
   m_sharedMaterial: {fileID: -2205750435177437956, guid: 8f00c5b1a8c405840b1defc7a17371b2, type: 2}

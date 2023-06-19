@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedBoostPower: 0
-  speedBoostDuration: 3
+  speedBoostDuration: 5
 --- !u!114 &2607307777627605579
 MonoBehaviour:
   m_ObjectHideFlags: 0
