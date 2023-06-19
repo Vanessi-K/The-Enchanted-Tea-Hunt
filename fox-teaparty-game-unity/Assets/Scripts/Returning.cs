@@ -12,10 +12,11 @@ public class Returning : MonoBehaviour
     [SerializeField] private Material activeMaterial;
     [SerializeField] private Material activeAllItemsReturnedMaterial;
     [SerializeField] private Renderer displayArea;
+    [SerializeField] private GameObject celebrationConfetti;
     private bool _playerIsInside;
     private int _totalCollectibles;
     private CollectionState[] _collectibleStates;
-
+    
     private void Start()
     {
         _totalCollectibles = GameStats.Instance.NumberOfCollectibles();
@@ -50,6 +51,7 @@ public class Returning : MonoBehaviour
 
         if (_totalCollectibles == GameStats.Instance.NumberOfCollectibles(_collectibleStates))
         {
+            celebrationConfetti.SetActive(true);
             StartCoroutine(WaitForEndSceneLoad());
         }
     }
