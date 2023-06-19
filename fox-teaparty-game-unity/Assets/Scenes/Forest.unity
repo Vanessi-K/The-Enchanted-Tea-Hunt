@@ -5580,7 +5580,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8664557443465403753, guid: 6a54c0164c1dd4b419059f2adfbd58d5, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8664557443465403753, guid: 6a54c0164c1dd4b419059f2adfbd58d5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27031,7 +27031,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4850379732878055531, guid: e7cac900ab0944f408e68fa773966648, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4850379732878055531, guid: e7cac900ab0944f408e68fa773966648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -39576,115 +39576,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3356751432537613521, guid: ffbddc4ef9676cc419e81e06aaa836d8, type: 3}
   m_PrefabInstance: {fileID: 1577837868}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1579950100
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: dialogueBox
-      value: 
-      objectReference: {fileID: 2443470310848784306}
-    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: dialogueText
-      value: 
-      objectReference: {fileID: 2443470310848784307}
-    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: dialogueDuration
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: dialogueTextField
-      value: 
-      objectReference: {fileID: 2443470310848784307}
-    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: mockingText.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: dialogueText.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: mockingText.Array.data[0]
-      value: Mocking 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: mockingText.Array.data[1]
-      value: Mocking 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: mockingText.Array.data[2]
-      value: Mocking 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: dialogueText.Array.data[0]
-      value: Mocking1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: dialogueText.Array.data[1]
-      value: Mocking2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: dialogueText.Array.data[2]
-      value: Mocking3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: probabilityOfShowingDialogue
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850379732878055531, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850379732878055531, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 17.953
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850379732878055531, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.591
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850379732878055531, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -14.065221
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850379732878055531, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850379732878055531, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850379732878055531, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850379732878055531, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850379732878055531, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850379732878055531, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850379732878055531, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8802929247120782723, guid: e7cac900ab0944f408e68fa773966648, type: 3}
-      propertyPath: m_Name
-      value: Owl
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e7cac900ab0944f408e68fa773966648, type: 3}
 --- !u!1001 &1581079584
 PrefabInstance:
   m_ObjectHideFlags: 0
