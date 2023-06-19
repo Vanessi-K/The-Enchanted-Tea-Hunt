@@ -66,9 +66,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "today, was a sad day for me. My neighbor Felix planned a grand teaparty,
+  m_text: "today, was a sad day for me. My neighbor Felix planned a grand tea party,
     but I wasn't invited. \nHooo :(\n\nSo, I decided to do something mischievous.
-    I used my magic to hide his stuff in the forrest and made the teacups come to
+    I used my magic to hide his stuff in the forest and made the teacups come to
     live and run away from him.\n\nNow Felix is never going to find all those teacups.
     HAHAHA"
   m_isRightToLeft: 0
