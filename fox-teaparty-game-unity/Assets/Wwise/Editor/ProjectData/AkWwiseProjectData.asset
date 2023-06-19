@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 188a79ae620ca947895fe52a9330fa7e
     GuidInternal: 
-    m_lastTime: -8585144303029515725
+    m_lastTime: -8585144286868282756
     List:
     - name: Standard
       guid: eb86d49d0ecd0546a84cf3c4ac5e4d05
@@ -179,8 +179,8 @@ MonoBehaviour:
         guid: 8865c188cac4ce47860dc7e1f6065a06
       Path: Events\Default Work Unit\Play_steps
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.570023
+      minDuration: 0.413878
     - name: Stop_shimmer
       guid: 6b6e31c08162034d98f4a4f03cc9e589
       id: 3507155921
