@@ -705,6 +705,168 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Neighbor" ID="{C9C315CF-655A-4578-8E96-029449DDC0ED}" ShortID="287754733">
+					<ChildrenList>
+						<BlendContainer Name="Owl" ID="{0CEC879B-E435-4955-8703-DB05BDB97E13}" ShortID="920230031">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Flaps" ID="{3663C413-2353-4700-9C79-7088746D39C8}" ShortID="694825535">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Birds_flapping 5" ID="{A855A6D8-6A60-4788-A0FD-602146143BA8}" ShortID="1060106336">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Birds_flapping 5" ID="{8E16D0F0-406D-4557-B378-85B211E2C4FA}">
+													<PropertyList>
+														<Property Name="LoopEnd" Type="Real64" Value="2.75795982374287"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.12460497667185"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.82490059616382"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Birds_flapping 5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="471434313"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Birds_flapping 5" ID="{8E16D0F0-406D-4557-B378-85B211E2C4FA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Birds_flapping 6" ID="{9F36C49F-71EE-437B-B981-B58EF830CF3D}" ShortID="306116578">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Birds_flapping 6" ID="{B723C514-F646-488E-AE9D-DD3CF5EEAD74}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.753330093312597"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.24882983411094"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Birds_flapping 6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="298099606"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Birds_flapping 6" ID="{B723C514-F646-488E-AE9D-DD3CF5EEAD74}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Birds_flapping 7" ID="{07B339A3-6DDC-43A2-A1BF-ABE4FFC6F5D8}" ShortID="161003695">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Birds_flapping 7" ID="{EC3882BB-56D0-4224-8C69-269962AF2099}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.788955352514256"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.83159318299637"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Birds_flapping 7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="38113466"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Birds_flapping 7" ID="{EC3882BB-56D0-4224-8C69-269962AF2099}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<Sound Name="Hoot_1" ID="{B149A5FB-0825-41BA-8673-D36B4010D949}" ShortID="74900734">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8B586953-9DCE-4E50-9137-BE1828F3C500}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Hoot_1" ID="{1549F32D-99E3-410B-8723-AD9066E0FD5D}">
+											<Language>SFX</Language>
+											<AudioFile>Hoot_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="460621279"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Hoot_1" ID="{1549F32D-99E3-410B-8723-AD9066E0FD5D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</BlendContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

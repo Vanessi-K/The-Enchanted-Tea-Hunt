@@ -8,6 +8,7 @@
 						<ObjectRef Name="Play_shouts" ID="{90F8F43D-A295-4153-A314-9D757F6DC958}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_steps" ID="{5AE9FC76-F44E-4466-B4D6-C45EBD4B03DF}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_activate_berry" ID="{8028C13A-51FE-4773-BE4B-03571E6F5406}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Owl" ID="{C6ECD1FC-C289-479B-98E8-42601677A550}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_steps" ID="{88C16588-C4CA-47CE-860D-C7E1F6065A06}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_return" ID="{F276D9BC-EFF9-4864-822F-845AD4B5F708}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_pickUp" ID="{40A0E319-ECCD-4905-B15E-464F151C5B43}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
