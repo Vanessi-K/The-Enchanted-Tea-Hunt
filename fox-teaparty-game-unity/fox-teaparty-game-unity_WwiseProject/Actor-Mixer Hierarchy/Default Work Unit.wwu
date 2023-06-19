@@ -178,12 +178,52 @@
 								<ActiveSource Name="pick_up_02" ID="{E8A7C74A-021A-4ECA-8F54-443D0EA18BCE}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="speed" ID="{9A75BC3D-AAD2-4713-958F-5F726EDEDE9F}" ShortID="420175818">
+						<Sound Name="shimmer_02" ID="{9D49CEFB-3652-4325-B082-3B82A40FBF2D}" ShortID="458806703">
 							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>350</Value>
-									</ValueList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{39034417-9164-446D-ABEB-70CD58BEDA0B}" ShortID="281261928">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="distance" ID="{CD4E8A5E-F060-4AAD-B417-873A5B67C8C9}" WorkUnitID="{1288FB92-21CD-41DB-917D-7468C5AB7840}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{55C94888-B0C2-45BE-BAF7-B66F850CCEA0}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>2.71325</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>2.53165</XPos>
+														<YPos>-1.68909</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>5.63867</XPos>
+														<YPos>-6.59949</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>9.83889</XPos>
+														<YPos>-200</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>50</XPos>
+														<YPos>-200</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -195,20 +235,20 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="speed" ID="{92A9322B-6C16-4AB9-8393-1559BCB19449}">
+								<AudioFileSource Name="chimes" ID="{94065D68-8021-4308-862E-71BB2C8851B8}">
 									<Language>SFX</Language>
-									<AudioFile>speed.wav</AudioFile>
+									<AudioFile>chimes.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="23075364"/>
+										<MediaID ID="782694443"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ObjectLists/>
 							<ActiveSourceList>
-								<ActiveSource Name="speed" ID="{92A9322B-6C16-4AB9-8393-1559BCB19449}" Platform="Linked"/>
+								<ActiveSource Name="chimes" ID="{94065D68-8021-4308-862E-71BB2C8851B8}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Power Boost" ID="{FF85D77C-85E9-4966-A6F9-33317A8BF7BD}" ShortID="424086849">
+						<BlendContainer Name="Berry_Activation" ID="{77E6F459-BB9C-417E-83EB-54924D938EE4}" ShortID="61432233">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
@@ -218,19 +258,78 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Power Boost" ID="{FE4122C1-FA29-45E2-9992-B52A2AB60C26}">
-									<Language>SFX</Language>
-									<AudioFile>Power Boost.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="765712076"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="Power Boost" ID="{FF85D77C-85E9-4966-A6F9-33317A8BF7BD}" ShortID="424086849">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="fairy-twinkle" ID="{7D336889-3E24-4D28-84BB-618F478D05CE}">
+											<Language>SFX</Language>
+											<AudioFile>fairy-twinkle.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="865922609"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="fairy-twinkle" ID="{7D336889-3E24-4D28-84BB-618F478D05CE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="speed" ID="{9A75BC3D-AAD2-4713-958F-5F726EDEDE9F}" ShortID="420175818">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>350</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="speed" ID="{92A9322B-6C16-4AB9-8393-1559BCB19449}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.923794712286158"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>speed.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="23075364"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="speed" ID="{92A9322B-6C16-4AB9-8393-1559BCB19449}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Power Boost" ID="{FE4122C1-FA29-45E2-9992-B52A2AB60C26}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</BlendContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Character" ID="{496C973A-20CA-46FB-B527-3E7835E40F72}" ShortID="228831077">

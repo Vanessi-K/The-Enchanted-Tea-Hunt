@@ -111,8 +111,8 @@ MonoBehaviour:
         guid: 9a6e41e5a0ad0b4abab6df91943b5fd7
       Path: Events\Default Work Unit\Play_activate_berry
       maxAttenuation: 0
-      maxDuration: 0.642146
-      minDuration: 0.642146
+      maxDuration: 7.35262
+      minDuration: 7.35262
     - name: Play_jump
       guid: 2a2323bfc6b7cd4a8b1e0666e015e462
       id: 3689126666
@@ -388,7 +388,7 @@ MonoBehaviour:
     m_lastTime: -8585144285744876962
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 05000000060000001700000018000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

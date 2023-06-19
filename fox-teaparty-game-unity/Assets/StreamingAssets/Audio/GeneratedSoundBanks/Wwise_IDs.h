@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_ACTIVATE_BERRY = 3567508744U;
+        static const AkUniqueID PLAY_IDLE_BERRY = 2286352653U;
         static const AkUniqueID PLAY_JUMP = 3689126666U;
         static const AkUniqueID PLAY_PICKUP = 3860455926U;
         static const AkUniqueID PLAY_PICKUP_BERRY = 3908278347U;
@@ -21,11 +22,11 @@ namespace AK
         static const AkUniqueID PLAY_SHIMMER = 543936919U;
         static const AkUniqueID PLAY_SHOUTS = 2709107516U;
         static const AkUniqueID PLAY_STEPS = 2600469463U;
-        static const AkUniqueID PLAY_TIMER = 4169444829U;
+        static const AkUniqueID STOP_ACTIVATE_BERRY = 3672395030U;
+        static const AkUniqueID STOP_IDLE_BERRY = 1424658547U;
         static const AkUniqueID STOP_SHIMMER = 3507155921U;
         static const AkUniqueID STOP_SHOUTS = 2263803406U;
         static const AkUniqueID STOP_STEPS = 2634345273U;
-        static const AkUniqueID STOP_TIMER = 3090597779U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

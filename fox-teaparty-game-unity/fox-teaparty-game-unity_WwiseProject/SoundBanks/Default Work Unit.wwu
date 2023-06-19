@@ -7,8 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_shouts" ID="{90F8F43D-A295-4153-A314-9D757F6DC958}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_steps" ID="{5AE9FC76-F44E-4466-B4D6-C45EBD4B03DF}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_timer" ID="{292BD6C3-D44B-4751-AB75-70F4D568761B}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_timer" ID="{8028C13A-51FE-4773-BE4B-03571E6F5406}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_activate_berry" ID="{8028C13A-51FE-4773-BE4B-03571E6F5406}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_steps" ID="{88C16588-C4CA-47CE-860D-C7E1F6065A06}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_return" ID="{F276D9BC-EFF9-4864-822F-845AD4B5F708}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_pickUp" ID="{40A0E319-ECCD-4905-B15E-464F151C5B43}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
@@ -17,7 +16,9 @@
 						<ObjectRef Name="Play_jump" ID="{BF23232A-B7C6-4ACD-8B1E-0666E015E462}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="play_pickUp_berry" ID="{E8AD4FBC-1F42-4C00-93A8-AA77963D13D5}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_shimmer" ID="{C0316E6B-6281-4D03-98F4-A4F03CC9E589}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_idle_berry" ID="{45A2127F-4A7B-4DC2-BC71-3D2F798A1645}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_shouts" ID="{26B1B9E8-2389-4DF1-B8D5-7833575CE24E}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_idle_berry" ID="{EF741002-EE1A-4FB9-9410-46FEBBCC910F}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
