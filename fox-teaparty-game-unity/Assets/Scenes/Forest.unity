@@ -1589,6 +1589,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9069115365609054727, guid: 60f79905accf3b24fa0114b941f1aac0, type: 3}
   m_PrefabInstance: {fileID: 113863287}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &52425281 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6289697542287413014, guid: 377dd56ef823de148a07d7ee7ce5d79a, type: 3}
+  m_PrefabInstance: {fileID: 1096738271}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &53137414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19379,11 +19384,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4385080170327957909, guid: ff62b58c5a9ea164fa8ddf8038e10cd1, type: 3}
   m_PrefabInstance: {fileID: 586314275}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &725055743 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 3614982087897771487, guid: 377dd56ef823de148a07d7ee7ce5d79a, type: 3}
-  m_PrefabInstance: {fileID: 1096738271}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &726896358 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1493958779012619316, guid: b9de24523a11d714db3851b5f0f9d527, type: 3}
@@ -28220,7 +28220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4134158347994554464, guid: 377dd56ef823de148a07d7ee7ce5d79a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.03
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 4134158347994554464, guid: 377dd56ef823de148a07d7ee7ce5d79a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -28254,6 +28254,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6289697542287413014, guid: 377dd56ef823de148a07d7ee7ce5d79a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fcd24387c20cf5543acf285991b7fe5b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 377dd56ef823de148a07d7ee7ce5d79a, type: 3}
 --- !u!1 &1096738272 stripped
@@ -28276,7 +28280,7 @@ MonoBehaviour:
   inactiveMaterial: {fileID: 2100000, guid: fcd24387c20cf5543acf285991b7fe5b, type: 2}
   activeMaterial: {fileID: 2100000, guid: ebecefb14c1fde648a6a48f9b28c7a7e, type: 2}
   activeAllItemsReturnedMaterial: {fileID: 2100000, guid: 70be6dde9f817944c89793a30ff091bc, type: 2}
-  displayArea: {fileID: 725055743}
+  displayArea: {fileID: 52425281}
   celebrationConfetti: {fileID: 425896441}
 --- !u!114 &1096738274
 MonoBehaviour:
@@ -28285,13 +28289,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096738272}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 861cc9715a52c984aa2b041d1293e20a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementDirection: {x: 0, y: 1, z: 0}
-  movementTime: 4
+  movementDirection: {x: 0, y: 0.15, z: 0}
+  movementTime: 2
 --- !u!114 &1096738278
 MonoBehaviour:
   m_ObjectHideFlags: 0
