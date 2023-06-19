@@ -6,6 +6,13 @@
 				<Folder Name="Items" ID="{1B6DA38C-355D-47F2-BCBC-299DBB5E1458}" ShortID="112973824">
 					<ChildrenList>
 						<Sound Name="pick_up_01" ID="{D0153BE4-AD35-4759-8CE6-427A421C181C}" ShortID="830918363">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-20</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
@@ -75,7 +82,7 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-0</YPos>
+														<YPos>0</YPos>
 														<Flags>5</Flags>
 													</Point>
 													<Point>
@@ -168,9 +175,31 @@
 								<ActiveSource Name="jump_01" ID="{A4CCFD31-3C65-467B-BBFD-BEA3A8706825}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Mugs" ID="{17FE4FE9-62B4-42E7-B597-BA6D56B9D440}" ShortID="470214319">
+					<ChildrenList>
 						<RandomSequenceContainer Name="Steps" ID="{7CF17C36-968A-488A-98B6-4D68BD115886}" ShortID="612253396">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>69</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1D1643FC-A00B-4C56-AFAE-DF8A3A540D94}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>580</Value>
+									</ValueList>
+								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
@@ -178,6 +207,52 @@
 									<ValueList>
 										<Value>12</Value>
 									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{3E0BA19A-F291-41DD-B37F-5ECB85CFFA59}" ShortID="577873987">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="distance" ID="{CD4E8A5E-F060-4AAD-B417-873A5B67C8C9}" WorkUnitID="{1288FB92-21CD-41DB-917D-7468C5AB7840}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{CD135994-7482-46A1-AFBE-959A457197A7}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>6.0206</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1.32641</XPos>
+														<YPos>-0.26085</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>2.99885</XPos>
+														<YPos>-6.4085</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>5.0173</XPos>
+														<YPos>-17.42448</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>9.91926</XPos>
+														<YPos>-200</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>50</XPos>
+														<YPos>-200</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -279,6 +354,168 @@
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="Grassy_Footstep_04" ID="{99A34100-571D-440A-AEB4-F50E071E1AEA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Shouts" ID="{0C562054-F8BB-477D-A06E-354F0F9B8909}" ShortID="444859695">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>40</Value>
+									</ValueList>
+								</Property>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>350</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{9561CAE3-39D7-40C0-8DA4-5F383E0CE109}" ShortID="535450092">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="distance" ID="{CD4E8A5E-F060-4AAD-B417-873A5B67C8C9}" WorkUnitID="{1288FB92-21CD-41DB-917D-7468C5AB7840}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{5E400503-9239-4C00-A92B-0FFED3306640}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1.90311</XPos>
+														<YPos>-6.10383</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>4.95963</XPos>
+														<YPos>-14.73556</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>9.91826</XPos>
+														<YPos>-200</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>50</XPos>
+														<YPos>-200</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Funny Cheering Shout (2)" ID="{AC3700D8-CAD7-4E4E-9425-74B56D34B835}" ShortID="187630135">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Funny Cheering Shout (2)" ID="{E529538E-9043-451F-9F91-CBAEEE6CD6CC}">
+											<Language>SFX</Language>
+											<AudioFile>Funny Cheering Shout (2).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="232365511"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Funny Cheering Shout (2)" ID="{E529538E-9043-451F-9F91-CBAEEE6CD6CC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Funny Cheering Shout (4)" ID="{31ECF9F6-F8C6-4E56-A4AE-D45CA91FCE37}" ShortID="762054471">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Funny Cheering Shout (4)" ID="{7AAA37EF-5E77-4B7A-A1DC-EFD92334E574}">
+											<Language>SFX</Language>
+											<AudioFile>Funny Cheering Shout (4).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="324928788"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Funny Cheering Shout (4)" ID="{7AAA37EF-5E77-4B7A-A1DC-EFD92334E574}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Funny Cheering Shout" ID="{E65B8F98-CA7D-4BB9-86D3-88B97B1ABC53}" ShortID="636310612">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Funny Cheering Shout" ID="{EF8AA96B-BE56-48D5-8DFF-3D425AA0C823}">
+											<Language>SFX</Language>
+											<AudioFile>Funny Cheering Shout.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="654407170"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Funny Cheering Shout" ID="{EF8AA96B-BE56-48D5-8DFF-3D425AA0C823}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

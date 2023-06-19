@@ -17,8 +17,11 @@ namespace AK
         static const AkUniqueID PLAY_PICKUP = 3860455926U;
         static const AkUniqueID PLAY_RETURN = 2337471648U;
         static const AkUniqueID PLAY_SHIMMER = 543936919U;
+        static const AkUniqueID PLAY_SHOUTS = 2709107516U;
         static const AkUniqueID PLAY_STEPS = 2600469463U;
         static const AkUniqueID STOP_SHIMMER = 3507155921U;
+        static const AkUniqueID STOP_SHOUTS = 2263803406U;
+        static const AkUniqueID STOP_STEPS = 2634345273U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

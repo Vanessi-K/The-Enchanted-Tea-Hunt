@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(CollectionStateManager))]
 public class Collectible : MonoBehaviour
@@ -25,6 +26,8 @@ public class Collectible : MonoBehaviour
                 _backpack.AddCollectible(this);
                 AkSoundEngine.PostEvent("Play_pickUp", gameObject);
                 AkSoundEngine.PostEvent("Stop_shimmer", gameObject);
+                AkSoundEngine.PostEvent("Stop_steps", gameObject);
+                AkSoundEngine.PostEvent("Stop_shouts", gameObject);
                 gameObject.SetActive(false);
             }
         }

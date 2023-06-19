@@ -72,6 +72,45 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_steps" ID="{5AE9FC76-F44E-4466-B4D6-C45EBD4B03DF}">
+					<ChildrenList>
+						<Action Name="" ID="{1BCC3F14-5883-440A-BCA9-46271AD77B09}" ShortID="860422505">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Steps" ID="{7CF17C36-968A-488A-98B6-4D68BD115886}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_shouts" ID="{90F8F43D-A295-4153-A314-9D757F6DC958}">
+					<ChildrenList>
+						<Action Name="" ID="{718016AB-CF1F-4330-9BFA-FFAB1049B30D}" ShortID="168900399">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shouts" ID="{0C562054-F8BB-477D-A06E-354F0F9B8909}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_shouts" ID="{26B1B9E8-2389-4DF1-B8D5-7833575CE24E}">
+					<ChildrenList>
+						<Action Name="" ID="{211A34BB-D1E3-46D1-A1B4-CC661B1C137D}" ShortID="618841511">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shouts" ID="{0C562054-F8BB-477D-A06E-354F0F9B8909}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
