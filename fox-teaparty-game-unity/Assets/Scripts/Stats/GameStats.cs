@@ -24,6 +24,7 @@ public class GameStats : MonoBehaviour
     public static GameStats Instance;
     private Backpack _backpack;
     private float _timer;
+    private string _tableLayer = "Forest";
 
     public string GetTime()
     {
@@ -42,7 +43,7 @@ public class GameStats : MonoBehaviour
     {
         if (Instance == null)
         {
-            GameStats.Instance = this;
+            Instance = this;
             _backpack = GetComponent<Backpack>();
             _timer = 0;
             DontDestroyOnLoad(gameObject); 
@@ -69,6 +70,15 @@ public class GameStats : MonoBehaviour
                 if(collectible.GetComponent<CollectionStateManager>().State == CollectionState.NotCollected)
                     collectible.SetActive(true);
             } 
+        }
+
+        if (sceneLayer == _tableLayer)
+        {
+            List<GameObject> returnedCollectibles = Collectibles(CollectionState.Returned);
+            foreach (GameObject collectible in returnedCollectibles)
+            {
+                collectible.GetComponent<Collectible>().TableRepresentation.SetActive(true);
+            }
         }
     }
     
@@ -111,6 +121,19 @@ public class GameStats : MonoBehaviour
         foreach (Collectible collectible in this.GetComponentsInChildren<Collectible>(true))
         {
             if (collectible.Type == collectibleType)
+            {
+                collectibles.Add(collectible.gameObject);
+            }
+        }
+        return collectibles;
+    }
+    
+    public List<GameObject> Collectibles(CollectionState state)
+    {
+        List<GameObject> collectibles = new List<GameObject>();
+        foreach (Collectible collectible in this.GetComponentsInChildren<Collectible>(true))
+        {
+            if (collectible.GetComponent<CollectionStateManager>().State == state)
             {
                 collectibles.Add(collectible.gameObject);
             }
