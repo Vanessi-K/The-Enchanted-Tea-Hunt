@@ -1,0 +1,23 @@
+Event	ID	Name			Wwise Object Path	Notes
+	543936919	Play_shimmer			\Default Work Unit\Play_shimmer	
+	2337471648	Play_return			\Default Work Unit\Play_return	
+	2600469463	Play_steps			\Default Work Unit\Play_steps	
+	3507155921	Stop_shimmer			\Default Work Unit\Stop_shimmer	
+	3689126666	Play_jump			\Default Work Unit\Play_jump	
+	3860455926	Play_pickUp			\Default Work Unit\Play_pickUp	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1240670792	distance			\Default Work Unit\distance	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	6605751	Grassy_Footstep_03	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Grassy_Footstep_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Steps\Grassy_Footstep_03		87908
+	216442115	return_items_01	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\return_items_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Items\return_items_01		480064
+	325647169	pick_up_01	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\pick_up_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Items\pick_up_01		264664
+	326163336	jump_01	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\jump_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\jump_01		13846
+	328642671	Grassy_Footstep_01	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Grassy_Footstep_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Steps\Grassy_Footstep_01		100616
+	436251205	Grassy_Footstep_04	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Grassy_Footstep_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Steps\Grassy_Footstep_04		88476
+	694152231	Grassy_Footstep_02	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Grassy_Footstep_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Steps\Grassy_Footstep_02		73072
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	511100354	shimmer_01	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\shimmer_01_D79FB2B7.wem	511100354.wem	\Actor-Mixer Hierarchy\Default Work Unit\Items\shimmer_01	
+

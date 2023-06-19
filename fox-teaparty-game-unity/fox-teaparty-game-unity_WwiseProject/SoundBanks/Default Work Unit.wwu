@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AE798A18-0C62-47A9-895F-E52A9330FA7E}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{AE798A18-0C62-47A9-895F-E52A9330FA7E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Standard" ID="{9DD486EB-CD0E-4605-A84C-F3C4AC5E4D05}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_return" ID="{F276D9BC-EFF9-4864-822F-845AD4B5F708}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_pickUp" ID="{40A0E319-ECCD-4905-B15E-464F151C5B43}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_shimmer" ID="{1677D09C-2D76-495B-B2B5-40641ED3C95E}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_jump" ID="{BF23232A-B7C6-4ACD-8B1E-0666E015E462}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_shimmer" ID="{C0316E6B-6281-4D03-98F4-A4F03CC9E589}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

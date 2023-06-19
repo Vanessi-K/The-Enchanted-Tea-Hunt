@@ -91,6 +91,7 @@ public class Backpack : MonoBehaviour
     public bool ReturnCollectibles()
     {
         if (_collectibles.Count == 0) return false;
+        AkSoundEngine.PostEvent("Play_return", gameObject);
         foreach (Collectible collectible in _collectibles)
         {
             collectible.GetComponent<CollectionStateManager>().State = CollectionState.Returned;

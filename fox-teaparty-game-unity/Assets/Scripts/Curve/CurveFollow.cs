@@ -17,6 +17,7 @@ public class CurveFollow : MonoBehaviour
         _routeToGo = 0;
         _tParam = 0f;
         _coroutineAllowed = true;
+        AkSoundEngine.PostEvent("Play_steps", gameObject);
     }
     
     void Update()

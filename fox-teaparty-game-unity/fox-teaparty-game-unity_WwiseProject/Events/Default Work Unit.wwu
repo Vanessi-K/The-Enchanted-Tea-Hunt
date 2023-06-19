@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_pickUp" ID="{40A0E319-ECCD-4905-B15E-464F151C5B43}">
+					<ChildrenList>
+						<Action Name="" ID="{9C400920-7547-402E-BEB4-F7959E812FDF}" ShortID="909972329">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pick_up_01" ID="{D0153BE4-AD35-4759-8CE6-427A421C181C}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_return" ID="{F276D9BC-EFF9-4864-822F-845AD4B5F708}">
+					<ChildrenList>
+						<Action Name="" ID="{27D86BCB-37C9-4BDF-8870-36D042DA5F93}" ShortID="442142096">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="return_items_01" ID="{67F5E79A-98EE-4E7F-910C-7A50CE7F4859}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_shimmer" ID="{1677D09C-2D76-495B-B2B5-40641ED3C95E}">
+					<ChildrenList>
+						<Action Name="" ID="{C26A0E30-73DC-426F-9B1D-CCC6562F121F}" ShortID="497998370">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="shimmer_01" ID="{D8B6F194-A827-4246-BB59-0E0C5F3E421B}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_shimmer" ID="{C0316E6B-6281-4D03-98F4-A4F03CC9E589}">
+					<ChildrenList>
+						<Action Name="" ID="{1E106DE9-A6EE-4D09-86E1-3F2295DF96AA}" ShortID="478214631">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="shimmer_01" ID="{D8B6F194-A827-4246-BB59-0E0C5F3E421B}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_jump" ID="{BF23232A-B7C6-4ACD-8B1E-0666E015E462}">
+					<ChildrenList>
+						<Action Name="" ID="{A03C41E6-CCF0-4F72-B7DF-7D1A5A0CE4EB}" ShortID="1036767089">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="jump_01" ID="{339DF402-D791-4979-8200-34CBCB228C0B}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_steps" ID="{88C16588-C4CA-47CE-860D-C7E1F6065A06}">
+					<ChildrenList>
+						<Action Name="" ID="{CA55F171-B6BF-4D02-8CA2-0AE3425406C3}" ShortID="305744406">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Steps" ID="{7CF17C36-968A-488A-98B6-4D68BD115886}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
