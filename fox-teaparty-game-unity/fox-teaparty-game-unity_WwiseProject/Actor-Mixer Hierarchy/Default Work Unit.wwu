@@ -170,70 +170,14 @@
 						</Sound>
 						<RandomSequenceContainer Name="Steps" ID="{7CF17C36-968A-488A-98B6-4D68BD115886}" ShortID="612253396">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>760</Value>
-									</ValueList>
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{21DD14BF-64EA-4FBA-8403-37B2A45807CF}"/>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>6</Value>
+										<Value>12</Value>
 									</ValueList>
-									<RTPCList>
-										<RTPC Name="" ID="{3744B4E8-B551-4DAC-A1AC-CCDDBFEF0406}" ShortID="318324527">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="distance" ID="{CD4E8A5E-F060-4AAD-B417-873A5B67C8C9}" WorkUnitID="{1288FB92-21CD-41DB-917D-7468C5AB7840}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{F88EB6D3-FF1E-408B-B78D-490186B73C06}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-0</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>0.87209</XPos>
-														<YPos>-5.51206</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>2.20931</XPos>
-														<YPos>-12.12358</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>4.59303</XPos>
-														<YPos>-22.30694</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>9.24419</XPos>
-														<YPos>-42.70895</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>50</XPos>
-														<YPos>-200</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
