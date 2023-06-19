@@ -1232,6 +1232,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7348453500560298351, guid: d10055f18de340d448b2084367c1598e, type: 3}
   m_PrefabInstance: {fileID: 462892107}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &462892111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462892110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3d29e3d39b4717821741ebb5851c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 462892110}
+  dialogueTextField: {fileID: 462892109}
+  dialogueDuration: 5
 --- !u!4 &489211735 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 430918, guid: 517e2520ef6b4a098fa2b4d0d98d7a39, type: 3}
@@ -4217,9 +4232,7 @@ MonoBehaviour:
   dialogueText:
   - Oh, it seems like there is an item in here as well! Also, I heard Oscar talking
     about a diary the other day. Maybe I can find that too, if I snoop a little.
-  dialogueBox: {fileID: 462892110}
-  dialogueTextField: {fileID: 462892109}
-  dialogueDuration: 9
+  dialogue: {fileID: 462892111}
   probabilityOfShowingDialogue: 100
   startOnCollision: 1
 --- !u!1001 &1496558148

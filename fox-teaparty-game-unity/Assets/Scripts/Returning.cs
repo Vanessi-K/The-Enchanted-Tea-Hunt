@@ -35,7 +35,7 @@ public class Returning : MonoBehaviour
 
             if (_firstTime)
             {
-                gameObject.GetComponent<DialoguePopup>().showDialogue();
+                gameObject.GetComponent<DialoguePopup>().ShowDialogue();
                 _firstTime = false;
             }
         }

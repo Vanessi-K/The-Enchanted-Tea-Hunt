@@ -15164,6 +15164,21 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3680765609775844348, guid: d10055f18de340d448b2084367c1598e, type: 3}
   m_PrefabInstance: {fileID: 1429982404}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &596842670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596842668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3d29e3d39b4717821741ebb5851c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 596842668}
+  dialogueTextField: {fileID: 774818156}
+  dialogueDuration: 5
 --- !u!4 &597321650 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5186735023777053022, guid: ac8efb728f1fb9b4092c4df591c827ca, type: 3}
@@ -22040,6 +22055,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7348453500560298351, guid: d10055f18de340d448b2084367c1598e, type: 3}
   m_PrefabInstance: {fileID: 826644131}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &826644135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826644134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3d29e3d39b4717821741ebb5851c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 826644134}
+  dialogueTextField: {fileID: 826644133}
+  dialogueDuration: 5
 --- !u!4 &828136646 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3356751432537613521, guid: ffbddc4ef9676cc419e81e06aaa836d8, type: 3}
@@ -27050,6 +27080,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 2443470310848784311}
+    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
       propertyPath: dialogueBox
       value: 
       objectReference: {fileID: 2443470310848784306}
@@ -28230,9 +28264,7 @@ MonoBehaviour:
   dialogueText:
   - "I need to return the items I collected here at the table. I can do that with
     \u201CR\u201D."
-  dialogueBox: {fileID: 596842668}
-  dialogueTextField: {fileID: 774818156}
-  dialogueDuration: 5
+  dialogue: {fileID: 596842670}
   probabilityOfShowingDialogue: 100
   startOnCollision: 0
 --- !u!4 &1097736074 stripped
@@ -46381,9 +46413,7 @@ MonoBehaviour:
   dialogueText:
   - "Oh, I found something! I think I have a list with all the missing items. I can
     check it with \u201CQ\u201D. "
-  dialogueBox: {fileID: 826644134}
-  dialogueTextField: {fileID: 826644133}
-  dialogueDuration: 5
+  dialogue: {fileID: 826644135}
   probabilityOfShowingDialogue: 100
   startOnCollision: 1
 --- !u!1001 &1798487847
@@ -51483,9 +51513,7 @@ MonoBehaviour:
   dialogueText:
   - "I collected a Zippityberry \u2013 it helps me to go fast for a short time. I
     can use it with \u201CE\u201D. "
-  dialogueBox: {fileID: 826644134}
-  dialogueTextField: {fileID: 826644133}
-  dialogueDuration: 5
+  dialogue: {fileID: 826644135}
   probabilityOfShowingDialogue: 100
   startOnCollision: 1
 --- !u!1 &1998406015
@@ -54475,6 +54503,21 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3680765609775844348, guid: be1e21247c25cc543a299ebbcbb549b7, type: 3}
   m_PrefabInstance: {fileID: 2443470310848784305}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2443470310848784311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2443470310848784306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3d29e3d39b4717821741ebb5851c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 2443470310848784306}
+  dialogueTextField: {fileID: 2443470310848784307}
+  dialogueDuration: 5
 --- !u!1001 &7086976165885083054
 PrefabInstance:
   m_ObjectHideFlags: 0
