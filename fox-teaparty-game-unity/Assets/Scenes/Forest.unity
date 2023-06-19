@@ -8121,7 +8121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8630630056707835767, guid: 8fb9ef60e2a09d346b08ae612df0a44d, type: 3}
       propertyPath: speedBoostDuration
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2010527575247099524, guid: 8fb9ef60e2a09d346b08ae612df0a44d, type: 3}
       propertyPath: m_Name
@@ -9197,7 +9197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8630630056707835767, guid: 8fb9ef60e2a09d346b08ae612df0a44d, type: 3}
       propertyPath: speedBoostDuration
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2010527575247099524, guid: 8fb9ef60e2a09d346b08ae612df0a44d, type: 3}
       propertyPath: m_Name
@@ -10869,7 +10869,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8630630056707835767, guid: 8fb9ef60e2a09d346b08ae612df0a44d, type: 3}
       propertyPath: speedBoostDuration
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2010527575247099524, guid: 8fb9ef60e2a09d346b08ae612df0a44d, type: 3}
       propertyPath: m_Name
@@ -28309,7 +28309,7 @@ MonoBehaviour:
     \u201CR\u201D."
   dialogueBox: {fileID: 596842668}
   dialogueTextField: {fileID: 774818156}
-  dialogueDuration: 3
+  dialogueDuration: 5
   probabilityOfShowingDialogue: 100
   startOnCollision: 0
 --- !u!4 &1097736074 stripped
@@ -29446,7 +29446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8630630056707835767, guid: 8fb9ef60e2a09d346b08ae612df0a44d, type: 3}
       propertyPath: speedBoostDuration
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2010527575247099524, guid: 8fb9ef60e2a09d346b08ae612df0a44d, type: 3}
       propertyPath: m_Name
@@ -34485,7 +34485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8630630056707835767, guid: 8fb9ef60e2a09d346b08ae612df0a44d, type: 3}
       propertyPath: speedBoostDuration
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2010527575247099524, guid: 8fb9ef60e2a09d346b08ae612df0a44d, type: 3}
       propertyPath: m_Name
@@ -50727,7 +50727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   routes:
   - {fileID: 1870069514}
-  speedModifier: 0.15
+  speedModifier: 0.3
 --- !u!1001 &1962126720
 PrefabInstance:
   m_ObjectHideFlags: 0
