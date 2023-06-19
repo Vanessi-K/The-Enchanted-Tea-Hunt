@@ -1,24 +1,25 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
 [Serializable]
 public class IconToCollectibleType
 {
-    [SerializeField] private Sprite sprites;
-    [SerializeField] private CollectibleType types;
+    [SerializeField] private Sprite sprite;
+    [SerializeField] private CollectibleType type;
 
-    public Sprite Sprites
+    public Sprite Sprite
     {
-        get => sprites;
-        private set => sprites = value;
+        get => sprite;
+        private set => sprite = value;
     }
     
-    public CollectibleType Types
+    public CollectibleType Type
     {
-        get => types;
-        private set => types = value;
+        get => type;
+        private set => type = value;
     }
 }
 
@@ -103,7 +104,11 @@ public class Backpack : MonoBehaviour
         if (!BackpackHasSpace) return false;
         _collectibles.Add(collectible);
         collectible.GetComponent<CollectionStateManager>().State = CollectionState.InPlayerInventory;
-        _slots[_collectibles.Count - 1].GetComponentInChildren<RectTransform>().GetChild(0).gameObject.SetActive(true);
+        
+        GameObject slot = _slots[_collectibles.Count - 1].GetComponentInChildren<RectTransform>().GetChild(0).gameObject;
+        Debug.Log(iconToCollectibleTypes.First(icon => icon.Type == collectible.Type));
+        slot.GetComponentInChildren<Image>().sprite = iconToCollectibleTypes.First(icon => icon.Type == collectible.Type).Sprite;
+        slot.SetActive(true);
         return true;
     }
 
