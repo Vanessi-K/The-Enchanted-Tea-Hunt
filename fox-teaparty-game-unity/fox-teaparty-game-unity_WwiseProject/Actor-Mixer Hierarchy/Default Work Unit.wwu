@@ -148,6 +148,89 @@
 								<ActiveSource Name="shimmer_01" ID="{2E50BA1B-C0DA-4E8E-8098-2BBD751E51C4}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="pick_up_02" ID="{F3EFF503-0C17-421F-920F-7D2E8D10DF61}" ShortID="332340693">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pick_up_02" ID="{E8A7C74A-021A-4ECA-8F54-443D0EA18BCE}">
+									<Language>SFX</Language>
+									<AudioFile>pick_up_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="527126381"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="pick_up_02" ID="{E8A7C74A-021A-4ECA-8F54-443D0EA18BCE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="speed" ID="{9A75BC3D-AAD2-4713-958F-5F726EDEDE9F}" ShortID="420175818">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>350</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="speed" ID="{92A9322B-6C16-4AB9-8393-1559BCB19449}">
+									<Language>SFX</Language>
+									<AudioFile>speed.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="23075364"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="speed" ID="{92A9322B-6C16-4AB9-8393-1559BCB19449}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Power Boost" ID="{FF85D77C-85E9-4966-A6F9-33317A8BF7BD}" ShortID="424086849">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Power Boost" ID="{FE4122C1-FA29-45E2-9992-B52A2AB60C26}">
+									<Language>SFX</Language>
+									<AudioFile>Power Boost.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="765712076"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Power Boost" ID="{FE4122C1-FA29-45E2-9992-B52A2AB60C26}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Character" ID="{496C973A-20CA-46FB-B527-3E7835E40F72}" ShortID="228831077">

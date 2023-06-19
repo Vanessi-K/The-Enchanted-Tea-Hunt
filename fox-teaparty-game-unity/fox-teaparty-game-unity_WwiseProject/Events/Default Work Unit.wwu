@@ -111,6 +111,53 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="play_pickUp_berry" ID="{E8AD4FBC-1F42-4C00-93A8-AA77963D13D5}">
+					<ChildrenList>
+						<Action Name="" ID="{9DDE66E7-70CB-4220-AACB-253A5EDD6904}" ShortID="449081501">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pick_up_02" ID="{F3EFF503-0C17-421F-920F-7D2E8D10DF61}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_timer" ID="{292BD6C3-D44B-4751-AB75-70F4D568761B}">
+					<ChildrenList>
+						<Action Name="" ID="{D9E2BF3F-07E4-4537-950F-A7F50BFD6923}" ShortID="69277518">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="speed" ID="{9A75BC3D-AAD2-4713-958F-5F726EDEDE9F}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_timer" ID="{8028C13A-51FE-4773-BE4B-03571E6F5406}">
+					<ChildrenList>
+						<Action Name="" ID="{4CAED304-A4F7-437A-9A56-EC95B2982CE8}" ShortID="637765584">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="speed" ID="{9A75BC3D-AAD2-4713-958F-5F726EDEDE9F}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_activate_berry" ID="{E5416E9A-ADA0-4A0B-BAB6-DF91943B5FD7}">
+					<ChildrenList>
+						<Action Name="" ID="{5DC193F2-AC87-46DF-A3DE-7FE482E3DF7D}" ShortID="242246843">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Power Boost" ID="{FF85D77C-85E9-4966-A6F9-33317A8BF7BD}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
