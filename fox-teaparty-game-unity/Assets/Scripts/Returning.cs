@@ -35,7 +35,7 @@ public class Returning : MonoBehaviour
 
             if (_firstTime)
             {
-                gameObject.GetComponent<DialoguePopup>().showDialogue();
+                gameObject.GetComponent<DialoguePopup>().ShowDialogue();
                 _firstTime = false;
             }
         }
@@ -58,6 +58,7 @@ public class Returning : MonoBehaviour
 
         if (_totalCollectibles == GameStats.Instance.NumberOfCollectibles(_collectibleStates))
         {
+            GameStats.Instance.IsPaused = true;
             celebrationConfetti.SetActive(true);
             StartCoroutine(WaitForEndSceneLoad());
         }

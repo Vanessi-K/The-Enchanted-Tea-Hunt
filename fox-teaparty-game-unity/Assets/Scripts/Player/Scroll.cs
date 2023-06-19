@@ -67,6 +67,7 @@ namespace Player
             }
             
             scrollOverlay.SetActive(scrollState);
+            GameStats.Instance.IsPaused = scrollState;
         }
 
         private void BuildScroll()

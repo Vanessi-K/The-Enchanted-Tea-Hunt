@@ -1,8 +1,27 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+
+[Serializable]
+public class IconToCollectibleType
+{
+    [SerializeField] private Sprite sprite;
+    [SerializeField] private CollectibleType type;
+
+    public Sprite Sprite
+    {
+        get => sprite;
+        private set => sprite = value;
+    }
+    
+    public CollectibleType Type
+    {
+        get => type;
+        private set => type = value;
+    }
+}
 
 public class Backpack : MonoBehaviour
 {
@@ -10,12 +29,13 @@ public class Backpack : MonoBehaviour
     [SerializeField] private GameObject slot;
     [SerializeField] private GameObject panel;
     [SerializeField] private Image speedBoostImage;
+    [SerializeField] private IconToCollectibleType[] iconToCollectibleTypes;
     private SpeedBoost _speedBoost = null;
     private bool _activeSpeedBoost = false;
     private float _speedBoostTimer = 0;
     private List<Collectible> _collectibles = new List<Collectible>();
     private GameObject[] _slots;
-
+    
     private void Awake()
     {
         _slots = new GameObject[size];
@@ -84,7 +104,10 @@ public class Backpack : MonoBehaviour
         if (!BackpackHasSpace) return false;
         _collectibles.Add(collectible);
         collectible.GetComponent<CollectionStateManager>().State = CollectionState.InPlayerInventory;
-        _slots[_collectibles.Count - 1].GetComponentInChildren<RectTransform>().GetChild(0).gameObject.SetActive(true);
+        
+        GameObject slot = _slots[_collectibles.Count - 1].GetComponentInChildren<RectTransform>().GetChild(0).gameObject;
+        slot.GetComponentInChildren<Image>().sprite = iconToCollectibleTypes.First(icon => icon.Type == collectible.Type).Sprite;
+        slot.SetActive(true);
         return true;
     }
 

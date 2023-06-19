@@ -12,6 +12,7 @@ public class DiscoverDiary : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             diary.SetActive(true);
+            GameStats.Instance.IsPaused = true;
         }
     }
 }

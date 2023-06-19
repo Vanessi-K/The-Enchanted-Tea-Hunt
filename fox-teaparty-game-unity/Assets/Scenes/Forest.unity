@@ -2940,8 +2940,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -40, y: -40}
-  m_SizeDelta: {x: 110, y: 130}
+  m_AnchoredPosition: {x: -40, y: -10}
+  m_SizeDelta: {x: 150, y: 195}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &87775991
 MonoBehaviour:
@@ -2963,7 +2963,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 7cd0a909806681342bdc7d26ad865fb6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6115,8 +6115,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -200, y: -40}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -230, y: -10}
+  m_SizeDelta: {x: 150, y: 195}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &210914420
 MonoBehaviour:
@@ -6131,7 +6131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.754717, g: 0.11747954, b: 0.48352298, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -13507,7 +13507,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 120, y: 120}
+  m_SizeDelta: {x: 180, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &525275934
 MonoBehaviour:
@@ -13522,7 +13522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.33490568, b: 0.675298, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15229,6 +15229,21 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3680765609775844348, guid: d10055f18de340d448b2084367c1598e, type: 3}
   m_PrefabInstance: {fileID: 1429982404}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &596842670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596842668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3d29e3d39b4717821741ebb5851c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 596842668}
+  dialogueTextField: {fileID: 774818156}
+  dialogueDuration: 5
 --- !u!4 &597321650 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5186735023777053022, guid: ac8efb728f1fb9b4092c4df591c827ca, type: 3}
@@ -22105,6 +22120,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7348453500560298351, guid: d10055f18de340d448b2084367c1598e, type: 3}
   m_PrefabInstance: {fileID: 826644131}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &826644135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826644134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3d29e3d39b4717821741ebb5851c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 826644134}
+  dialogueTextField: {fileID: 826644133}
+  dialogueDuration: 5
 --- !u!4 &828136646 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3356751432537613521, guid: ffbddc4ef9676cc419e81e06aaa836d8, type: 3}
@@ -27115,6 +27145,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 2443470310848784311}
+    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
       propertyPath: dialogueBox
       value: 
       objectReference: {fileID: 2443470310848784306}
@@ -28295,9 +28329,7 @@ MonoBehaviour:
   dialogueText:
   - "I need to return the items I collected here at the table. I can do that with
     \u201CR\u201D."
-  dialogueBox: {fileID: 596842668}
-  dialogueTextField: {fileID: 774818156}
-  dialogueDuration: 5
+  dialogue: {fileID: 596842670}
   probabilityOfShowingDialogue: 100
   startOnCollision: 0
 --- !u!4 &1097736074 stripped
@@ -40931,6 +40963,15 @@ MonoBehaviour:
   slot: {fileID: 1702149618}
   panel: {fileID: 1482801660}
   speedBoostImage: {fileID: 210914420}
+  iconToCollectibleTypes:
+  - sprite: {fileID: 21300000, guid: 846afd5beb3d1984bb7d87694660d6ba, type: 3}
+    type: 0
+  - sprite: {fileID: 21300000, guid: 1ffaa5e26d01bf54e9f975da37a3de32, type: 3}
+    type: 1
+  - sprite: {fileID: 21300000, guid: b4fed2efa1038aa44a1eb154d7a36ef9, type: 3}
+    type: 2
+  - sprite: {fileID: 21300000, guid: 9d86189746efa594eac15ba796b12963, type: 3}
+    type: 3
 --- !u!114 &1613456863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44091,14 +44132,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.8301768, b: 0.5518868, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a45a3b35035c54b41aa9696f25f817ff, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -45868,14 +45909,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6415094, g: 0.32861844, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 8f7012cf1f180d44a83adf001fa33956, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -46495,9 +46536,7 @@ MonoBehaviour:
   dialogueText:
   - "Oh, I found something! I think I have a list with all the missing items. I can
     check it with \u201CQ\u201D. "
-  dialogueBox: {fileID: 826644134}
-  dialogueTextField: {fileID: 826644133}
-  dialogueDuration: 5
+  dialogue: {fileID: 826644135}
   probabilityOfShowingDialogue: 100
   startOnCollision: 1
 --- !u!1001 &1798487847
@@ -51595,11 +51634,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText:
-  - "I collected a Zippityberry \u2013 it helps me to go fast for short time. I can
-    use it with \u201CE\u201D. "
-  dialogueBox: {fileID: 826644134}
-  dialogueTextField: {fileID: 826644133}
-  dialogueDuration: 5
+  - "I collected a Zippityberry \u2013 it helps me to go fast for a short time. I
+    can use it with \u201CE\u201D. "
+  dialogue: {fileID: 826644135}
   probabilityOfShowingDialogue: 100
   startOnCollision: 1
 --- !u!1 &1998406015
@@ -54589,6 +54626,21 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3680765609775844348, guid: be1e21247c25cc543a299ebbcbb549b7, type: 3}
   m_PrefabInstance: {fileID: 2443470310848784305}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2443470310848784311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2443470310848784306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3d29e3d39b4717821741ebb5851c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 2443470310848784306}
+  dialogueTextField: {fileID: 2443470310848784307}
+  dialogueDuration: 5
 --- !u!1001 &7086976165885083054
 PrefabInstance:
   m_ObjectHideFlags: 0
