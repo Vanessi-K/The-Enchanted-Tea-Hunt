@@ -406,7 +406,7 @@ PrefabInstance:
         as usual.\r\n\nHe mumbled some words and suddenly everything I prepared for
         the tea-party became magical! Believe it or not, the cups grew legs and run
         off followed by flying cupcakes and spoons! Even the teapot went missing.\r\n\nNow
-        I must go out in the forest and collect everything \u2013 I need to hurry,
+        I must go out in the forest and collect everything \u2013 I need to hurry
         if I want to make it in time for the tea party!\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 4528409478178041098, guid: 12e73aa79c3ed6a4ba669ebb2c15cc98, type: 3}
