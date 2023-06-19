@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &910589189332716240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3993741782389441015}
+  m_Layer: 0
+  m_Name: TableCup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3993741782389441015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910589189332716240}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7510443130921349452}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &8048158214021944999
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3993741782389441015}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ad5314f54157e40179677e54f0e59cca, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ad5314f54157e40179677e54f0e59cca, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ad5314f54157e40179677e54f0e59cca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ad5314f54157e40179677e54f0e59cca, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ad5314f54157e40179677e54f0e59cca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.98820156
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ad5314f54157e40179677e54f0e59cca, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.11145586
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ad5314f54157e40179677e54f0e59cca, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.011773492
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ad5314f54157e40179677e54f0e59cca, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.104387365
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ad5314f54157e40179677e54f0e59cca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 12.87
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ad5314f54157e40179677e54f0e59cca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ad5314f54157e40179677e54f0e59cca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 12.06
+      objectReference: {fileID: 0}
+    - target: {fileID: -5071935377146555852, guid: ad5314f54157e40179677e54f0e59cca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3181452503744645242, guid: ad5314f54157e40179677e54f0e59cca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad5314f54157e40179677e54f0e59cca, type: 3}
+      propertyPath: m_Name
+      value: MovingCupRunAnimation
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036213049465896255, guid: ad5314f54157e40179677e54f0e59cca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ad5314f54157e40179677e54f0e59cca, type: 3}
+--- !u!4 &7510443130921349452 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ad5314f54157e40179677e54f0e59cca, type: 3}
+  m_PrefabInstance: {fileID: 8048158214021944999}
+  m_PrefabAsset: {fileID: 0}

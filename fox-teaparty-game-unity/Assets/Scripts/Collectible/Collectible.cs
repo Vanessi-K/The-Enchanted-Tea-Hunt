@@ -6,11 +6,13 @@ public class Collectible : MonoBehaviour
 {
     [SerializeField] public float Weight;
     [SerializeField] public CollectibleType Type;
+    [SerializeField] public GameObject TableRepresentation;
     private Backpack _backpack;
 
     private void Start()
     {
         _backpack = GameStats.Instance.Backpack;
+        TableRepresentation.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)

@@ -94,6 +94,7 @@ public class Backpack : MonoBehaviour
         foreach (Collectible collectible in _collectibles)
         {
             collectible.GetComponent<CollectionStateManager>().State = CollectionState.Returned;
+            collectible.TableRepresentation.SetActive(true);
         }
         _collectibles.Clear();
 
