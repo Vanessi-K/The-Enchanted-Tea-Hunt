@@ -106,7 +106,6 @@ public class Backpack : MonoBehaviour
         collectible.GetComponent<CollectionStateManager>().State = CollectionState.InPlayerInventory;
         
         GameObject slot = _slots[_collectibles.Count - 1].GetComponentInChildren<RectTransform>().GetChild(0).gameObject;
-        Debug.Log(iconToCollectibleTypes.First(icon => icon.Type == collectible.Type));
         slot.GetComponentInChildren<Image>().sprite = iconToCollectibleTypes.First(icon => icon.Type == collectible.Type).Sprite;
         slot.SetActive(true);
         return true;
