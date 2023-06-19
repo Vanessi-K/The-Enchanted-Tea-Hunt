@@ -16,6 +16,7 @@ public class Returning : MonoBehaviour
     private bool _playerIsInside;
     private int _totalCollectibles;
     private CollectionState[] _collectibleStates;
+    private bool _firstTime = true;
     
     private void Start()
     {
@@ -31,6 +32,12 @@ public class Returning : MonoBehaviour
         {
             _playerIsInside = true;
             displayArea.material = activeMaterial;
+
+            if (_firstTime)
+            {
+                gameObject.GetComponent<DialoguePopup>().showDialogue();
+                _firstTime = false;
+            }
         }
     }
 

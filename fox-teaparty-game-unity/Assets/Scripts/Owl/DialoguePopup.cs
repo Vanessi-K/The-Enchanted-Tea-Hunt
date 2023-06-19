@@ -13,6 +13,7 @@ public class DialoguePopup : MonoBehaviour
     [SerializeField] private TMP_Text dialogueTextField;
     [SerializeField] private float dialogueDuration;
     [SerializeField] private int probabilityOfShowingDialogue; 
+    [SerializeField] private bool startOnCollision;
     private float _dialogueTimer = 0;
 
     private void Update()
@@ -30,16 +31,24 @@ public class DialoguePopup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (startOnCollision)
         {
-            int randomValue = UnityEngine.Random.Range(0, 100);
-            
-            if (randomValue <= probabilityOfShowingDialogue)
+            if (other.CompareTag("Player"))
             {
-                int randomDialogueText = UnityEngine.Random.Range(0, dialogueText.Length);
-                dialogueTextField.text = dialogueText[randomDialogueText];
-                dialogueBox.SetActive(true);
+                showDialogue();
             }
+        }
+    }
+    
+    public void showDialogue()
+    {
+        int randomValue = UnityEngine.Random.Range(0, 100);
+            
+        if (randomValue <= probabilityOfShowingDialogue)
+        {
+            int randomDialogueText = UnityEngine.Random.Range(0, dialogueText.Length);
+            dialogueTextField.text = dialogueText[randomDialogueText];
+            dialogueBox.SetActive(true);
         }
     }
 }
