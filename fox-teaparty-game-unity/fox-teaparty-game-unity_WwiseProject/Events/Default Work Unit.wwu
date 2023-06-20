@@ -282,6 +282,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_fox" ID="{EA128D40-C78C-495D-AC3C-FDF14C39C83E}">
+					<ChildrenList>
+						<Action Name="" ID="{931C639B-3D73-4C01-AAEF-980C5D555CEB}" ShortID="238861041">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fox_noise" ID="{44C90610-ACD1-4C5F-A6CD-933646EBBDB3}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_winning" ID="{40897397-4E4B-45D6-A2CD-D1E82156EE3E}">
+					<ChildrenList>
+						<Action Name="" ID="{1E9D2773-641C-485D-ABFC-5D1D48BADACA}" ShortID="736558690">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Winning Music" ID="{EC701D45-3CBC-4A5A-BCE2-969F58C92976}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

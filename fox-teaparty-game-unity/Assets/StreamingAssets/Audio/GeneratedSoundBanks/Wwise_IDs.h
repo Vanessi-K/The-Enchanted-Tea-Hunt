@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID PLAY_DIARY_CLOSE = 295785890U;
         static const AkUniqueID PLAY_DIARY_OPEN = 864978166U;
         static const AkUniqueID PLAY_DOOR = 2547633870U;
+        static const AkUniqueID PLAY_FOX = 2991955701U;
         static const AkUniqueID PLAY_IDLE_BERRY = 2286352653U;
         static const AkUniqueID PLAY_INDOOR_MUSIC = 526251383U;
         static const AkUniqueID PLAY_JUMP = 3689126666U;

@@ -17,6 +17,7 @@
 						<ObjectRef Name="Play_return" ID="{F276D9BC-EFF9-4864-822F-845AD4B5F708}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_pickUp" ID="{40A0E319-ECCD-4905-B15E-464F151C5B43}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_shimmer" ID="{1677D09C-2D76-495B-B2B5-40641ED3C95E}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_fox" ID="{EA128D40-C78C-495D-AC3C-FDF14C39C83E}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_activate_berry" ID="{E5416E9A-ADA0-4A0B-BAB6-DF91943B5FD7}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_outdoor_music" ID="{AF517755-EA6F-4A5C-A472-81471D4C4D8E}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_bush_hit" ID="{81E6FD35-7905-4AC0-B222-351E8447CC9A}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>

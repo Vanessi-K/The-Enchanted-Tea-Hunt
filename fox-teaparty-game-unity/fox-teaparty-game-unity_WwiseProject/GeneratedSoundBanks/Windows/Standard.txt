@@ -15,6 +15,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2634345273	Stop_steps			\Default Work Unit\Stop_steps	
 	2709107516	Play_shouts			\Default Work Unit\Play_shouts	
 	2859161640	Play_owl			\Default Work Unit\Play_owl	
+	2991955701	Play_fox			\Default Work Unit\Play_fox	
 	3025897706	Play_birds			\Default Work Unit\Play_birds	
 	3507155921	Stop_shimmer			\Default Work Unit\Stop_shimmer	
 	3567508744	Play_activate_berry			\Default Work Unit\Play_activate_berry	
@@ -59,6 +60,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	460621279	Hoot_1	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Windows\SFX\Hoot_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Neighbor\Owl\Hoot_1		142844
 	471434313	Birds_flapping 5	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Windows\SFX\Birds_flapping 5_E4290891.wem		\Actor-Mixer Hierarchy\Default Work Unit\Neighbor\Owl\Flaps\Birds_flapping 5		163292
 	497917418	WallHit (3)	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Windows\SFX\WallHit (3)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Wall_hits\WallHit (3)		13376
+	503228206	fox_noise	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Windows\SFX\fox_noise_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\fox_noise		50040
 	511100354	shimmer_01	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Windows\SFX\shimmer_01_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Items\shimmer_01		3351664
 	527126381	pick_up_02	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Windows\SFX\pick_up_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Items\pick_up_02		204508
 	554740162	LeavesRustlingFast07	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Windows\SFX\LeavesRustlingFast07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Bush_hits\LeavesRustlingFast07		79932
@@ -74,7 +76,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1045806882	WallHit (1)	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Windows\SFX\WallHit (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Wall_hits\WallHit (1)		33156
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	355161123	ForestAmbience	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Windows\SFX\ForestAmbience_F502585D.wem	355161123.wem	\Actor-Mixer Hierarchy\Default Work Unit\Music\Ambience\ForestAmbience	
+	355161123	ForestAmbience	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Windows\SFX\ForestAmbience_D00F9EBF.wem	355161123.wem	\Actor-Mixer Hierarchy\Default Work Unit\Music\Ambience\ForestAmbience	
 	442238079	main-theme	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Windows\SFX\main-theme_5AADC048.wem	442238079.wem	\Actor-Mixer Hierarchy\Default Work Unit\Music\Themes\main-theme	
 	967610578	indoor-theme	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Windows\SFX\indoor-theme_DCDDB111.wem	967610578.wem	\Actor-Mixer Hierarchy\Default Work Unit\Music\Themes\indoor-theme	
 
