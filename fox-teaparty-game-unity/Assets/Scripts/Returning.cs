@@ -16,7 +16,7 @@ public class Returning : MonoBehaviour
     private bool _playerIsInside;
     private int _totalCollectibles;
     private CollectionState[] _collectibleStates;
-    private bool _firstTime = true;
+    public static bool FIRST_TIME = true;
     
     private void Start()
     {
@@ -33,10 +33,10 @@ public class Returning : MonoBehaviour
             _playerIsInside = true;
             displayArea.material = activeMaterial;
 
-            if (_firstTime)
+            if (FIRST_TIME)
             {
                 gameObject.GetComponent<DialoguePopup>().ShowDialogue();
-                _firstTime = false;
+                FIRST_TIME = false;
             }
         }
     }
@@ -53,8 +53,12 @@ public class Returning : MonoBehaviour
     private void OnReturn(InputValue value)
     {
         if (!_playerIsInside) return;
-        _backpack.ReturnCollectibles();
-        displayArea.material = activeAllItemsReturnedMaterial;
+        
+        if (_backpack.ReturnCollectibles())
+        {
+            displayArea.material = activeAllItemsReturnedMaterial;
+        }
+        
 
         if (_totalCollectibles == GameStats.Instance.NumberOfCollectibles(_collectibleStates))
         {

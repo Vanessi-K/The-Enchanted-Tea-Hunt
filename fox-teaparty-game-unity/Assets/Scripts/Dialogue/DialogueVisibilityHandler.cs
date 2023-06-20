@@ -12,13 +12,13 @@ namespace Dialogue
 
         private void Update()
         {
-            if (dialogueBox.activeInHierarchy)
+            if (dialogueBox.activeSelf)
             {
                 _dialogueTimer += Time.deltaTime;
                 if (_dialogueTimer >= dialogueDuration)
                 {
-                    dialogueBox.SetActive(false);
                     _dialogueTimer = 0;
+                    dialogueBox.SetActive(false);
                 }
             }
         }
