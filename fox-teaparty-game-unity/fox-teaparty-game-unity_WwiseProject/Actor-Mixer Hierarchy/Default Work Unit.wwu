@@ -701,6 +701,230 @@
 								<ActiveSource Name="fox_noise" ID="{3078175F-FE77-4B3A-B58D-70EC44CDA21F}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="Steps_grass" ID="{8209B845-1BA8-4F37-ABCB-52F209B6D95C}" ShortID="406780244">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>300</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Grassy_Footstep_03" ID="{41DF887D-BA20-4C7B-9EE8-4C3BABA7C537}" ShortID="231566034">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grassy_Footstep_03" ID="{060ED338-A394-4C75-BDA0-E23D43B01E8B}">
+											<Language>SFX</Language>
+											<AudioFile>Grassy_Footstep_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="6605751"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Grassy_Footstep_03" ID="{060ED338-A394-4C75-BDA0-E23D43B01E8B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grassy_Footstep_02" ID="{BA532F17-87FB-43D0-993F-DC8D9758FCFB}" ShortID="564430253">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grassy_Footstep_02" ID="{1A0BF907-4A54-45C7-A265-3F12E7AA11A6}">
+											<Language>SFX</Language>
+											<AudioFile>Grassy_Footstep_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="694152231"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Grassy_Footstep_02" ID="{1A0BF907-4A54-45C7-A265-3F12E7AA11A6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grassy_Footstep_04" ID="{34D3053D-06D5-4668-BAE6-39AC77E4E1BC}" ShortID="222304095">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grassy_Footstep_04" ID="{33AF0D57-52A5-4F34-B5B0-6FA0170B5AC3}">
+											<Language>SFX</Language>
+											<AudioFile>Grassy_Footstep_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="436251205"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Grassy_Footstep_04" ID="{33AF0D57-52A5-4F34-B5B0-6FA0170B5AC3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grassy_Footstep_01" ID="{F126A42F-13BB-4B99-A6DE-2774C84AB814}" ShortID="282805330">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grassy_Footstep_01" ID="{4E1E8AED-A542-4E70-9A86-BC4F5CE4BE86}">
+											<Language>SFX</Language>
+											<AudioFile>Grassy_Footstep_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="328642671"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Grassy_Footstep_01" ID="{4E1E8AED-A542-4E70-9A86-BC4F5CE4BE86}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Steps_floor" ID="{A114EEBD-AA4F-443A-9791-23F73C4EF65C}" ShortID="773426719">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>400</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Street Footstep 1" ID="{C781BBBC-638A-493A-973C-08738F611BB8}" ShortID="985549386">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Street Footstep 1" ID="{9CD92268-B12C-4EFE-9B7F-A8B30FADB64F}">
+											<Language>SFX</Language>
+											<AudioFile>Street Footstep 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="585295119"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Street Footstep 1" ID="{9CD92268-B12C-4EFE-9B7F-A8B30FADB64F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Street Footstep 2" ID="{63CA0523-8917-4FA9-BB23-3C102CF46BB7}" ShortID="601514015">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Street Footstep 2" ID="{F252395D-8A87-45BC-A615-B2C27E6B899A}">
+											<Language>SFX</Language>
+											<AudioFile>Street Footstep 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="576974963"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Street Footstep 2" ID="{F252395D-8A87-45BC-A615-B2C27E6B899A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Street Footstep 3" ID="{DF4B5579-E2DD-45ED-B229-40CF56DF9EA1}" ShortID="663260108">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Street Footstep 3" ID="{A8F27C2A-A626-46A6-BCE1-A4DA02BAD8FC}">
+											<Language>SFX</Language>
+											<AudioFile>Street Footstep 3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="158963408"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Street Footstep 3" ID="{A8F27C2A-A626-46A6-BCE1-A4DA02BAD8FC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Mugs" ID="{17FE4FE9-62B4-42E7-B597-BA6D56B9D440}" ShortID="470214319">
