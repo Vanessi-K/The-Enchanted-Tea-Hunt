@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_pickUp" ID="{40A0E319-ECCD-4905-B15E-464F151C5B43}">
+					<ChildrenList>
+						<Action Name="" ID="{9C400920-7547-402E-BEB4-F7959E812FDF}" ShortID="909972329">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pick_up_01" ID="{D0153BE4-AD35-4759-8CE6-427A421C181C}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_return" ID="{F276D9BC-EFF9-4864-822F-845AD4B5F708}">
+					<ChildrenList>
+						<Action Name="" ID="{27D86BCB-37C9-4BDF-8870-36D042DA5F93}" ShortID="442142096">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="return_items_01" ID="{67F5E79A-98EE-4E7F-910C-7A50CE7F4859}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_shimmer" ID="{1677D09C-2D76-495B-B2B5-40641ED3C95E}">
+					<ChildrenList>
+						<Action Name="" ID="{C26A0E30-73DC-426F-9B1D-CCC6562F121F}" ShortID="497998370">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="shimmer_01" ID="{D8B6F194-A827-4246-BB59-0E0C5F3E421B}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_shimmer" ID="{C0316E6B-6281-4D03-98F4-A4F03CC9E589}">
+					<ChildrenList>
+						<Action Name="" ID="{1E106DE9-A6EE-4D09-86E1-3F2295DF96AA}" ShortID="478214631">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="shimmer_01" ID="{D8B6F194-A827-4246-BB59-0E0C5F3E421B}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_jump" ID="{BF23232A-B7C6-4ACD-8B1E-0666E015E462}">
+					<ChildrenList>
+						<Action Name="" ID="{A03C41E6-CCF0-4F72-B7DF-7D1A5A0CE4EB}" ShortID="1036767089">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="jump_01" ID="{339DF402-D791-4979-8200-34CBCB228C0B}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_steps" ID="{88C16588-C4CA-47CE-860D-C7E1F6065A06}">
+					<ChildrenList>
+						<Action Name="" ID="{CA55F171-B6BF-4D02-8CA2-0AE3425406C3}" ShortID="305744406">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Steps" ID="{7CF17C36-968A-488A-98B6-4D68BD115886}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_steps" ID="{5AE9FC76-F44E-4466-B4D6-C45EBD4B03DF}">
+					<ChildrenList>
+						<Action Name="" ID="{1BCC3F14-5883-440A-BCA9-46271AD77B09}" ShortID="860422505">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Steps" ID="{7CF17C36-968A-488A-98B6-4D68BD115886}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_shouts" ID="{90F8F43D-A295-4153-A314-9D757F6DC958}">
+					<ChildrenList>
+						<Action Name="" ID="{718016AB-CF1F-4330-9BFA-FFAB1049B30D}" ShortID="168900399">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shouts" ID="{0C562054-F8BB-477D-A06E-354F0F9B8909}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_shouts" ID="{26B1B9E8-2389-4DF1-B8D5-7833575CE24E}">
+					<ChildrenList>
+						<Action Name="" ID="{211A34BB-D1E3-46D1-A1B4-CC661B1C137D}" ShortID="618841511">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shouts" ID="{0C562054-F8BB-477D-A06E-354F0F9B8909}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="play_pickUp_berry" ID="{E8AD4FBC-1F42-4C00-93A8-AA77963D13D5}">
+					<ChildrenList>
+						<Action Name="" ID="{9DDE66E7-70CB-4220-AACB-253A5EDD6904}" ShortID="449081501">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pick_up_02" ID="{F3EFF503-0C17-421F-920F-7D2E8D10DF61}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_activate_berry" ID="{8028C13A-51FE-4773-BE4B-03571E6F5406}">
+					<ChildrenList>
+						<Action Name="" ID="{4CAED304-A4F7-437A-9A56-EC95B2982CE8}" ShortID="637765584">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Berry_Activation" ID="{77E6F459-BB9C-417E-83EB-54924D938EE4}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_activate_berry" ID="{E5416E9A-ADA0-4A0B-BAB6-DF91943B5FD7}">
+					<ChildrenList>
+						<Action Name="" ID="{5DC193F2-AC87-46DF-A3DE-7FE482E3DF7D}" ShortID="242246843">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Berry_Activation" ID="{77E6F459-BB9C-417E-83EB-54924D938EE4}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_idle_berry" ID="{EF741002-EE1A-4FB9-9410-46FEBBCC910F}">
+					<ChildrenList>
+						<Action Name="" ID="{DA98C274-1B7F-494F-B8A5-134C6BE088E8}" ShortID="839100727">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="shimmer_02" ID="{9D49CEFB-3652-4325-B082-3B82A40FBF2D}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_idle_berry" ID="{45A2127F-4A7B-4DC2-BC71-3D2F798A1645}">
+					<ChildrenList>
+						<Action Name="" ID="{9EDD2CEF-617C-4D15-AE1E-4CF37C23F2D8}" ShortID="273090064">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="shimmer_02" ID="{9D49CEFB-3652-4325-B082-3B82A40FBF2D}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Owl" ID="{C6ECD1FC-C289-479B-98E8-42601677A550}">
+					<ChildrenList>
+						<Action Name="" ID="{9433CB8F-EE49-4C49-B40D-8E55FCFD3C30}" ShortID="913098371">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Owl" ID="{0CEC879B-E435-4955-8703-DB05BDB97E13}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

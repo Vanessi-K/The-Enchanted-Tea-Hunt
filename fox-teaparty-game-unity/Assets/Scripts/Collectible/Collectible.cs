@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(CollectionStateManager))]
 public class Collectible : MonoBehaviour
@@ -13,6 +14,7 @@ public class Collectible : MonoBehaviour
     {
         _backpack = GameStats.Instance.Backpack;
         TableRepresentation.SetActive(false);
+        AkSoundEngine.PostEvent("Play_shimmer", gameObject);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -22,6 +24,10 @@ public class Collectible : MonoBehaviour
             if (_backpack.BackpackHasSpace)
             {
                 _backpack.AddCollectible(this);
+                AkSoundEngine.PostEvent("Play_pickUp", gameObject);
+                AkSoundEngine.PostEvent("Stop_shimmer", gameObject);
+                AkSoundEngine.PostEvent("Stop_steps", gameObject);
+                AkSoundEngine.PostEvent("Stop_shouts", gameObject);
                 gameObject.SetActive(false);
             }
         }

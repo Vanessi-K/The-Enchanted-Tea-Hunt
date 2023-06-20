@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             boostEffect.SetActive(false);
+            AkSoundEngine.PostEvent("Stop_activate_berry", gameObject);
         }
     }
 
@@ -52,11 +53,13 @@ public class PlayerMovement : MonoBehaviour
         if (_isJumpingOrFalling) return;
         float weightModifier = 1 - (_backpack.TotalWeight * _decreaseValuePerWeightUnit);
         GetComponent<Rigidbody>().AddForce(Vector3.up * 5 * weightModifier, ForceMode.Impulse);
+        AkSoundEngine.PostEvent("Play_jump", gameObject);
     }
 
     private void OnActivateBoost(InputValue inputValue)
     {
         _backpack.UseSpeedBoost();
+        AkSoundEngine.PostEvent("Play_activate_berry", gameObject);
     }
 
     private void RotateHorizontal(float angle)

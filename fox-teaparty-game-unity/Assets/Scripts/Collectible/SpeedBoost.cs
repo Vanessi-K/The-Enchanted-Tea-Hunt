@@ -30,6 +30,8 @@ public class SpeedBoost : MonoBehaviour
                 return;
 
             GameStats.Instance.Backpack.AddSpeedBoost(this);
+            AkSoundEngine.PostEvent("Play_pickUp_berry", gameObject);
+            AkSoundEngine.PostEvent("Stop_idle_berry", gameObject);
             gameObject.SetActive(false);
         }
     }

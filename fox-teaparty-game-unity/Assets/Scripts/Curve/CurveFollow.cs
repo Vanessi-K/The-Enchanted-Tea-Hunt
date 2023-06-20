@@ -17,6 +17,8 @@ public class CurveFollow : MonoBehaviour
         _routeToGo = 0;
         _tParam = 0f;
         _coroutineAllowed = true;
+        AkSoundEngine.PostEvent("Play_steps", gameObject);
+        StartCoroutine(PlayShoutAfterDelay());
     }
     
     void Update()
@@ -47,7 +49,7 @@ public class CurveFollow : MonoBehaviour
             }
             
             Vector3 direction = _objectPosition - transform.position;
-            
+
             transform.position = _objectPosition;
             transform.rotation = Quaternion.LookRotation(direction, transform.up);
             yield return new WaitForEndOfFrame();
@@ -73,5 +75,14 @@ public class CurveFollow : MonoBehaviour
                Mathf.Pow(_tParam, 3) * p3;
     }
     
+    private IEnumerator PlayShoutAfterDelay()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(5f);
+            AkSoundEngine.PostEvent("Play_shouts", gameObject);
+        }
+    }
+      
     
 }
