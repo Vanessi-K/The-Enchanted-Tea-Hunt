@@ -235,93 +235,6 @@
 								<ActiveSource Name="chimes" ID="{94065D68-8021-4308-862E-71BB2C8851B8}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<BlendContainer Name="Berry_Activation" ID="{77E6F459-BB9C-417E-83EB-54924D938EE4}" ShortID="61432233">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Power Boost" ID="{FF85D77C-85E9-4966-A6F9-33317A8BF7BD}" ShortID="424086849">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="fairy-twinkle" ID="{7D336889-3E24-4D28-84BB-618F478D05CE}">
-											<Language>SFX</Language>
-											<AudioFile>fairy-twinkle.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="865922609"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="fairy-twinkle" ID="{7D336889-3E24-4D28-84BB-618F478D05CE}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="speed" ID="{9A75BC3D-AAD2-4713-958F-5F726EDEDE9F}" ShortID="420175818">
-									<PropertyList>
-										<Property Name="InitialDelay" Type="Real64">
-											<ValueList>
-												<Value>0.5</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="whoosh" ID="{69D7CCFC-B465-4496-A6F7-34953E2C3542}">
-											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="0.12597200622084"/>
-												<Property Name="LoopEnd" Type="Real64" Value="0.729393468118196"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>whoosh.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1039902360"/>
-											</MediaIDList>
-										</AudioFileSource>
-										<AudioFileSource Name="ding ding" ID="{44080F13-36DA-4ACE-BEDB-3B525BE285C7}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>ding ding.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="430290202"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="ding ding" ID="{44080F13-36DA-4ACE-BEDB-3B525BE285C7}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<ObjectLists/>
-						</BlendContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Character" ID="{496C973A-20CA-46FB-B527-3E7835E40F72}" ShortID="228831077">
@@ -656,6 +569,108 @@
 								<ActiveSource Name="Paper Sound" ID="{25DE2006-B0D0-4169-95A2-8E15FFC4DB03}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<BlendContainer Name="Berry_Activation" ID="{77E6F459-BB9C-417E-83EB-54924D938EE4}" ShortID="61432233">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Power Boost" ID="{FF85D77C-85E9-4966-A6F9-33317A8BF7BD}" ShortID="424086849">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="fairy-twinkle" ID="{7D336889-3E24-4D28-84BB-618F478D05CE}">
+											<Language>SFX</Language>
+											<AudioFile>fairy-twinkle.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="865922609"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="fairy-twinkle" ID="{7D336889-3E24-4D28-84BB-618F478D05CE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="speed" ID="{9A75BC3D-AAD2-4713-958F-5F726EDEDE9F}" ShortID="420175818">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>60</Value>
+											</ValueList>
+										</Property>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>50</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="whoosh" ID="{69D7CCFC-B465-4496-A6F7-34953E2C3542}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.12597200622084"/>
+												<Property Name="LoopEnd" Type="Real64" Value="0.729393468118196"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>whoosh.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1039902360"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="ding ding" ID="{44080F13-36DA-4ACE-BEDB-3B525BE285C7}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ding ding.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="430290202"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="ding ding" ID="{44080F13-36DA-4ACE-BEDB-3B525BE285C7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</BlendContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Mugs" ID="{17FE4FE9-62B4-42E7-B597-BA6D56B9D440}" ShortID="470214319">
@@ -1201,48 +1216,6 @@
 				</Sound>
 				<Folder Name="Music" ID="{18686F93-EC53-470C-9E62-838FD6E7CB76}" ShortID="1024238011">
 					<ChildrenList>
-						<Sound Name="menu-theme" ID="{3E85F18B-1917-47F7-8BF4-79100123BDF5}" ShortID="37887054">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="IsStreamingEnabled" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-14</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="menu-theme" ID="{6907A44A-987E-4A4C-873B-1527F32A5A27}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="10.0976914334605"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="6.37339004030849"/>
-										<Property Name="LoopEnd" Type="Real64" Value="99.7169587625526"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>telling-the-story-150614.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="286250885"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="menu-theme" ID="{6907A44A-987E-4A4C-873B-1527F32A5A27}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Folder Name="Themes" ID="{1A502BA8-4F5E-4B93-90C4-8103B1B5CAAC}" ShortID="752013596">
 							<ChildrenList>
 								<Sound Name="indoor-theme" ID="{69AB3588-E3AE-4B7F-85C0-97900066B669}" ShortID="656007671">
@@ -1368,6 +1341,48 @@
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="main-theme" ID="{523918E3-33BD-4170-9B7D-4EBCE1114EDC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="menu-theme" ID="{3E85F18B-1917-47F7-8BF4-79100123BDF5}" ShortID="37887054">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu-theme" ID="{6907A44A-987E-4A4C-873B-1527F32A5A27}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="10.0976914334605"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="6.37339004030849"/>
+												<Property Name="LoopEnd" Type="Real64" Value="99.7169587625526"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>telling-the-story-150614.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="286250885"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="menu-theme" ID="{6907A44A-987E-4A4C-873B-1527F32A5A27}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
