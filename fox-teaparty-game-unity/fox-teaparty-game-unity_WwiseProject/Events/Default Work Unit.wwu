@@ -304,6 +304,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_rustling_paper" ID="{921B7445-F2C4-47DC-9CA0-DA94E7EDF990}">
+					<ChildrenList>
+						<Action Name="" ID="{A3DA93FE-BC49-4640-8ECF-A2C38C4351A8}" ShortID="303210592">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="rustling_paper" ID="{F741C626-8D68-4547-94DF-318D1BA5969B}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

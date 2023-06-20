@@ -1284,6 +1284,41 @@
 								<ActiveSource Name="diary_open" ID="{C953979F-DA33-495A-ACAC-F43850F1A289}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="rustling_paper" ID="{F741C626-8D68-4547-94DF-318D1BA5969B}" ShortID="901885317">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="rustling_paper" ID="{45069878-DEFE-4A3C-8505-067990289575}">
+									<PropertyList>
+										<Property Name="LoopEnd" Type="Real64" Value="1.16536286544228"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0520716204397801"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>rustling_paper.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="766823336"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="rustling_paper" ID="{45069878-DEFE-4A3C-8505-067990289575}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{18686F93-EC53-470C-9E62-838FD6E7CB76}" ShortID="1024238011">

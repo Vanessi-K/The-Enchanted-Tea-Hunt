@@ -29,6 +29,7 @@ namespace AK
         static const AkUniqueID PLAY_PICKUP = 3860455926U;
         static const AkUniqueID PLAY_PICKUP_BERRY = 3908278347U;
         static const AkUniqueID PLAY_RETURN = 2337471648U;
+        static const AkUniqueID PLAY_RUSTLING_PAPER = 528770715U;
         static const AkUniqueID PLAY_SHIMMER = 543936919U;
         static const AkUniqueID PLAY_SHOUTS = 2709107516U;
         static const AkUniqueID PLAY_STEPS = 2600469463U;

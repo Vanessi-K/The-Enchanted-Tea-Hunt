@@ -93,5 +93,10 @@ public class PlayerMovement : MonoBehaviour
         {
             AkSoundEngine.PostEvent("Play_bush_hit", gameObject);
         }
+        
+        if (other.gameObject.layer == 11)
+        {
+            AkSoundEngine.PostEvent("Play_rustling_paper", gameObject);
+        }
     }
 }
