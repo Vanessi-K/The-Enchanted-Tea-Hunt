@@ -205,6 +205,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_paper" ID="{12CE9DE9-3FD2-47B7-9477-77E2C68983ED}">
+					<ChildrenList>
+						<Action Name="" ID="{E7AD2498-BA41-44B9-BBF1-96129D626E18}" ShortID="27313098">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Paper Sound" ID="{879197CF-850E-4B04-9DF7-9758B64679E2}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_door" ID="{88BDF517-3A2A-4499-BA4A-F145C3ED505F}">
+					<ChildrenList>
+						<Action Name="" ID="{678B99B8-733E-4263-A6EA-774F7B8DF410}" ShortID="857213043">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="doorsound" ID="{DB346B9B-D09E-4F35-9323-6DA0C47E36D1}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

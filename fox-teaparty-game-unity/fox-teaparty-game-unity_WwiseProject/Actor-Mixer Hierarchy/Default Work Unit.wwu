@@ -84,7 +84,7 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-0</YPos>
+														<YPos>0</YPos>
 														<Flags>5</Flags>
 													</Point>
 													<Point>
@@ -633,6 +633,29 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</RandomSequenceContainer>
+						<Sound Name="Paper Sound" ID="{879197CF-850E-4B04-9DF7-9758B64679E2}" ShortID="410641292">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Paper Sound" ID="{25DE2006-B0D0-4169-95A2-8E15FFC4DB03}">
+									<Language>SFX</Language>
+									<AudioFile>Paper Sound.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="966014376"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Paper Sound" ID="{25DE2006-B0D0-4169-95A2-8E15FFC4DB03}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Mugs" ID="{17FE4FE9-62B4-42E7-B597-BA6D56B9D440}" ShortID="470214319">
@@ -1153,6 +1176,29 @@
 						</BlendContainer>
 					</ChildrenList>
 				</Folder>
+				<Sound Name="doorsound" ID="{DB346B9B-D09E-4F35-9323-6DA0C47E36D1}" ShortID="402362257">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="doorsound" ID="{8FFE5ECF-8344-4596-84D9-932FFDD5711A}">
+							<Language>SFX</Language>
+							<AudioFile>doorsound.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="758753002"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="doorsound" ID="{8FFE5ECF-8344-4596-84D9-932FFDD5711A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

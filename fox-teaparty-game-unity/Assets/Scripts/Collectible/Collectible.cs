@@ -14,7 +14,12 @@ public class Collectible : MonoBehaviour
     {
         _backpack = GameStats.Instance.Backpack;
         TableRepresentation.SetActive(false);
-        AkSoundEngine.PostEvent("Play_shimmer", gameObject);
+
+
+        if (gameObject.activeSelf)
+        {
+            AkSoundEngine.PostEvent("Play_shimmer", gameObject);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
