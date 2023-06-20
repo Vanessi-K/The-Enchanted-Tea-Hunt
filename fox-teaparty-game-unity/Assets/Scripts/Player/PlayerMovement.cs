@@ -1,16 +1,17 @@
 using System;
+using System.Linq.Expressions;
 using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     private bool _isJumpingOrFalling;
-    private bool _isWalking;
     private bool _walkingPressed;
     private Backpack _backpack;
     [SerializeField] private GameObject boostEffect;
     [SerializeField] private float _speed;
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _decreaseValuePerWeightUnit;
+    [SerializeField] private Animator animator;
 
     private void Start()
     {
@@ -24,6 +25,16 @@ public class PlayerMovement : MonoBehaviour
         {
             float weightModifier = 1 - (_backpack.TotalWeight * _decreaseValuePerWeightUnit);
             transform.Translate(Vector3.forward * (Time.deltaTime * _speed * weightModifier * _backpack.SpeedBoost));
+        }
+
+        if(animator.GetBool("walking") != _walkingPressed)
+        {
+            animator.SetBool("walking", _walkingPressed);
+        }
+        
+        if(animator.GetBool("jumping") != _isJumpingOrFalling)
+        {
+            animator.SetBool("jumping", _isJumpingOrFalling);
         }
         
         if(_backpack.SpeedBoost > 1)
