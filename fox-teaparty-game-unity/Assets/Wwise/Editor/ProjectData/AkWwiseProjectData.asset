@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 188a79ae620ca947895fe52a9330fa7e
     GuidInternal: 
-    m_lastTime: -8585143542700632419
+    m_lastTime: -8585143462297931244
     List:
     - name: Standard
       guid: eb86d49d0ecd0546a84cf3c4ac5e4d05
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ea3ac9f74106a1478d57dc01acff8772
     GuidInternal: 
-    m_lastTime: -8585143485241737562
+    m_lastTime: -8585143462297997509
     List:
     - name: Play_activate_berry
       guid: 9a6e41e5a0ad0b4abab6df91943b5fd7
@@ -110,6 +110,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 9a6e41e5a0ad0b4abab6df91943b5fd7
       Path: Events\Default Work Unit\Play_activate_berry
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_birds
+      guid: 9521c84a6fc37f4baefce460a3a40856
+      id: 3025897706
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ea3ac9f74106a1478d57dc01acff8772
+      - ElementName: Play_birds
+        ObjectType: 3
+        guid: 9521c84a6fc37f4baefce460a3a40856
+      Path: Events\Default Work Unit\Play_birds
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -130,6 +147,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.338826
       minDuration: 0.234559
+    - name: Play_diary_close
+      guid: f382386b7e5c684797c778257d7fabb9
+      id: 295785890
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ea3ac9f74106a1478d57dc01acff8772
+      - ElementName: Play_diary_close
+        ObjectType: 3
+        guid: f382386b7e5c684797c778257d7fabb9
+      Path: Events\Default Work Unit\Play_diary_close
+      maxAttenuation: 0
+      maxDuration: 0.281679
+      minDuration: 0.281679
+    - name: Play_diary_open
+      guid: 079047f2c57ec347a95b841652260fed
+      id: 864978166
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ea3ac9f74106a1478d57dc01acff8772
+      - ElementName: Play_diary_open
+        ObjectType: 3
+        guid: 079047f2c57ec347a95b841652260fed
+      Path: Events\Default Work Unit\Play_diary_open
+      maxAttenuation: 0
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Play_door
       guid: 17f5bd882a3a9944ba4af145c3ed505f
       id: 2547633870
@@ -215,7 +266,7 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_Owl
+    - name: Play_owl
       guid: fcd1ecc689c29b4798e842601677a550
       id: 2859161640
       PathAndIcons:
@@ -225,10 +276,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: ea3ac9f74106a1478d57dc01acff8772
-      - ElementName: Play_Owl
+      - ElementName: Play_owl
         ObjectType: 3
         guid: fcd1ecc689c29b4798e842601677a550
-      Path: Events\Default Work Unit\Play_Owl
+      Path: Events\Default Work Unit\Play_owl
       maxAttenuation: 0
       maxDuration: 2.042638
       minDuration: 1.4955

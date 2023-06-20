@@ -895,22 +895,27 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>5.05317</XPos>
-														<YPos>-2.91699</YPos>
+														<XPos>4.76843</XPos>
+														<YPos>-0.93766</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>9.99972</XPos>
-														<YPos>-6.01369</YPos>
+														<XPos>10.11361</XPos>
+														<YPos>-1.88111</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>15.0729</XPos>
-														<YPos>-11.42782</YPos>
+														<XPos>15.01595</XPos>
+														<YPos>-3.95621</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>20.10309</XPos>
+														<XPos>19.93224</XPos>
+														<YPos>-8.73385</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>25</XPos>
 														<YPos>-200</YPos>
 														<Flags>0</Flags>
 													</Point>
@@ -935,13 +940,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Funny Cheering Shout (2)" ID="{AC3700D8-CAD7-4E4E-9425-74B56D34B835}" ShortID="187630135">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-12</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
@@ -965,13 +963,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Funny Cheering Shout (4)" ID="{31ECF9F6-F8C6-4E56-A4AE-D45CA91FCE37}" ShortID="762054471">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-12</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
@@ -995,13 +986,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Funny Cheering Shout" ID="{E65B8F98-CA7D-4BB9-86D3-88B97B1ABC53}" ShortID="636310612">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-12</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
@@ -1456,6 +1440,11 @@
 												<Value>True</Value>
 											</ValueList>
 										</Property>
+										<Property Name="PreFetchLength" Type="int16">
+											<ValueList>
+												<Value>5000</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<RTPCList>
 												<RTPC Name="" ID="{E85522D3-D16D-4A97-8249-7BEEE10E3CCA}" ShortID="63590050">
@@ -1471,7 +1460,7 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>-0</YPos>
+																<YPos>0</YPos>
 																<Flags>5</Flags>
 															</Point>
 															<Point>
@@ -1522,8 +1511,8 @@
 										<AudioFileSource Name="ForestAmbience" ID="{A2032EBE-D1BC-456F-929F-D7678DA02E7E}">
 											<PropertyList>
 												<Property Name="LoopBegin" Type="Real64" Value="1.23019730941704"/>
-												<Property Name="LoopEnd" Type="Real64" Value="136.244352017937"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="50.4758145100973"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>ForestAmbience.wav</AudioFile>

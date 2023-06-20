@@ -79,7 +79,7 @@ public class CurveFollow : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(3f);
             AkSoundEngine.PostEvent("Play_shouts", gameObject);
         }
     }
