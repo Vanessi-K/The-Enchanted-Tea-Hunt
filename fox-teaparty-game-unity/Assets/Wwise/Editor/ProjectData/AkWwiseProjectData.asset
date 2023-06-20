@@ -468,8 +468,8 @@ MonoBehaviour:
         guid: 977389404b4ed645a2cdd1e82156ee3e
       Path: Events\Default Work Unit\Play_winning
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 4
+      minDuration: 4
     - name: Stop_activate_berry
       guid: 3ac12880fe517347be4b03571e6f5406
       id: 3672395030

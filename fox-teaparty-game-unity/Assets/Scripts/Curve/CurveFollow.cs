@@ -19,7 +19,7 @@ public class CurveFollow : MonoBehaviour
         _tParam = 0f;
         _coroutineAllowed = true;
         AkSoundEngine.PostEvent("Play_steps", gameObject);
-        StartCoroutine(PlayShoutAfterDelay());
+        //StartCoroutine(PlayShoutAfterDelay());
     }
 
     private void OnEnable()
@@ -93,6 +93,4 @@ public class CurveFollow : MonoBehaviour
             AkSoundEngine.PostEvent("Play_shouts", gameObject);
         }
     }
-      
-    
 }
