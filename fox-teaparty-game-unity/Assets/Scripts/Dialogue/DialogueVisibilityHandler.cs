@@ -14,14 +14,10 @@ namespace Dialogue
         {
             if (dialogueBox.activeSelf)
             {
-                Debug.Log("Delta: " + Time.deltaTime);
-                Debug.Log("Timer: " + _dialogueTimer);
                 _dialogueTimer += Time.deltaTime;
                 if (_dialogueTimer >= dialogueDuration)
                 {
-                    Debug.Log("Set inactive");
                     _dialogueTimer = 0;
-                    Debug.Log("Timer in if: " + _dialogueTimer);
                     dialogueBox.SetActive(false);
                 }
             }
@@ -29,10 +25,8 @@ namespace Dialogue
 
         public void ShowDialogue(string dialogueTextString)
         {
-            Debug.Log("Show dialogue");
             dialogueTextField.text = dialogueTextString;
             dialogueBox.SetActive(true);
-            _dialogueTimer = 0;
         }
     }
 }
