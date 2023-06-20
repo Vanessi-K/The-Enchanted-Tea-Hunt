@@ -15154,31 +15154,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4661435515762813124, guid: e289bf5debb17f6459818c207d781953, type: 3}
   m_PrefabInstance: {fileID: 49080081}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &596842668 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7348453500560298351, guid: d10055f18de340d448b2084367c1598e, type: 3}
-  m_PrefabInstance: {fileID: 1429982404}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &596842669 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3680765609775844348, guid: d10055f18de340d448b2084367c1598e, type: 3}
   m_PrefabInstance: {fileID: 1429982404}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &596842670
+--- !u!114 &596842670 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 596842670, guid: d10055f18de340d448b2084367c1598e, type: 3}
+  m_PrefabInstance: {fileID: 1429982404}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596842668}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd3d29e3d39b4717821741ebb5851c3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 596842668}
-  dialogueTextField: {fileID: 774818156}
-  dialogueDuration: 5
 --- !u!4 &597321650 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5186735023777053022, guid: ac8efb728f1fb9b4092c4df591c827ca, type: 3}
@@ -20332,17 +20323,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6308cb7062fac34e8e50600086b12a1, type: 3}
---- !u!114 &774818156 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3553907236539156441, guid: d10055f18de340d448b2084367c1598e, type: 3}
-  m_PrefabInstance: {fileID: 1429982404}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &775744003
 GameObject:
   m_ObjectHideFlags: 0
@@ -36070,10 +36050,6 @@ PrefabInstance:
     - target: {fileID: 7348453500560298351, guid: d10055f18de340d448b2084367c1598e, type: 3}
       propertyPath: m_Name
       value: DialogueFox
-      objectReference: {fileID: 0}
-    - target: {fileID: 7348453500560298351, guid: d10055f18de340d448b2084367c1598e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d10055f18de340d448b2084367c1598e, type: 3}
@@ -54539,11 +54515,10 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3680765609775844348, guid: be1e21247c25cc543a299ebbcbb549b7, type: 3}
   m_PrefabInstance: {fileID: 2443470310848784305}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2443470310848784311
+--- !u!114 &2443470310848784311 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2443470310848784311, guid: be1e21247c25cc543a299ebbcbb549b7, type: 3}
+  m_PrefabInstance: {fileID: 2443470310848784305}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2443470310848784306}
   m_Enabled: 1
@@ -54551,9 +54526,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd3d29e3d39b4717821741ebb5851c3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 2443470310848784306}
-  dialogueTextField: {fileID: 2443470310848784307}
-  dialogueDuration: 5
 --- !u!1001 &7086976165885083054
 PrefabInstance:
   m_ObjectHideFlags: 0
