@@ -16,6 +16,7 @@ public class Returning : MonoBehaviour
     private bool _playerIsInside;
     private int _totalCollectibles;
     private CollectionState[] _collectibleStates;
+    private PlayerMovement _playerMovement;
     public static bool FIRST_TIME = true;
     
     private void Start()
@@ -31,6 +32,7 @@ public class Returning : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             _playerIsInside = true;
+            _playerMovement = other.GetComponent<PlayerMovement>();
             displayArea.material = activeMaterial;
 
             if (FIRST_TIME)
@@ -47,6 +49,7 @@ public class Returning : MonoBehaviour
         {
             _playerIsInside = false;
             displayArea.material = inactiveMaterial;
+            _playerMovement = null;
         }
     }
     
@@ -62,6 +65,8 @@ public class Returning : MonoBehaviour
 
         if (_totalCollectibles == GameStats.Instance.NumberOfCollectibles(_collectibleStates))
         {
+            _playerMovement.Celebrate();
+            _playerMovement.enabled = false;
             GameStats.Instance.IsPaused = true;
             celebrationConfetti.SetActive(true);
             StartCoroutine(WaitForEndSceneLoad());
