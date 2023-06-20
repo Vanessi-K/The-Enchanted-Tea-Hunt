@@ -172,12 +172,144 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Owl" ID="{C6ECD1FC-C289-479B-98E8-42601677A550}">
+				<Event Name="Play_owl" ID="{C6ECD1FC-C289-479B-98E8-42601677A550}">
 					<ChildrenList>
 						<Action Name="" ID="{9433CB8F-EE49-4C49-B40D-8E55FCFD3C30}" ShortID="913098371">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Owl" ID="{0CEC879B-E435-4955-8703-DB05BDB97E13}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_wall_hit" ID="{B501D883-DF16-4FA5-AD32-99E33AA1E708}">
+					<ChildrenList>
+						<Action Name="" ID="{4A11B11D-8F5F-4BE4-A455-2BC753FFF181}" ShortID="948641558">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wall_hits" ID="{2FDDA0E9-81BD-4B46-B0DE-8CF557EFC966}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_bush_hit" ID="{81E6FD35-7905-4AC0-B222-351E8447CC9A}">
+					<ChildrenList>
+						<Action Name="" ID="{89561850-F673-4E7D-B714-814C9A0737C3}" ShortID="738362951">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bush_hits" ID="{D996CC6E-4956-4FCA-8D44-70F44E89D6B6}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_paper" ID="{12CE9DE9-3FD2-47B7-9477-77E2C68983ED}">
+					<ChildrenList>
+						<Action Name="" ID="{E7AD2498-BA41-44B9-BBF1-96129D626E18}" ShortID="27313098">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Paper Sound" ID="{879197CF-850E-4B04-9DF7-9758B64679E2}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_door" ID="{88BDF517-3A2A-4499-BA4A-F145C3ED505F}">
+					<ChildrenList>
+						<Action Name="" ID="{678B99B8-733E-4263-A6EA-774F7B8DF410}" ShortID="857213043">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="doorsound" ID="{DB346B9B-D09E-4F35-9323-6DA0C47E36D1}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_indoor_music" ID="{2CC495C2-8048-4D7C-92DD-1F10F02410D7}">
+					<ChildrenList>
+						<Action Name="" ID="{6EA4BC0B-710D-48A3-A79A-C843746AA167}" ShortID="340251342">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="indoor-theme" ID="{69AB3588-E3AE-4B7F-85C0-97900066B669}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_outdoor_music" ID="{AF517755-EA6F-4A5C-A472-81471D4C4D8E}">
+					<ChildrenList>
+						<Action Name="" ID="{7E94F39A-2C5B-488F-88FF-E72061557B88}" ShortID="510873742">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="main-theme" ID="{340DF297-4DD5-431F-B413-7784BC03E5D3}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_birds" ID="{4AC82195-C36F-4B7F-AEFC-E460A3A40856}">
+					<ChildrenList>
+						<Action Name="" ID="{9D0FBF4C-2780-4DE8-BCE1-D35D15BF066D}" ShortID="930763556">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ForestAmbience" ID="{6ACB116B-BBB0-489F-8BF0-E5B98CA2AF32}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_diary_close" ID="{6B3882F3-5C7E-4768-97C7-78257D7FABB9}">
+					<ChildrenList>
+						<Action Name="" ID="{B24BEF43-4CA1-46CA-907C-938EE1A6BFB7}" ShortID="781853932">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="diary_close" ID="{85E1051D-364C-4768-BBC4-5E01766B1C5D}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_diary_open" ID="{F2479007-7EC5-47C3-A95B-841652260FED}">
+					<ChildrenList>
+						<Action Name="" ID="{B2D9A452-64DC-4BDF-AE06-AD9CD70A4DBC}" ShortID="109670831">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="diary_open" ID="{5EF5C7E6-B93A-489C-BBF2-575641810BC5}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_fox" ID="{EA128D40-C78C-495D-AC3C-FDF14C39C83E}">
+					<ChildrenList>
+						<Action Name="" ID="{931C639B-3D73-4C01-AAEF-980C5D555CEB}" ShortID="238861041">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fox_noise" ID="{44C90610-ACD1-4C5F-A6CD-933646EBBDB3}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_winning" ID="{40897397-4E4B-45D6-A2CD-D1E82156EE3E}">
+					<ChildrenList>
+						<Action Name="" ID="{1E9D2773-641C-485D-ABFC-5D1D48BADACA}" ShortID="736558690">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Winning Music" ID="{EC701D45-3CBC-4A5A-BCE2-969F58C92976}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_rustling_paper" ID="{921B7445-F2C4-47DC-9CA0-DA94E7EDF990}">
+					<ChildrenList>
+						<Action Name="" ID="{A3DA93FE-BC49-4640-8ECF-A2C38C4351A8}" ShortID="303210592">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="rustling_paper" ID="{F741C626-8D68-4547-94DF-318D1BA5969B}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

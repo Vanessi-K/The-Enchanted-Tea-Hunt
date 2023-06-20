@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1CD714AD-C015-47C7-9DFF-6AD83094E67D}" SchemaVersion="103">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{1CD714AD-C015-47C7-9DFF-6AD83094E67D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1CD714AD-C015-47C7-9DFF-6AD83094E67D}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="music" ID="{4F647C82-42C1-46E6-AC2A-F037FB3CB919}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{FC2EB84A-5508-4FFD-9584-239D538166F2}"/>
+						<State Name="HouseInterior" ID="{A084CDEE-C8C1-4C40-884F-BF4B3F881AD6}"/>
+						<State Name="Forest" ID="{AE8BC576-6D3C-4423-AD1A-8703EEB255EE}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Forest" ID="{AE8BC576-6D3C-4423-AD1A-8703EEB255EE}"/>
+							<EndState Name="HouseInterior" ID="{A084CDEE-C8C1-4C40-884F-BF4B3F881AD6}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
