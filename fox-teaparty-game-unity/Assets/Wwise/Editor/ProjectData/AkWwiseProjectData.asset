@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 188a79ae620ca947895fe52a9330fa7e
     GuidInternal: 
-    m_lastTime: -8585143414953257434
+    m_lastTime: -8585143371027569566
     List:
     - name: Standard
       guid: eb86d49d0ecd0546a84cf3c4ac5e4d05
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ea3ac9f74106a1478d57dc01acff8772
     GuidInternal: 
-    m_lastTime: -8585143414953297307
+    m_lastTime: -8585143371027604889
     List:
     - name: Play_activate_berry
       guid: 9a6e41e5a0ad0b4abab6df91943b5fd7
@@ -487,6 +487,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_birds
+      guid: 7e0341b5a701204eb12315844cf94347
+      id: 1698272256
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ea3ac9f74106a1478d57dc01acff8772
+      - ElementName: Stop_birds
+        ObjectType: 3
+        guid: 7e0341b5a701204eb12315844cf94347
+      Path: Events\Default Work Unit\Stop_birds
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_idle_berry
       guid: 7f12a2457b4ac24dbc713d2f798a1645
       id: 1424658547
@@ -501,6 +518,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7f12a2457b4ac24dbc713d2f798a1645
       Path: Events\Default Work Unit\Stop_idle_berry
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_outdoor_music
+      guid: ea956c88c2b0d040bc2821dcea3205e4
+      id: 3752586024
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ea3ac9f74106a1478d57dc01acff8772
+      - ElementName: Stop_outdoor_music
+        ObjectType: 3
+        guid: ea956c88c2b0d040bc2821dcea3205e4
+      Path: Events\Default Work Unit\Stop_outdoor_music
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -692,7 +726,7 @@ MonoBehaviour:
     m_lastTime: -8585143582041016053
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

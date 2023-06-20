@@ -1729,6 +1729,11 @@
 												<Value>True</Value>
 											</ValueList>
 										</Property>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="PreFetchLength" Type="int16">
 											<ValueList>
 												<Value>5000</Value>
