@@ -24,6 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Start.unity
     guid: 0a7d97887b5be3d4fa9c6e963c2f6070
   - enabled: 1
-    path: Assets/Scenes/Story.unity
+    path: Assets/Scenes/FelixDiaryOld.unity
     guid: 80a6f7bdd4b1e5b43be94e21aada65be
   m_configObjects: {}
