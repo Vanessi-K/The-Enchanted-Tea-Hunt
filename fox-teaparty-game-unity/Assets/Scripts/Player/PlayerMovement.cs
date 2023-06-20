@@ -48,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             boostEffect.SetActive(false);
+            AkSoundEngine.PostEvent("Stop_activate_berry", gameObject);
         }
     }
 
@@ -73,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
     private void OnActivateBoost(InputValue inputValue)
     {
         _backpack.UseSpeedBoost();
+        AkSoundEngine.PostEvent("Play_activate_berry", gameObject);
     }
 
     private void RotateHorizontal(float angle)

@@ -1,22 +1,42 @@
 Event	ID	Name			Wwise Object Path	Notes
 	543936919	Play_shimmer			\Default Work Unit\Play_shimmer	
+	1424658547	Stop_idle_berry			\Default Work Unit\Stop_idle_berry	
+	2263803406	Stop_shouts			\Default Work Unit\Stop_shouts	
+	2286352653	Play_idle_berry			\Default Work Unit\Play_idle_berry	
 	2337471648	Play_return			\Default Work Unit\Play_return	
 	2600469463	Play_steps			\Default Work Unit\Play_steps	
+	2634345273	Stop_steps			\Default Work Unit\Stop_steps	
+	2709107516	Play_shouts			\Default Work Unit\Play_shouts	
+	2859161640	Play_Owl			\Default Work Unit\Play_Owl	
 	3507155921	Stop_shimmer			\Default Work Unit\Stop_shimmer	
+	3567508744	Play_activate_berry			\Default Work Unit\Play_activate_berry	
+	3672395030	Stop_activate_berry			\Default Work Unit\Stop_activate_berry	
 	3689126666	Play_jump			\Default Work Unit\Play_jump	
 	3860455926	Play_pickUp			\Default Work Unit\Play_pickUp	
+	3908278347	play_pickUp_berry			\Default Work Unit\play_pickUp_berry	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1240670792	distance			\Default Work Unit\distance	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	6605751	Grassy_Footstep_03	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Grassy_Footstep_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Steps\Grassy_Footstep_03		87908
+	6605751	Grassy_Footstep_03	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Grassy_Footstep_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mugs\Steps\Grassy_Footstep_03		87908
+	23075364	speed	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\speed_BD4539DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Items\Berry_Activation\speed		1587664
+	38113466	Birds_flapping 7	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Birds_flapping 7_D2E3CBDF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Neighbor\Owl\Flaps\Birds_flapping 7		196156
 	216442115	return_items_01	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\return_items_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Items\return_items_01		480064
+	232365511	Funny Cheering Shout (2)	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Funny Cheering Shout (2)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mugs\Shouts\Funny Cheering Shout (2)		231084
+	298099606	Birds_flapping 6	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Birds_flapping 6_6AA6BF5F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Neighbor\Owl\Flaps\Birds_flapping 6		143632
+	324928788	Funny Cheering Shout (4)	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Funny Cheering Shout (4)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mugs\Shouts\Funny Cheering Shout (4)		227424
 	325647169	pick_up_01	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\pick_up_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Items\pick_up_01		264664
 	326163336	jump_01	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\jump_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\jump_01		13846
-	328642671	Grassy_Footstep_01	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Grassy_Footstep_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Steps\Grassy_Footstep_01		100616
-	436251205	Grassy_Footstep_04	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Grassy_Footstep_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Steps\Grassy_Footstep_04		88476
-	694152231	Grassy_Footstep_02	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Grassy_Footstep_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Steps\Grassy_Footstep_02		73072
+	328642671	Grassy_Footstep_01	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Grassy_Footstep_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mugs\Steps\Grassy_Footstep_01		100616
+	436251205	Grassy_Footstep_04	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Grassy_Footstep_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mugs\Steps\Grassy_Footstep_04		88476
+	460621279	Hoot_1	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Hoot_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Neighbor\Owl\Hoot_1		142844
+	471434313	Birds_flapping 5	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Birds_flapping 5_4C5BD70E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Neighbor\Owl\Flaps\Birds_flapping 5		163292
+	527126381	pick_up_02	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\pick_up_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Items\pick_up_02		204508
+	654407170	Funny Cheering Shout	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Funny Cheering Shout_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mugs\Shouts\Funny Cheering Shout		213072
+	694152231	Grassy_Footstep_02	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Grassy_Footstep_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mugs\Steps\Grassy_Footstep_02		73072
+	782694443	shimmer_02	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\chimes_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Items\shimmer_02		1018892
+	865922609	Power Boost	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\fairy-twinkle_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Items\Berry_Activation\Power Boost		1355364
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
 	511100354	shimmer_01	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\shimmer_01_D79FB2B7.wem	511100354.wem	\Actor-Mixer Hierarchy\Default Work Unit\Items\shimmer_01	
