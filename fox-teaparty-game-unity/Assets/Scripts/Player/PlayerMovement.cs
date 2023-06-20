@@ -80,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
         transform.Rotate(Vector3.up, angle);
     }
     
-    // check for collision with layer solid
+    
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.layer == 9)

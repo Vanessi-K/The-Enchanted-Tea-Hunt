@@ -315,6 +315,56 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_outdoor_music" ID="{886C95EA-B0C2-40D0-BC28-21DCEA3205E4}">
+					<ChildrenList>
+						<Action Name="" ID="{AC43498C-3137-495A-99DC-0BEA5C9C49E5}" ShortID="632757283">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="main-theme" ID="{340DF297-4DD5-431F-B413-7784BC03E5D3}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_birds" ID="{B541037E-01A7-4E20-B123-15844CF94347}">
+					<ChildrenList>
+						<Action Name="" ID="{731793B0-EF8F-48F9-9FED-D9DE623B3901}" ShortID="34828249">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ForestAmbience" ID="{6ACB116B-BBB0-489F-8BF0-E5B98CA2AF32}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_click" ID="{78AD7E2A-9D90-456F-85EB-1A4DB1DCA858}">
+					<ChildrenList>
+						<Action Name="" ID="{FEF0366A-4508-4FA0-A52C-53DA2059B773}" ShortID="629110785">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="click_sound" ID="{78E31856-4FBC-4188-B163-B3050DD91741}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_menu_music" ID="{BB76C9EE-584D-4EB3-B282-BD8834FB1842}">
+					<ChildrenList>
+						<Action Name="" ID="{ECAC5E25-2D74-42D2-AA35-9E57DA22402D}" ShortID="631263469">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu-theme" ID="{3E85F18B-1917-47F7-8BF4-79100123BDF5}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

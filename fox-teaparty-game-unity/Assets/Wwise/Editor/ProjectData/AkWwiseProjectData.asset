@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 188a79ae620ca947895fe52a9330fa7e
     GuidInternal: 
-    m_lastTime: -8585143414953257434
+    m_lastTime: -8585143338276342808
     List:
     - name: Standard
       guid: eb86d49d0ecd0546a84cf3c4ac5e4d05
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ea3ac9f74106a1478d57dc01acff8772
     GuidInternal: 
-    m_lastTime: -8585143414953297307
+    m_lastTime: -8585143338278677959
     List:
     - name: Play_activate_berry
       guid: 9a6e41e5a0ad0b4abab6df91943b5fd7
@@ -147,6 +147,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.338826
       minDuration: 0.234559
+    - name: Play_click
+      guid: 2a7ead78909d6f4585eb1a4db1dca858
+      id: 311910498
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ea3ac9f74106a1478d57dc01acff8772
+      - ElementName: Play_click
+        ObjectType: 3
+        guid: 2a7ead78909d6f4585eb1a4db1dca858
+      Path: Events\Default Work Unit\Play_click
+      maxAttenuation: 0
+      maxDuration: 0.245407
+      minDuration: 0.245407
     - name: Play_diary_close
       guid: f382386b7e5c684797c778257d7fabb9
       id: 295785890
@@ -266,6 +283,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.156259
       minDuration: 0.156259
+    - name: Play_menu_music
+      guid: eec976bb4d58b34eb282bd8834fb1842
+      id: 2228153899
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ea3ac9f74106a1478d57dc01acff8772
+      - ElementName: Play_menu_music
+        ObjectType: 3
+        guid: eec976bb4d58b34eb282bd8834fb1842
+      Path: Events\Default Work Unit\Play_menu_music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_outdoor_music
       guid: 557751af6fea5c4aa47281471d4c4d8e
       id: 3591166290
@@ -468,8 +502,8 @@ MonoBehaviour:
         guid: 977389404b4ed645a2cdd1e82156ee3e
       Path: Events\Default Work Unit\Play_winning
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 4
+      minDuration: 4
     - name: Stop_activate_berry
       guid: 3ac12880fe517347be4b03571e6f5406
       id: 3672395030
@@ -487,6 +521,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_birds
+      guid: 7e0341b5a701204eb12315844cf94347
+      id: 1698272256
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ea3ac9f74106a1478d57dc01acff8772
+      - ElementName: Stop_birds
+        ObjectType: 3
+        guid: 7e0341b5a701204eb12315844cf94347
+      Path: Events\Default Work Unit\Stop_birds
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_idle_berry
       guid: 7f12a2457b4ac24dbc713d2f798a1645
       id: 1424658547
@@ -501,6 +552,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7f12a2457b4ac24dbc713d2f798a1645
       Path: Events\Default Work Unit\Stop_idle_berry
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_outdoor_music
+      guid: ea956c88c2b0d040bc2821dcea3205e4
+      id: 3752586024
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ea3ac9f74106a1478d57dc01acff8772
+      - ElementName: Stop_outdoor_music
+        ObjectType: 3
+        guid: ea956c88c2b0d040bc2821dcea3205e4
+      Path: Events\Default Work Unit\Stop_outdoor_music
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -595,7 +663,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: ad14d71c15c0c7479dff6ad83094e67d
     GuidInternal: 
-    m_lastTime: -8585143492373901742
+    m_lastTime: -8585143338276352912
     List:
     - name: music
       guid: 827c644fc142e646ac2af037fb3cb919
@@ -692,7 +760,7 @@ MonoBehaviour:
     m_lastTime: -8585143582041016053
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

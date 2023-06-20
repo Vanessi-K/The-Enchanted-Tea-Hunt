@@ -66,6 +66,7 @@ public class Returning : MonoBehaviour
         if (_totalCollectibles == GameStats.Instance.NumberOfCollectibles(_collectibleStates))
         {
             _playerMovement.Celebrate();
+            AkSoundEngine.PostEvent("Play_winning", gameObject);
             _playerMovement.enabled = false;
             GameStats.Instance.IsPaused = true;
             celebrationConfetti.SetActive(true);
