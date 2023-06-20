@@ -26,11 +26,7 @@ public class PlayerMovement : MonoBehaviour
             float weightModifier = 1 - (_backpack.TotalWeight * _decreaseValuePerWeightUnit);
             transform.Translate(Vector3.forward * (Time.deltaTime * _speed * weightModifier * _backpack.SpeedBoost));
         }
-        
-        Debug.Log("Jump: " + _isJumpingOrFalling + "; Walk: " + _walkingPressed);
-        // animator.SetBool("walking", _walkingPressed);
-        // animator.SetBool("jumping", _isJumpingOrFalling);
-        
+
         if(animator.GetBool("walking") != _walkingPressed)
         {
             animator.SetBool("walking", _walkingPressed);
