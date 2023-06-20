@@ -13,6 +13,7 @@ public class DiscoverDiary : MonoBehaviour
         {
             diary.SetActive(true);
             GameStats.Instance.IsPaused = true;
+            AkSoundEngine.PostEvent("Play_diary_open", gameObject);
         }
     }
 }

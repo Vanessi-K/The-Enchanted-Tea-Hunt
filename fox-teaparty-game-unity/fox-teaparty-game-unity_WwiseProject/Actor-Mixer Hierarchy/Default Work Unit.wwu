@@ -1189,31 +1189,89 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</BlendContainer>
+						<Sound Name="doorsound" ID="{DB346B9B-D09E-4F35-9323-6DA0C47E36D1}" ShortID="402362257">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="doorsound" ID="{8FFE5ECF-8344-4596-84D9-932FFDD5711A}">
+									<Language>SFX</Language>
+									<AudioFile>doorsound.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="758753002"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="doorsound" ID="{8FFE5ECF-8344-4596-84D9-932FFDD5711A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="diary_close" ID="{85E1051D-364C-4768-BBC4-5E01766B1C5D}" ShortID="849188043">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="diary_close" ID="{06101E11-5FCF-4738-8091-4792372D93B8}">
+									<Language>SFX</Language>
+									<AudioFile>diary_close.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="693695146"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="diary_close" ID="{06101E11-5FCF-4738-8091-4792372D93B8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="diary_open" ID="{5EF5C7E6-B93A-489C-BBF2-575641810BC5}" ShortID="1049687004">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="diary_open" ID="{C953979F-DA33-495A-ACAC-F43850F1A289}">
+									<Language>SFX</Language>
+									<AudioFile>diary_open.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1001247048"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="diary_open" ID="{C953979F-DA33-495A-ACAC-F43850F1A289}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
-				<Sound Name="doorsound" ID="{DB346B9B-D09E-4F35-9323-6DA0C47E36D1}" ShortID="402362257">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="doorsound" ID="{8FFE5ECF-8344-4596-84D9-932FFDD5711A}">
-							<Language>SFX</Language>
-							<AudioFile>doorsound.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="758753002"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="doorsound" ID="{8FFE5ECF-8344-4596-84D9-932FFDD5711A}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Folder Name="Music" ID="{18686F93-EC53-470C-9E62-838FD6E7CB76}" ShortID="1024238011">
 					<ChildrenList>
 						<Folder Name="Themes" ID="{1A502BA8-4F5E-4B93-90C4-8103B1B5CAAC}" ShortID="752013596">
@@ -1383,6 +1441,100 @@
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="menu-theme" ID="{6907A44A-987E-4A4C-873B-1527F32A5A27}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Ambience" ID="{02961BFD-3CBF-418D-9EBA-6AF5E0C27AB4}" ShortID="438912169">
+							<ChildrenList>
+								<Sound Name="ForestAmbience" ID="{6ACB116B-BBB0-489F-8BF0-E5B98CA2AF32}" ShortID="797682010">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{E85522D3-D16D-4A97-8249-7BEEE10E3CCA}" ShortID="63590050">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="distance" ID="{CD4E8A5E-F060-4AAD-B417-873A5B67C8C9}" WorkUnitID="{1288FB92-21CD-41DB-917D-7468C5AB7840}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{4BB06D22-8C55-455C-8567-60EEDD4F217C}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>3.87243</XPos>
+																<YPos>-1.14113</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>9.33941</XPos>
+																<YPos>-3.64857</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>13.83827</XPos>
+																<YPos>-6.93933</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>17.88155</XPos>
+																<YPos>-12.66951</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>20.04556</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>50</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ForestAmbience" ID="{A2032EBE-D1BC-456F-929F-D7678DA02E7E}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="1.23019730941704"/>
+												<Property Name="LoopEnd" Type="Real64" Value="136.244352017937"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ForestAmbience.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="355161123"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="ForestAmbience" ID="{A2032EBE-D1BC-456F-929F-D7678DA02E7E}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

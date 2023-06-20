@@ -27179,6 +27179,34 @@ PrefabInstance:
       propertyPath: probabilityOfShowingDialogue
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
+      propertyPath: onDialogueShown.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
+      propertyPath: onDialogueShown.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
+      propertyPath: onDialogueShown.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2539466077005961114, guid: e7cac900ab0944f408e68fa773966648, type: 3}
+    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
+      propertyPath: onDialogueShown.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
+      propertyPath: onDialogueShown.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OwlSounds
+      objectReference: {fileID: 0}
+    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
+      propertyPath: onDialogueShown.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: OwlActions, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1128472200637633081, guid: e7cac900ab0944f408e68fa773966648, type: 3}
+      propertyPath: onDialogueShown.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4850379732878055531, guid: e7cac900ab0944f408e68fa773966648, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -28310,6 +28338,9 @@ MonoBehaviour:
   dialogue: {fileID: 596842670}
   probabilityOfShowingDialogue: 100
   startOnCollision: 0
+  onDialogueShown:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1097736074 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5186735023777053022, guid: ac8efb728f1fb9b4092c4df591c827ca, type: 3}
@@ -46671,6 +46702,9 @@ MonoBehaviour:
   dialogue: {fileID: 826644135}
   probabilityOfShowingDialogue: 100
   startOnCollision: 1
+  onDialogueShown:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1798487847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51771,6 +51805,9 @@ MonoBehaviour:
   dialogue: {fileID: 826644135}
   probabilityOfShowingDialogue: 100
   startOnCollision: 1
+  onDialogueShown:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1998406015
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,7 @@ using Dialogue;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.Events;
 
 public class DialoguePopup : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class DialoguePopup : MonoBehaviour
     [SerializeField] private DialogueVisibilityHandler dialogue;
     [SerializeField] private int probabilityOfShowingDialogue; 
     [SerializeField] private bool startOnCollision;
+    [SerializeField] private UnityEvent onDialogueShown;
     
     private void OnTriggerEnter(Collider other)
     {
@@ -33,6 +35,7 @@ public class DialoguePopup : MonoBehaviour
         {
             int randomDialogueText = UnityEngine.Random.Range(0, dialogueText.Length);
             dialogue.ShowDialogue(dialogueText[randomDialogueText]);
+            onDialogueShown?.Invoke();
         }
     }
 }

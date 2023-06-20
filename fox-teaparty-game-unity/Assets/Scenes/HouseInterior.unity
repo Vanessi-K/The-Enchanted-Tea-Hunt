@@ -139,6 +139,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cupboard_Big_Preset_02
       objectReference: {fileID: 0}
+    - target: {fileID: 131308, guid: 0648a8654321442ba88d4834921d373a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 431308, guid: 0648a8654321442ba88d4834921d373a, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -199,6 +203,14 @@ PrefabInstance:
     - target: {fileID: 184700, guid: d3f5491481ca44e6a5445d9009794c0c, type: 3}
       propertyPath: m_Name
       value: Cupboard_Preset_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 184700, guid: d3f5491481ca44e6a5445d9009794c0c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 195864, guid: d3f5491481ca44e6a5445d9009794c0c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 484700, guid: d3f5491481ca44e6a5445d9009794c0c, type: 3}
       propertyPath: m_RootOrder
@@ -901,7 +913,7 @@ GameObject:
   - component: {fileID: 387493816}
   - component: {fileID: 387493818}
   - component: {fileID: 387493817}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cupboard_Big_Preset_Items_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2175,15 +2187,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 52f18bb9affa40319dc60a840f31a449, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.6039276
+      value: -5.531
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 52f18bb9affa40319dc60a840f31a449, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6477662
+      value: 0.853
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 52f18bb9affa40319dc60a840f31a449, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.1609478
+      value: 1.234
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 52f18bb9affa40319dc60a840f31a449, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3380,6 +3392,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Treasure Chest
       objectReference: {fileID: 0}
+    - target: {fileID: 101712, guid: f145d8a31a7a4126899cac55d3396d94, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 101714, guid: f145d8a31a7a4126899cac55d3396d94, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 401712, guid: f145d8a31a7a4126899cac55d3396d94, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3452,6 +3472,10 @@ PrefabInstance:
     - target: {fileID: 138372, guid: 1efd93450a4746d1bf94bff601cf447c, type: 3}
       propertyPath: m_Name
       value: Chair_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 138372, guid: 1efd93450a4746d1bf94bff601cf447c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 438372, guid: 1efd93450a4746d1bf94bff601cf447c, type: 3}
       propertyPath: m_RootOrder
@@ -3530,6 +3554,14 @@ PrefabInstance:
     - target: {fileID: 108694, guid: 10fa83c6e3d4469d8bd4bff9470da469, type: 3}
       propertyPath: m_Name
       value: Table_Preset_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 108694, guid: 10fa83c6e3d4469d8bd4bff9470da469, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 177448, guid: 10fa83c6e3d4469d8bd4bff9470da469, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 408694, guid: 10fa83c6e3d4469d8bd4bff9470da469, type: 3}
       propertyPath: m_RootOrder
@@ -3895,9 +3927,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1229103719}
     m_Modifications:
+    - target: {fileID: 141834, guid: 2c3e3f4479824bceb3d0cece5ec5697f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 175604, guid: 2c3e3f4479824bceb3d0cece5ec5697f, type: 3}
       propertyPath: m_Name
       value: Cupboard_Preset_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 175604, guid: 2c3e3f4479824bceb3d0cece5ec5697f, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 475604, guid: 2c3e3f4479824bceb3d0cece5ec5697f, type: 3}
       propertyPath: m_RootOrder
@@ -4097,9 +4137,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1229103719}
     m_Modifications:
+    - target: {fileID: 120512, guid: 05321276d9d746b7b382f6d02305b9c4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 157522, guid: 05321276d9d746b7b382f6d02305b9c4, type: 3}
       propertyPath: m_Name
       value: Cupboard_Preset_07
+      objectReference: {fileID: 0}
+    - target: {fileID: 157522, guid: 05321276d9d746b7b382f6d02305b9c4, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 457522, guid: 05321276d9d746b7b382f6d02305b9c4, type: 3}
       propertyPath: m_RootOrder
@@ -4235,6 +4283,9 @@ MonoBehaviour:
   dialogue: {fileID: 462892111}
   probabilityOfShowingDialogue: 100
   startOnCollision: 1
+  onDialogueShown:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1496558148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4585,9 +4636,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1229103719}
     m_Modifications:
+    - target: {fileID: 173470, guid: dbfc6d66c8564f40ac4701c24ba5d15b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 181168, guid: dbfc6d66c8564f40ac4701c24ba5d15b, type: 3}
       propertyPath: m_Name
       value: Cupboard_Big_Preset_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 181168, guid: dbfc6d66c8564f40ac4701c24ba5d15b, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 481168, guid: dbfc6d66c8564f40ac4701c24ba5d15b, type: 3}
       propertyPath: m_RootOrder

@@ -8,9 +8,11 @@
 						<ObjectRef Name="Play_shouts" ID="{90F8F43D-A295-4153-A314-9D757F6DC958}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_steps" ID="{5AE9FC76-F44E-4466-B4D6-C45EBD4B03DF}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_door" ID="{88BDF517-3A2A-4499-BA4A-F145C3ED505F}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_diary_close" ID="{6B3882F3-5C7E-4768-97C7-78257D7FABB9}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_activate_berry" ID="{8028C13A-51FE-4773-BE4B-03571E6F5406}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Owl" ID="{C6ECD1FC-C289-479B-98E8-42601677A550}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_owl" ID="{C6ECD1FC-C289-479B-98E8-42601677A550}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_paper" ID="{12CE9DE9-3FD2-47B7-9477-77E2C68983ED}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_diary_open" ID="{F2479007-7EC5-47C3-A95B-841652260FED}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_steps" ID="{88C16588-C4CA-47CE-860D-C7E1F6065A06}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_return" ID="{F276D9BC-EFF9-4864-822F-845AD4B5F708}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_pickUp" ID="{40A0E319-ECCD-4905-B15E-464F151C5B43}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
@@ -19,6 +21,7 @@
 						<ObjectRef Name="Play_outdoor_music" ID="{AF517755-EA6F-4A5C-A472-81471D4C4D8E}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_bush_hit" ID="{81E6FD35-7905-4AC0-B222-351E8447CC9A}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_jump" ID="{BF23232A-B7C6-4ACD-8B1E-0666E015E462}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_birds" ID="{4AC82195-C36F-4B7F-AEFC-E460A3A40856}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="play_pickUp_berry" ID="{E8AD4FBC-1F42-4C00-93A8-AA77963D13D5}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_shimmer" ID="{C0316E6B-6281-4D03-98F4-A4F03CC9E589}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_indoor_music" ID="{2CC495C2-8048-4D7C-92DD-1F10F02410D7}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>

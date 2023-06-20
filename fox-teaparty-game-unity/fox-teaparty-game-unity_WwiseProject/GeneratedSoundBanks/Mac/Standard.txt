@@ -1,8 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
+	295785890	Play_diary_close			\Default Work Unit\Play_diary_close	
 	441377128	Play_paper			\Default Work Unit\Play_paper	
 	526251383	Play_indoor_music			\Default Work Unit\Play_indoor_music	
 	543936919	Play_shimmer			\Default Work Unit\Play_shimmer	
 	625690868	Play_wall_hit			\Default Work Unit\Play_wall_hit	
+	864978166	Play_diary_open			\Default Work Unit\Play_diary_open	
 	1424658547	Stop_idle_berry			\Default Work Unit\Stop_idle_berry	
 	1834107382	Play_bush_hit			\Default Work Unit\Play_bush_hit	
 	2263803406	Stop_shouts			\Default Work Unit\Stop_shouts	
@@ -12,7 +14,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	2600469463	Play_steps			\Default Work Unit\Play_steps	
 	2634345273	Stop_steps			\Default Work Unit\Stop_steps	
 	2709107516	Play_shouts			\Default Work Unit\Play_shouts	
-	2859161640	Play_Owl			\Default Work Unit\Play_Owl	
+	2859161640	Play_owl			\Default Work Unit\Play_owl	
+	3025897706	Play_birds			\Default Work Unit\Play_birds	
 	3507155921	Stop_shimmer			\Default Work Unit\Stop_shimmer	
 	3567508744	Play_activate_berry			\Default Work Unit\Play_activate_berry	
 	3591166290	Play_outdoor_music			\Default Work Unit\Play_outdoor_music	
@@ -60,15 +63,18 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	527126381	pick_up_02	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\pick_up_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Items\pick_up_02		204508
 	554740162	LeavesRustlingFast07	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\LeavesRustlingFast07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Bush_hits\LeavesRustlingFast07		79932
 	654407170	Funny Cheering Shout	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Funny Cheering Shout_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mugs\Shouts\Funny Cheering Shout		213072
+	693695146	diary_close	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\diary_close_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Neighbor\diary_close		50040
 	694152231	Grassy_Footstep_02	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Grassy_Footstep_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mugs\Steps\Grassy_Footstep_02		73072
-	758753002	doorsound	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\doorsound_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\doorsound		235660
+	758753002	doorsound	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\doorsound_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Neighbor\doorsound		235660
 	782694443	shimmer_02	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\chimes_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Items\shimmer_02		1018892
 	811207102	LeavesRustlingFast04	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\LeavesRustlingFast04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Bush_hits\LeavesRustlingFast04		90172
 	865922609	Power Boost	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\fairy-twinkle_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Berry_Activation\Power Boost		1355364
 	966014376	Paper Sound	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Paper Sound_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Paper Sound		176464
+	1001247048	diary_open	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\diary_open_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Neighbor\diary_open		88264
 	1045806882	WallHit (1)	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\WallHit (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Wall_hits\WallHit (1)		33156
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	355161123	ForestAmbience	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\ForestAmbience_6538A80A.wem	355161123.wem	\Actor-Mixer Hierarchy\Default Work Unit\Music\Ambience\ForestAmbience	
 	442238079	main-theme	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\main-theme_5AADC048.wem	442238079.wem	\Actor-Mixer Hierarchy\Default Work Unit\Music\Themes\main-theme	
 	967610578	indoor-theme	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\indoor-theme_DCDDB111.wem	967610578.wem	\Actor-Mixer Hierarchy\Default Work Unit\Music\Themes\indoor-theme	
 

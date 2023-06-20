@@ -14,7 +14,10 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_ACTIVATE_BERRY = 3567508744U;
+        static const AkUniqueID PLAY_BIRDS = 3025897706U;
         static const AkUniqueID PLAY_BUSH_HIT = 1834107382U;
+        static const AkUniqueID PLAY_DIARY_CLOSE = 295785890U;
+        static const AkUniqueID PLAY_DIARY_OPEN = 864978166U;
         static const AkUniqueID PLAY_DOOR = 2547633870U;
         static const AkUniqueID PLAY_IDLE_BERRY = 2286352653U;
         static const AkUniqueID PLAY_INDOOR_MUSIC = 526251383U;
