@@ -227,6 +227,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_indoor_music" ID="{2CC495C2-8048-4D7C-92DD-1F10F02410D7}">
+					<ChildrenList>
+						<Action Name="" ID="{6EA4BC0B-710D-48A3-A79A-C843746AA167}" ShortID="340251342">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="indoor-theme" ID="{69AB3588-E3AE-4B7F-85C0-97900066B669}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_outdoor_music" ID="{AF517755-EA6F-4A5C-A472-81471D4C4D8E}">
+					<ChildrenList>
+						<Action Name="" ID="{7E94F39A-2C5B-488F-88FF-E72061557B88}" ShortID="510873742">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="main-theme" ID="{340DF297-4DD5-431F-B413-7784BC03E5D3}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

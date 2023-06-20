@@ -1199,6 +1199,158 @@
 						<ActiveSource Name="doorsound" ID="{8FFE5ECF-8344-4596-84D9-932FFDD5711A}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Folder Name="Music" ID="{18686F93-EC53-470C-9E62-838FD6E7CB76}" ShortID="1024238011">
+					<ChildrenList>
+						<Sound Name="menu-theme" ID="{3E85F18B-1917-47F7-8BF4-79100123BDF5}" ShortID="37887054">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="menu-theme" ID="{6907A44A-987E-4A4C-873B-1527F32A5A27}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="10.0976914334605"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="6.37339004030849"/>
+										<Property Name="LoopEnd" Type="Real64" Value="99.7169587625526"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>telling-the-story-150614.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="286250885"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="menu-theme" ID="{6907A44A-987E-4A4C-873B-1527F32A5A27}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<SwitchContainer Name="Music" ID="{ADAA58C4-127E-43BE-9836-03F40DE12FF6}" ShortID="53428101">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="indoor-theme" ID="{69AB3588-E3AE-4B7F-85C0-97900066B669}" ShortID="656007671">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-16</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="indoor-theme" ID="{B2006BFC-2E79-423A-A122-AB052F06222C}">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="116.826443626631"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>indoor-theme.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="967610578"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="indoor-theme" ID="{B2006BFC-2E79-423A-A122-AB052F06222C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="main-theme" ID="{340DF297-4DD5-431F-B413-7784BC03E5D3}" ShortID="1055045904">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-16</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="main-theme" ID="{523918E3-33BD-4170-9B7D-4EBCE1114EDC}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.06429635937833"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.29489947991119"/>
+												<Property Name="LoopEnd" Type="Real64" Value="66.1557833267435"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="66.843882113203"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>main-theme.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="442238079"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="main-theme" ID="{523918E3-33BD-4170-9B7D-4EBCE1114EDC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="indoor-theme" ID="{69AB3588-E3AE-4B7F-85C0-97900066B669}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="main-theme" ID="{340DF297-4DD5-431F-B413-7784BC03E5D3}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

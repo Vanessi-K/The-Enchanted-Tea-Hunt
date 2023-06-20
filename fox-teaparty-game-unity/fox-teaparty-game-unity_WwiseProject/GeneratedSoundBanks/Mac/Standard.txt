@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	441377128	Play_paper			\Default Work Unit\Play_paper	
+	526251383	Play_indoor_music			\Default Work Unit\Play_indoor_music	
 	543936919	Play_shimmer			\Default Work Unit\Play_shimmer	
 	625690868	Play_wall_hit			\Default Work Unit\Play_wall_hit	
 	1424658547	Stop_idle_berry			\Default Work Unit\Stop_idle_berry	
@@ -14,6 +15,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2859161640	Play_Owl			\Default Work Unit\Play_Owl	
 	3507155921	Stop_shimmer			\Default Work Unit\Stop_shimmer	
 	3567508744	Play_activate_berry			\Default Work Unit\Play_activate_berry	
+	3591166290	Play_outdoor_music			\Default Work Unit\Play_outdoor_music	
 	3672395030	Stop_activate_berry			\Default Work Unit\Stop_activate_berry	
 	3689126666	Play_jump			\Default Work Unit\Play_jump	
 	3860455926	Play_pickUp			\Default Work Unit\Play_pickUp	
@@ -53,4 +55,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	865922609	Power Boost	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\fairy-twinkle_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Items\Berry_Activation\Power Boost		1355364
 	966014376	Paper Sound	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Paper Sound_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Paper Sound		176464
 	1045806882	WallHit (1)	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\WallHit (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Wall_hits\WallHit (1)		33156
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	442238079	main-theme	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\main-theme_5AADC048.wem	442238079.wem	\Actor-Mixer Hierarchy\Default Work Unit\Music\Music\main-theme	
+	967610578	indoor-theme	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\indoor-theme_DCDDB111.wem	967610578.wem	\Actor-Mixer Hierarchy\Default Work Unit\Music\Music\indoor-theme	
 

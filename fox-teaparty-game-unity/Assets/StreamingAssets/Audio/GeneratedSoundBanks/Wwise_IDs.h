@@ -17,7 +17,9 @@ namespace AK
         static const AkUniqueID PLAY_BUSH_HIT = 1834107382U;
         static const AkUniqueID PLAY_DOOR = 2547633870U;
         static const AkUniqueID PLAY_IDLE_BERRY = 2286352653U;
+        static const AkUniqueID PLAY_INDOOR_MUSIC = 526251383U;
         static const AkUniqueID PLAY_JUMP = 3689126666U;
+        static const AkUniqueID PLAY_OUTDOOR_MUSIC = 3591166290U;
         static const AkUniqueID PLAY_OWL = 2859161640U;
         static const AkUniqueID PLAY_PAPER = 441377128U;
         static const AkUniqueID PLAY_PICKUP = 3860455926U;
