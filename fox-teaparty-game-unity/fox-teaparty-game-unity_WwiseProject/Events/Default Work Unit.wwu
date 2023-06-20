@@ -343,6 +343,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_click" ID="{78AD7E2A-9D90-456F-85EB-1A4DB1DCA858}">
+					<ChildrenList>
+						<Action Name="" ID="{FEF0366A-4508-4FA0-A52C-53DA2059B773}" ShortID="629110785">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="click_sound" ID="{78E31856-4FBC-4188-B163-B3050DD91741}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_menu_music" ID="{BB76C9EE-584D-4EB3-B282-BD8834FB1842}">
+					<ChildrenList>
+						<Action Name="" ID="{ECAC5E25-2D74-42D2-AA35-9E57DA22402D}" ShortID="631263469">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu-theme" ID="{3E85F18B-1917-47F7-8BF4-79100123BDF5}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
