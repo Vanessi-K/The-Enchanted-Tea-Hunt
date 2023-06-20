@@ -22019,37 +22019,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3680765609775844348, guid: d10055f18de340d448b2084367c1598e, type: 3}
   m_PrefabInstance: {fileID: 826644131}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &826644133 stripped
+--- !u!114 &826644136 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3553907236539156441, guid: d10055f18de340d448b2084367c1598e, type: 3}
+  m_CorrespondingSourceObject: {fileID: 596842670, guid: d10055f18de340d448b2084367c1598e, type: 3}
   m_PrefabInstance: {fileID: 826644131}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &826644134 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7348453500560298351, guid: d10055f18de340d448b2084367c1598e, type: 3}
-  m_PrefabInstance: {fileID: 826644131}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &826644135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 826644134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd3d29e3d39b4717821741ebb5851c3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 826644134}
-  dialogueTextField: {fileID: 826644133}
-  dialogueDuration: 5
 --- !u!4 &828136646 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3356751432537613521, guid: ffbddc4ef9676cc419e81e06aaa836d8, type: 3}
@@ -46425,7 +46405,7 @@ MonoBehaviour:
   dialogueText:
   - "Oh, I found something! I think I have a list with all the missing items. I can
     check it with \u201CQ\u201D. "
-  dialogue: {fileID: 826644135}
+  dialogue: {fileID: 826644136}
   probabilityOfShowingDialogue: 100
   startOnCollision: 1
 --- !u!1001 &1798487847
@@ -51525,7 +51505,7 @@ MonoBehaviour:
   dialogueText:
   - "I collected a Zippityberry \u2013 it helps me to go fast for a short time. I
     can use it with \u201CE\u201D. "
-  dialogue: {fileID: 826644135}
+  dialogue: {fileID: 826644136}
   probabilityOfShowingDialogue: 100
   startOnCollision: 1
 --- !u!1 &1998406015
@@ -54487,10 +54467,6 @@ PrefabInstance:
     - target: {fileID: 7348453500560298351, guid: be1e21247c25cc543a299ebbcbb549b7, type: 3}
       propertyPath: m_Name
       value: DialogueOwl
-      objectReference: {fileID: 0}
-    - target: {fileID: 7348453500560298351, guid: be1e21247c25cc543a299ebbcbb549b7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be1e21247c25cc543a299ebbcbb549b7, type: 3}
