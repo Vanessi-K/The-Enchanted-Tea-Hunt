@@ -21,6 +21,18 @@ Event	ID	Name			Wwise Object Path	Notes
 	3860455926	Play_pickUp			\Default Work Unit\Play_pickUp	
 	3908278347	play_pickUp_berry			\Default Work Unit\play_pickUp_berry	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	music			\Default Work Unit\music	
+
+State	ID	Name	State Group			Notes
+	491961918	Forest	music			
+	748895195	None	music			
+	3332917963	HouseInterior	music			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	645825358	Forest	music	\Actor-Mixer Hierarchy\Default Work Unit\Music\Themes\indoor-theme		
+	1059809559	HouseInterior	music	\Actor-Mixer Hierarchy\Default Work Unit\Music\Themes\main-theme		
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1240670792	distance			\Default Work Unit\distance	
 
@@ -57,6 +69,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1045806882	WallHit (1)	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\WallHit (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Wall_hits\WallHit (1)		33156
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	442238079	main-theme	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\main-theme_5AADC048.wem	442238079.wem	\Actor-Mixer Hierarchy\Default Work Unit\Music\Music\main-theme	
-	967610578	indoor-theme	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\indoor-theme_DCDDB111.wem	967610578.wem	\Actor-Mixer Hierarchy\Default Work Unit\Music\Music\indoor-theme	
+	442238079	main-theme	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\main-theme_5AADC048.wem	442238079.wem	\Actor-Mixer Hierarchy\Default Work Unit\Music\Themes\main-theme	
+	967610578	indoor-theme	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\indoor-theme_DCDDB111.wem	967610578.wem	\Actor-Mixer Hierarchy\Default Work Unit\Music\Themes\indoor-theme	
 

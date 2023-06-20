@@ -1243,15 +1243,7 @@
 								<ActiveSource Name="menu-theme" ID="{6907A44A-987E-4A4C-873B-1527F32A5A27}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<SwitchContainer Name="Music" ID="{ADAA58C4-127E-43BE-9836-03F40DE12FF6}" ShortID="53428101">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
-								</Reference>
-							</ReferenceList>
+						<Folder Name="Themes" ID="{1A502BA8-4F5E-4B93-90C4-8103B1B5CAAC}" ShortID="752013596">
 							<ChildrenList>
 								<Sound Name="indoor-theme" ID="{69AB3588-E3AE-4B7F-85C0-97900066B669}" ShortID="656007671">
 									<PropertyList>
@@ -1288,6 +1280,27 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="music" ID="{4F647C82-42C1-46E6-AC2A-F037FB3CB919}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Forest" ID="{AE8BC576-6D3C-4423-AD1A-8703EEB255EE}"/>
+												<CustomState Name="" ID="{71F2D267-05E1-474F-9DD2-58BE6A04FFC4}" ShortID="645825358">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="HouseInterior" ID="{A084CDEE-C8C1-4C40-884F-BF4B3F881AD6}"/>
+												<CustomState Name="" ID="{2340EB33-8648-4A36-8612-B6758DE29151}" ShortID="350286244"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="indoor-theme" ID="{B2006BFC-2E79-423A-A122-AB052F06222C}" Platform="Linked"/>
@@ -1331,24 +1344,34 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="music" ID="{4F647C82-42C1-46E6-AC2A-F037FB3CB919}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Forest" ID="{AE8BC576-6D3C-4423-AD1A-8703EEB255EE}"/>
+												<CustomState Name="" ID="{766C4368-AD26-4050-A494-5CDE7F3DB8F2}" ShortID="354431291"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="HouseInterior" ID="{A084CDEE-C8C1-4C40-884F-BF4B3F881AD6}"/>
+												<CustomState Name="" ID="{9F9BAD4B-C3FA-42AF-9B96-DF6D609112E2}" ShortID="1059809559">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="main-theme" ID="{523918E3-33BD-4170-9B7D-4EBCE1114EDC}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
-							<ObjectLists/>
-							<GroupingInfo>
-								<GroupingBehaviorList>
-									<GroupingBehavior>
-										<ItemRef Name="indoor-theme" ID="{69AB3588-E3AE-4B7F-85C0-97900066B669}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="main-theme" ID="{340DF297-4DD5-431F-B413-7784BC03E5D3}"/>
-									</GroupingBehavior>
-								</GroupingBehaviorList>
-							</GroupingInfo>
-						</SwitchContainer>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

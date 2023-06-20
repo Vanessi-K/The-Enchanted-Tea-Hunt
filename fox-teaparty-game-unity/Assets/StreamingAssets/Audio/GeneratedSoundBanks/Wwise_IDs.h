@@ -36,6 +36,22 @@ namespace AK
         static const AkUniqueID STOP_STEPS = 2634345273U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace MUSIC
+        {
+            static const AkUniqueID GROUP = 3991942870U;
+
+            namespace STATE
+            {
+                static const AkUniqueID FOREST = 491961918U;
+                static const AkUniqueID HOUSEINTERIOR = 3332917963U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace MUSIC
+
+    } // namespace STATES
+
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID DISTANCE = 1240670792U;

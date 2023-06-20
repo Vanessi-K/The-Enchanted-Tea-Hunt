@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ea3ac9f74106a1478d57dc01acff8772
     GuidInternal: 
-    m_lastTime: -8585143542700542656
+    m_lastTime: -8585143524956764441
     List:
     - name: Play_activate_berry
       guid: 9a6e41e5a0ad0b4abab6df91943b5fd7
@@ -493,8 +493,74 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: ad14d71c15c0c7479dff6ad83094e67d
     GuidInternal: 
-    m_lastTime: -8585143582041025553
-    List: []
+    m_lastTime: -8585143524956715652
+    List:
+    - name: music
+      guid: 827c644fc142e646ac2af037fb3cb919
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ad14d71c15c0c7479dff6ad83094e67d
+      - ElementName: music
+        ObjectType: 9
+        guid: 827c644fc142e646ac2af037fb3cb919
+      Path: States\Default Work Unit\music
+      values:
+      - name: Forest
+        guid: 76c58bae3c6d2344ad1a8703eeb255ee
+        id: 491961918
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ad14d71c15c0c7479dff6ad83094e67d
+        - ElementName: music
+          ObjectType: 9
+          guid: 827c644fc142e646ac2af037fb3cb919
+        - ElementName: Forest
+          ObjectType: 8
+          guid: 76c58bae3c6d2344ad1a8703eeb255ee
+      - name: HouseInterior
+        guid: eecd84a0c1c8404c884fbf4b3f881ad6
+        id: 3332917963
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ad14d71c15c0c7479dff6ad83094e67d
+        - ElementName: music
+          ObjectType: 9
+          guid: 827c644fc142e646ac2af037fb3cb919
+        - ElementName: HouseInterior
+          ObjectType: 8
+          guid: eecd84a0c1c8404c884fbf4b3f881ad6
+      - name: None
+        guid: 4ab82efc0855fd4f9584239d538166f2
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ad14d71c15c0c7479dff6ad83094e67d
+        - ElementName: music
+          ObjectType: 9
+          guid: 827c644fc142e646ac2af037fb3cb919
+        - ElementName: None
+          ObjectType: 8
+          guid: 4ab82efc0855fd4f9584239d538166f2
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -507,7 +573,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 9661b06b6127dc4793669c85464ab78e
     GuidInternal: 
-    m_lastTime: -8585143582041016053
+    m_lastTime: -8585143527036680820
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -524,7 +590,7 @@ MonoBehaviour:
     m_lastTime: -8585143582041016053
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000001c0000001d0000001e0000001f00000028000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
