@@ -9,7 +9,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-20</Value>
+										<Value>-7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -36,6 +36,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="return_items_01" ID="{67F5E79A-98EE-4E7F-910C-7A50CE7F4859}" ShortID="294721286">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
@@ -62,11 +69,6 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="IsStreamingEnabled" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
 								<Property Name="Volume" Type="Real64">
 									<RTPCList>
 										<RTPC Name="" ID="{0935419F-2E8E-4426-9A9B-D6B303CC7D1E}" ShortID="622836799">
@@ -82,36 +84,21 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>0</YPos>
+														<YPos>-0</YPos>
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>0.98837</XPos>
-														<YPos>-7.5339</YPos>
+														<XPos>5.03552</XPos>
+														<YPos>-5.80064</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>2.03488</XPos>
-														<YPos>-12.99219</YPos>
+														<XPos>9.98282</XPos>
+														<YPos>-11.61351</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>4.7093</XPos>
-														<YPos>-19.75567</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>7.32558</XPos>
-														<YPos>-23.19188</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>9.94186</XPos>
-														<YPos>-29.06325</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>15.05814</XPos>
+														<XPos>15.04009</XPos>
 														<YPos>-200</YPos>
 														<Flags>0</Flags>
 													</Point>
@@ -152,7 +139,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -197,21 +184,21 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>2.71325</YPos>
+														<YPos>0</YPos>
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>2.53165</XPos>
-														<YPos>-1.68909</YPos>
+														<XPos>4.80641</XPos>
+														<YPos>-6.22389</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>5.63867</XPos>
-														<YPos>-6.59949</YPos>
+														<XPos>9.92554</XPos>
+														<YPos>-13.39832</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>9.83889</XPos>
+														<XPos>15.09737</XPos>
 														<YPos>-200</YPos>
 														<Flags>0</Flags>
 													</Point>
@@ -259,13 +246,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Power Boost" ID="{FF85D77C-85E9-4966-A6F9-33317A8BF7BD}" ShortID="424086849">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
@@ -290,14 +270,15 @@
 								</Sound>
 								<Sound Name="speed" ID="{9A75BC3D-AAD2-4713-958F-5F726EDEDE9F}" ShortID="420175818">
 									<PropertyList>
-										<Property Name="Pitch" Type="int32">
+										<Property Name="InitialDelay" Type="Real64">
 											<ValueList>
-												<Value>350</Value>
+												<Value>0.5</Value>
 											</ValueList>
 										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-12</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -310,21 +291,32 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="speed" ID="{92A9322B-6C16-4AB9-8393-1559BCB19449}">
+										<AudioFileSource Name="whoosh" ID="{69D7CCFC-B465-4496-A6F7-34953E2C3542}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.923794712286158"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.12597200622084"/>
+												<Property Name="LoopEnd" Type="Real64" Value="0.729393468118196"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>speed.wav</AudioFile>
+											<AudioFile>whoosh.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="23075364"/>
+												<MediaID ID="1039902360"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="ding ding" ID="{44080F13-36DA-4ACE-BEDB-3B525BE285C7}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ding ding.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="430290202"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="speed" ID="{92A9322B-6C16-4AB9-8393-1559BCB19449}" Platform="Linked"/>
+										<ActiveSource Name="ding ding" ID="{44080F13-36DA-4ACE-BEDB-3B525BE285C7}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -335,6 +327,13 @@
 				<Folder Name="Character" ID="{496C973A-20CA-46FB-B527-3E7835E40F72}" ShortID="228831077">
 					<ChildrenList>
 						<Sound Name="jump_01" ID="{339DF402-D791-4979-8200-34CBCB228C0B}" ShortID="1063160832">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
@@ -357,6 +356,283 @@
 								<ActiveSource Name="jump_01" ID="{A4CCFD31-3C65-467B-BBFD-BEA3A8706825}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="Wall_hits" ID="{2FDDA0E9-81BD-4B46-B0DE-8CF557EFC966}" ShortID="149870410">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-2400</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="WallHit (1)" ID="{4EF813D7-1633-49B3-94E0-2B4964A3CF75}" ShortID="925848682">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WallHit (1)" ID="{4D044B20-2F91-4DB1-A6B8-5A059B4BFBF1}">
+											<Language>SFX</Language>
+											<AudioFile>WallHit (1).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1045806882"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="WallHit (1)" ID="{4D044B20-2F91-4DB1-A6B8-5A059B4BFBF1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="WallHit (2)" ID="{6C7A3039-C96C-454C-9D31-A11CC90D9813}" ShortID="557254417">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WallHit (2)" ID="{9BE8E6EB-8DF6-492E-91B4-609343CEBDC1}">
+											<Language>SFX</Language>
+											<AudioFile>WallHit (2).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="440104205"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="WallHit (2)" ID="{9BE8E6EB-8DF6-492E-91B4-609343CEBDC1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="WallHit (3)" ID="{7F98A897-D88B-45BA-98C6-6C052B0F0452}" ShortID="183163986">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WallHit (3)" ID="{14B967F4-8DD1-41A7-BFA3-40E55A1BF047}">
+											<Language>SFX</Language>
+											<AudioFile>WallHit (3).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="497917418"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="WallHit (3)" ID="{14B967F4-8DD1-41A7-BFA3-40E55A1BF047}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="WallHit (4)" ID="{ADDB71FE-9B12-4C6B-BAC0-D1D058197F7F}" ShortID="289716543">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WallHit (4)" ID="{0B2A1623-CB6F-45BC-87D8-429AED10E81F}">
+											<Language>SFX</Language>
+											<AudioFile>WallHit (4).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="154332333"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="WallHit (4)" ID="{0B2A1623-CB6F-45BC-87D8-429AED10E81F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Bush_hits" ID="{D996CC6E-4956-4FCA-8D44-70F44E89D6B6}" ShortID="953506236">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>1000</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="LeavesRustlingFast02" ID="{418DF10C-050E-4996-A81A-650EDB8BE403}" ShortID="451439561">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LeavesRustlingFast02" ID="{89A3EDEB-1BB8-49CC-B4F3-3E899DDBE8E2}">
+											<Language>SFX</Language>
+											<AudioFile>LeavesRustlingFast02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="256413668"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LeavesRustlingFast02" ID="{89A3EDEB-1BB8-49CC-B4F3-3E899DDBE8E2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LeavesRustlingFast04" ID="{76E6F14C-D0A1-4001-972A-F9290E82FEFC}" ShortID="261332766">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LeavesRustlingFast04" ID="{569809AB-733E-4659-BCB3-377FD152A239}">
+											<Language>SFX</Language>
+											<AudioFile>LeavesRustlingFast04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="811207102"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LeavesRustlingFast04" ID="{569809AB-733E-4659-BCB3-377FD152A239}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LeavesRustlingFast05" ID="{E3538B5E-71C7-4C4A-B228-06DC24AC2989}" ShortID="454824754">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LeavesRustlingFast05" ID="{56881504-A76E-4784-A933-98EF0A9F5B03}">
+											<Language>SFX</Language>
+											<AudioFile>LeavesRustlingFast05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="44107744"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LeavesRustlingFast05" ID="{56881504-A76E-4784-A933-98EF0A9F5B03}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LeavesRustlingFast06" ID="{F7FA0C4C-5A6E-41B0-9D52-4B307A3975A7}" ShortID="61647439">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LeavesRustlingFast06" ID="{4F032912-C998-4E9A-9C67-A532955E6BE0}">
+											<Language>SFX</Language>
+											<AudioFile>LeavesRustlingFast06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="285224332"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LeavesRustlingFast06" ID="{4F032912-C998-4E9A-9C67-A532955E6BE0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LeavesRustlingFast07" ID="{26DA8082-F653-4E3A-A2FB-F2825D6F41FB}" ShortID="269241103">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LeavesRustlingFast07" ID="{07DFDD9A-2EB5-4F40-9528-0A41C758FD67}">
+											<Language>SFX</Language>
+											<AudioFile>LeavesRustlingFast07.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="554740162"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LeavesRustlingFast07" ID="{07DFDD9A-2EB5-4F40-9528-0A41C758FD67}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Mugs" ID="{17FE4FE9-62B4-42E7-B597-BA6D56B9D440}" ShortID="470214319">
@@ -403,26 +679,31 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>6.0206</YPos>
+														<YPos>6.45498</YPos>
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>1.32641</XPos>
-														<YPos>-0.26085</YPos>
+														<XPos>1.72733</XPos>
+														<YPos>0.06102</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>2.99885</XPos>
-														<YPos>-6.4085</YPos>
+														<XPos>5.00343</XPos>
+														<YPos>-3.12695</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>5.0173</XPos>
-														<YPos>-17.42448</YPos>
+														<XPos>10.00012</XPos>
+														<YPos>-6.22849</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>9.91926</XPos>
+														<XPos>15.0739</XPos>
+														<YPos>-12.25567</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>19.98855</XPos>
 														<YPos>-200</YPos>
 														<Flags>0</Flags>
 													</Point>
@@ -576,17 +857,22 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>1.90311</XPos>
-														<YPos>-6.10383</YPos>
+														<XPos>5.05317</XPos>
+														<YPos>-2.91699</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>4.95963</XPos>
-														<YPos>-14.73556</YPos>
+														<XPos>9.99972</XPos>
+														<YPos>-6.01369</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>9.91826</XPos>
+														<XPos>15.0729</XPos>
+														<YPos>-11.42782</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>20.10309</XPos>
 														<YPos>-200</YPos>
 														<Flags>0</Flags>
 													</Point>

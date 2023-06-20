@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_ACTIVATE_BERRY = 3567508744U;
+        static const AkUniqueID PLAY_BUSH_HIT = 1834107382U;
         static const AkUniqueID PLAY_IDLE_BERRY = 2286352653U;
         static const AkUniqueID PLAY_JUMP = 3689126666U;
         static const AkUniqueID PLAY_OWL = 2859161640U;
@@ -23,6 +24,7 @@ namespace AK
         static const AkUniqueID PLAY_SHIMMER = 543936919U;
         static const AkUniqueID PLAY_SHOUTS = 2709107516U;
         static const AkUniqueID PLAY_STEPS = 2600469463U;
+        static const AkUniqueID PLAY_WALL_HIT = 625690868U;
         static const AkUniqueID STOP_ACTIVATE_BERRY = 3672395030U;
         static const AkUniqueID STOP_IDLE_BERRY = 1424658547U;
         static const AkUniqueID STOP_SHIMMER = 3507155921U;

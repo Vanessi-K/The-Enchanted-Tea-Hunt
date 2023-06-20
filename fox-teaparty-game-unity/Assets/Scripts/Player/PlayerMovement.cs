@@ -67,4 +67,20 @@ public class PlayerMovement : MonoBehaviour
         transform.Rotate(Vector3.up, angle);
     }
     
+    // check for collision with layer solid
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.layer == 9)
+        {
+            AkSoundEngine.PostEvent("Play_wall_hit", gameObject);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.layer == 10)
+        {
+            AkSoundEngine.PostEvent("Play_bush_hit", gameObject);
+        }
+    }
 }

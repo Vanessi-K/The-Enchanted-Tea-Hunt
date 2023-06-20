@@ -183,6 +183,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_wall_hit" ID="{B501D883-DF16-4FA5-AD32-99E33AA1E708}">
+					<ChildrenList>
+						<Action Name="" ID="{4A11B11D-8F5F-4BE4-A455-2BC753FFF181}" ShortID="948641558">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wall_hits" ID="{2FDDA0E9-81BD-4B46-B0DE-8CF557EFC966}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_bush_hit" ID="{81E6FD35-7905-4AC0-B222-351E8447CC9A}">
+					<ChildrenList>
+						<Action Name="" ID="{89561850-F673-4E7D-B714-814C9A0737C3}" ShortID="738362951">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bush_hits" ID="{D996CC6E-4956-4FCA-8D44-70F44E89D6B6}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
