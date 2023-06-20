@@ -53,8 +53,12 @@ public class Returning : MonoBehaviour
     private void OnReturn(InputValue value)
     {
         if (!_playerIsInside) return;
-        _backpack.ReturnCollectibles();
-        displayArea.material = activeAllItemsReturnedMaterial;
+        
+        if (_backpack.ReturnCollectibles())
+        {
+            displayArea.material = activeAllItemsReturnedMaterial;
+        }
+        
 
         if (_totalCollectibles == GameStats.Instance.NumberOfCollectibles(_collectibleStates))
         {
