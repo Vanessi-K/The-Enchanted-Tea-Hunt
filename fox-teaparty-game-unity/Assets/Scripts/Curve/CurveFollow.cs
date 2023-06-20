@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,7 +21,16 @@ public class CurveFollow : MonoBehaviour
         AkSoundEngine.PostEvent("Play_steps", gameObject);
         StartCoroutine(PlayShoutAfterDelay());
     }
-    
+
+    private void OnEnable()
+    {
+        _routeToGo = 0;
+        _tParam = 0f;
+        _coroutineAllowed = true;
+        AkSoundEngine.PostEvent("Play_steps", gameObject);
+        StartCoroutine(PlayShoutAfterDelay());
+    }
+
     void Update()
     {
         if(_coroutineAllowed) StartCoroutine(GoByTheRoute(_routeToGo));

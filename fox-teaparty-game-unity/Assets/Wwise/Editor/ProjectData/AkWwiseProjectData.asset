@@ -66,11 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 188a79ae620ca947895fe52a9330fa7e
     GuidInternal: 
-<<<<<<< HEAD
-    m_lastTime: -8585143648321606286
-=======
     m_lastTime: -8585143588552031353
->>>>>>> player-animation
     List:
     - name: Standard
       guid: eb86d49d0ecd0546a84cf3c4ac5e4d05
@@ -98,11 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ea3ac9f74106a1478d57dc01acff8772
     GuidInternal: 
-<<<<<<< HEAD
-    m_lastTime: -8585143648322572307
-=======
     m_lastTime: -8585143588552839010
->>>>>>> player-animation
     List:
     - name: Play_activate_berry
       guid: 9a6e41e5a0ad0b4abab6df91943b5fd7
