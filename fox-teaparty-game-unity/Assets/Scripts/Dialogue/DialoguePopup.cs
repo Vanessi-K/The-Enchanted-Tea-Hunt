@@ -13,7 +13,6 @@ public class DialoguePopup : MonoBehaviour
     [SerializeField] private DialogueVisibilityHandler dialogue;
     [SerializeField] private int probabilityOfShowingDialogue; 
     [SerializeField] private bool startOnCollision;
-    private float _dialogueTimer = 0;
     
     private void OnTriggerEnter(Collider other)
     {
