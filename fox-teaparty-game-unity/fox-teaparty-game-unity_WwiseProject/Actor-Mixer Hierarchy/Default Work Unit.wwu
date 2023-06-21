@@ -2084,7 +2084,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2147,7 +2147,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>-10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2174,6 +2174,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="diary_open" ID="{5EF5C7E6-B93A-489C-BBF2-575641810BC5}" ShortID="1049687004">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Sounds" ID="{56B05EF8-EB35-4610-9F53-CFAB8AF6FA0E}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
