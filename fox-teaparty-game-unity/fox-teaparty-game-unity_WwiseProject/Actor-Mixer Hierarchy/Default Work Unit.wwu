@@ -88,13 +88,13 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>5.03552</XPos>
-														<YPos>-5.80064</YPos>
+														<XPos>4.58344</XPos>
+														<YPos>-2.80518</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>9.98282</XPos>
-														<YPos>-11.61351</YPos>
+														<XPos>9.8924</XPos>
+														<YPos>-9.44348</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
@@ -615,6 +615,8 @@
 											</ValueList>
 										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+										<Property Name="LoopCount" Type="int32" Value="3"/>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
 												<Value>20</Value>
@@ -666,6 +668,11 @@
 										<Value>150</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -696,14 +703,82 @@
 									<ValueList>
 										<Value>300</Value>
 									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{C7768570-8264-4073-9CA0-D930732F483B}" ShortID="9855394">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="speed" ID="{BC3D08D2-C91A-4452-8367-6A97A5D89662}" WorkUnitID="{1288FB92-21CD-41DB-917D-7468C5AB7840}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{323FD5AC-F068-48E9-A055-48CD99C5530B}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-526</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.50171</XPos>
+														<YPos>-526</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1.5</XPos>
+														<YPos>528</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
 								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>12</Value>
 									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{74EA7F8F-E81F-4C0B-80A6-498154AAD73F}" ShortID="609594885">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="speed" ID="{BC3D08D2-C91A-4452-8367-6A97A5D89662}" WorkUnitID="{1288FB92-21CD-41DB-917D-7468C5AB7840}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{C9F3A040-83BA-4179-929B-9C1948219BA4}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.001</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1.5</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -820,17 +895,120 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="steps" ID="{F6CF46EF-9735-45B2-8922-1C31CA4E59FA}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="HouseInterior" ID="{CBA34F6B-1998-4605-B177-A1390B39306A}"/>
+										<CustomState Name="" ID="{4916F8C0-45D3-4E07-8C3B-54D726465A4B}" ShortID="55766521">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-200"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Forest" ID="{81BBCC45-B0AC-4DB1-84EC-09105A6DC4F4}"/>
+										<CustomState Name="" ID="{B67F6001-169A-442C-B832-40AF38411728}" ShortID="380795963"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists/>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Steps_floor" ID="{A114EEBD-AA4F-443A-9791-23F73C4EF65C}" ShortID="773426719">
 							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>400</Value>
 									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{D71AF796-FF49-481E-A9E0-C8ADB5F900DF}" ShortID="497199001">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="speed" ID="{BC3D08D2-C91A-4452-8367-6A97A5D89662}" WorkUnitID="{1288FB92-21CD-41DB-917D-7468C5AB7840}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{36F4E878-8751-4FAF-BA61-712AC4C32C94}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-526</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.50171</XPos>
+														<YPos>-526</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1.5</XPos>
+														<YPos>528</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
 								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0C2AC828-EAAF-40FF-A21B-BE88D48DCF2F}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{ED04F29B-F419-413A-950F-91BAD7C83463}" ShortID="803203730">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="speed" ID="{BC3D08D2-C91A-4452-8367-6A97A5D89662}" WorkUnitID="{1288FB92-21CD-41DB-917D-7468C5AB7840}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{C8766742-05EE-4045-BEAA-E683151F316C}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.01</XPos>
+														<YPos>-0.21448</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1.5</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -911,6 +1089,27 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="steps" ID="{F6CF46EF-9735-45B2-8922-1C31CA4E59FA}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="HouseInterior" ID="{CBA34F6B-1998-4605-B177-A1390B39306A}"/>
+										<CustomState Name="" ID="{B5305F76-F6AA-49D1-BC76-AFC042921345}" ShortID="101106485"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Forest" ID="{81BBCC45-B0AC-4DB1-84EC-09105A6DC4F4}"/>
+										<CustomState Name="" ID="{2F13E0F6-AA4A-4B9D-B05E-936F199134D9}" ShortID="743662092">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-200"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists/>
 						</RandomSequenceContainer>
 					</ChildrenList>
@@ -963,22 +1162,22 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>1.72733</XPos>
-														<YPos>0.06102</YPos>
+														<XPos>2.90274</XPos>
+														<YPos>2.41837</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>5.00343</XPos>
-														<YPos>-3.12695</YPos>
+														<XPos>6.35967</XPos>
+														<YPos>-1.07086</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>10.00012</XPos>
+														<XPos>9.9097</XPos>
 														<YPos>-6.22849</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>15.0739</XPos>
+														<XPos>14.35057</XPos>
 														<YPos>-12.25567</YPos>
 														<Flags>0</Flags>
 													</Point>
@@ -1110,6 +1309,11 @@
 										<Value>40</Value>
 									</ValueList>
 								</Property>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
@@ -1117,8 +1321,15 @@
 									</ValueList>
 								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{9561CAE3-39D7-40C0-8DA4-5F383E0CE109}" ShortID="535450092">
 											<ReferenceList>
@@ -1137,23 +1348,23 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>4.76843</XPos>
-														<YPos>-0.93766</YPos>
+														<XPos>4.49718</XPos>
+														<YPos>-1.95677</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>10.11361</XPos>
-														<YPos>-1.88111</YPos>
+														<XPos>10.02319</XPos>
+														<YPos>-4.16702</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>15.01595</XPos>
-														<YPos>-3.95621</YPos>
+														<XPos>15.2872</XPos>
+														<YPos>-7.99969</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>19.93224</XPos>
-														<YPos>-8.73385</YPos>
+														<XPos>20.02266</XPos>
+														<YPos>-13.27939</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
@@ -1425,6 +1636,11 @@
 							<ChildrenList>
 								<Sound Name="indoor-theme" ID="{69AB3588-E3AE-4B7F-85C0-97900066B669}" ShortID="656007671">
 									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="IsStreamingEnabled" Type="bool">
 											<ValueList>
@@ -1575,7 +1791,8 @@
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="10.0976914334605"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="6.37339004030849"/>
-												<Property Name="LoopEnd" Type="Real64" Value="99.7169587625526"/>
+												<Property Name="LoopBegin" Type="Real64" Value="1.31547444355386"/>
+												<Property Name="LoopEnd" Type="Real64" Value="98.7883885671028"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 											</PropertyList>
 											<Language>SFX</Language>
@@ -1614,6 +1831,9 @@
 											</ValueList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{E85522D3-D16D-4A97-8249-7BEEE10E3CCA}" ShortID="63590050">
 													<ReferenceList>
@@ -1628,27 +1848,22 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>0</YPos>
+																<YPos>2.62558</YPos>
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>3.87243</XPos>
-																<YPos>-1.14113</YPos>
+																<XPos>3.6916</XPos>
+																<YPos>0.68322</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
-																<XPos>9.33941</XPos>
-																<YPos>-3.64857</YPos>
+																<XPos>10.31205</XPos>
+																<YPos>-3.92881</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
-																<XPos>13.83827</XPos>
-																<YPos>-6.93933</YPos>
-																<Flags>0</Flags>
-															</Point>
-															<Point>
-																<XPos>17.88155</XPos>
-																<YPos>-12.66951</YPos>
+																<XPos>15.53074</XPos>
+																<YPos>-10.25473</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
@@ -1699,6 +1914,11 @@
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
 												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1761,7 +1981,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1812,9 +2032,14 @@
 								</Sound>
 								<Sound Name="click_sound" ID="{78E31856-4FBC-4188-B163-B3050DD91741}" ShortID="951887359">
 									<PropertyList>
-										<Property Name="Pitch" Type="int32">
+										<Property Name="Highpass" Type="int16">
 											<ValueList>
-												<Value>100</Value>
+												<Value>50</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1834,10 +2059,17 @@
 												<MediaID ID="329438938"/>
 											</MediaIDList>
 										</AudioFileSource>
+										<AudioFileSource Name="clicky_button_3" ID="{28BD368E-57E0-4CD5-99DD-936A3EC5AEAA}">
+											<Language>SFX</Language>
+											<AudioFile>clicky_button_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="712627541"/>
+											</MediaIDList>
+										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="click_sound" ID="{BA9F5508-0CE4-4233-B3BF-0831861D3837}" Platform="Linked"/>
+										<ActiveSource Name="clicky_button_3" ID="{28BD368E-57E0-4CD5-99DD-936A3EC5AEAA}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

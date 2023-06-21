@@ -10,17 +10,62 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Steps" ID="{7CF17C36-968A-488A-98B6-4D68BD115886}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="click_sound" ID="{78E31856-4FBC-4188-B163-B3050DD91741}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="shimmer_02" ID="{9D49CEFB-3652-4325-B082-3B82A40FBF2D}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="indoor-theme" ID="{69AB3588-E3AE-4B7F-85C0-97900066B669}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="menu-theme" ID="{3E85F18B-1917-47F7-8BF4-79100123BDF5}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ForestAmbience" ID="{6ACB116B-BBB0-489F-8BF0-E5B98CA2AF32}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="diary_close" ID="{85E1051D-364C-4768-BBC4-5E01766B1C5D}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="main-theme" ID="{340DF297-4DD5-431F-B413-7784BC03E5D3}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="diary_open" ID="{5EF5C7E6-B93A-489C-BBF2-575641810BC5}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Shouts" ID="{0C562054-F8BB-477D-A06E-354F0F9B8909}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="rustling_paper" ID="{F741C626-8D68-4547-94DF-318D1BA5969B}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+							<Position X="4" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="speed" ID="{BC3D08D2-C91A-4452-8367-6A97A5D89662}"/>
+							<Value>0.497152619589977</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="distance" ID="{CD4E8A5E-F060-4AAD-B417-873A5B67C8C9}"/>
-							<Value>3.0751708428246</Value>
+							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="HouseInterior" ID="{CBA34F6B-1998-4605-B177-A1390B39306A}"/>
 						<CurrentStateRef Name="Forest" ID="{AE8BC576-6D3C-4423-AD1A-8703EEB255EE}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
