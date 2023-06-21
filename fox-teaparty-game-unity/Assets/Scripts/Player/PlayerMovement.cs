@@ -29,8 +29,15 @@ public class PlayerMovement : MonoBehaviour
             float speedModifier = weightModifier * _backpack.SpeedBoost;
             transform.Translate(Vector3.forward * (Time.deltaTime * _speed * speedModifier));
             animator.SetFloat("speedModifier", speedModifier);
-            
-            AkSoundEngine.SetRTPCValue("speed", speedModifier);
+
+            if (!_isJumpingOrFalling)
+            { 
+                AkSoundEngine.SetRTPCValue("speed", speedModifier);
+            }
+            else
+            {
+                AkSoundEngine.SetRTPCValue("speed", 0);
+            }
         } 
         else
         {
