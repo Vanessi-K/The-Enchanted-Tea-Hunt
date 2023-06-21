@@ -9,7 +9,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-7</Value>
+										<Value>-16</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -39,7 +39,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-14</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -139,7 +139,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-16</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -278,7 +278,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>4</Value>
+										<Value>-2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -605,6 +605,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<BlendContainer Name="Berry_Activation" ID="{77E6F459-BB9C-417E-83EB-54924D938EE4}" ShortID="61432233">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Sounds" ID="{56B05EF8-EB35-4610-9F53-CFAB8AF6FA0E}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
@@ -705,7 +712,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-16</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1324,17 +1331,17 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>6.45498</YPos>
+														<YPos>13.17082</YPos>
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>2.90274</XPos>
-														<YPos>2.41837</YPos>
+														<XPos>2.39021</XPos>
+														<YPos>3.30136</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>6.35967</XPos>
-														<YPos>-1.07086</YPos>
+														<XPos>5.44851</XPos>
+														<YPos>-0.38012</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
@@ -1494,7 +1501,7 @@
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>-11</Value>
 									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{9561CAE3-39D7-40C0-8DA4-5F383E0CE109}" ShortID="535450092">
@@ -1635,6 +1642,13 @@
 				<Folder Name="Neighbor" ID="{C9C315CF-655A-4578-8E96-029449DDC0ED}" ShortID="287754733">
 					<ChildrenList>
 						<BlendContainer Name="Owl" ID="{0CEC879B-E435-4955-8703-DB05BDB97E13}" ShortID="920230031">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Music" ID="{5045159A-371A-41D6-BDBF-E0429C8A1C14}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
@@ -1815,7 +1829,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-16</Value>
+												<Value>-23</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1876,7 +1890,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-16</Value>
+												<Value>-25</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1940,7 +1954,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-22</Value>
+												<Value>-25</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2116,6 +2130,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="doorsound" ID="{DB346B9B-D09E-4F35-9323-6DA0C47E36D1}" ShortID="402362257">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Sounds" ID="{56B05EF8-EB35-4610-9F53-CFAB8AF6FA0E}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
@@ -2248,6 +2269,13 @@
 							</ChildrenList>
 						</Folder>
 						<BlendContainer Name="Winning Music" ID="{EC701D45-3CBC-4A5A-BCE2-969F58C92976}" ShortID="341787459">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Music" ID="{5045159A-371A-41D6-BDBF-E0429C8A1C14}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
