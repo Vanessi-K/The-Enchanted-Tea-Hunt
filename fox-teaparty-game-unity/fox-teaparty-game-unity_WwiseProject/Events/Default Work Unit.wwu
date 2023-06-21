@@ -111,26 +111,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="play_pickUp_berry" ID="{E8AD4FBC-1F42-4C00-93A8-AA77963D13D5}">
+				<Event Name="Play_pickUp_berry" ID="{E8AD4FBC-1F42-4C00-93A8-AA77963D13D5}">
 					<ChildrenList>
 						<Action Name="" ID="{9DDE66E7-70CB-4220-AACB-253A5EDD6904}" ShortID="449081501">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="pick_up_02" ID="{F3EFF503-0C17-421F-920F-7D2E8D10DF61}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_activate_berry" ID="{8028C13A-51FE-4773-BE4B-03571E6F5406}">
-					<ChildrenList>
-						<Action Name="" ID="{4CAED304-A4F7-437A-9A56-EC95B2982CE8}" ShortID="637765584">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Berry_Activation" ID="{77E6F459-BB9C-417E-83EB-54924D938EE4}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -360,6 +346,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="menu-theme" ID="{3E85F18B-1917-47F7-8BF4-79100123BDF5}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_fox_steps" ID="{62F0832F-6E9D-4FAB-9754-D00F4CA17587}">
+					<ChildrenList>
+						<Action Name="" ID="{A4CC034C-A71A-448D-A85D-4A6C414BEED0}" ShortID="797302301">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Steps_grass" ID="{8209B845-1BA8-4F37-ABCB-52F209B6D95C}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_fox_steps_indoor" ID="{8E4635CA-BDE8-4DE7-957D-F5E81BBFD172}">
+					<ChildrenList>
+						<Action Name="" ID="{2C60BDE3-655C-496F-B431-B602B6BCD3C3}" ShortID="304803677">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Steps_floor" ID="{A114EEBD-AA4F-443A-9791-23F73C4EF65C}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

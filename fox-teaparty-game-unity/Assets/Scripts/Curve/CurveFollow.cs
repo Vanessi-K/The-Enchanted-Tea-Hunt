@@ -18,8 +18,6 @@ public class CurveFollow : MonoBehaviour
         _routeToGo = 0;
         _tParam = 0f;
         _coroutineAllowed = true;
-        AkSoundEngine.PostEvent("Play_steps", gameObject);
-        //StartCoroutine(PlayShoutAfterDelay());
     }
 
     private void OnEnable()
@@ -28,7 +26,7 @@ public class CurveFollow : MonoBehaviour
         _tParam = 0f;
         _coroutineAllowed = true;
         AkSoundEngine.PostEvent("Play_steps", gameObject);
-        StartCoroutine(PlayShoutAfterDelay());
+        AkSoundEngine.PostEvent("Play_shouts", gameObject);
     }
 
     void Update()
@@ -83,14 +81,5 @@ public class CurveFollow : MonoBehaviour
                3 * Mathf.Pow(1 - _tParam, 2) * _tParam * p1 +
                3 * (1 - _tParam) * Mathf.Pow(_tParam, 2) * p2 +
                Mathf.Pow(_tParam, 3) * p3;
-    }
-    
-    private IEnumerator PlayShoutAfterDelay()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(3f);
-            AkSoundEngine.PostEvent("Play_shouts", gameObject);
-        }
     }
 }
