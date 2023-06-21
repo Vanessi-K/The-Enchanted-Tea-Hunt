@@ -8,5 +8,6 @@ public class EndSceneManager : MonoBehaviour
     private void Start()
     {
         endTimer.text = GameStats.Instance.GetTime();
+        GameStats.DestroyInstance();
     }
 }
