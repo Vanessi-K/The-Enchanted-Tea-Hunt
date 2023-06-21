@@ -78,6 +78,7 @@ public class Returning : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         AkSoundEngine.StopAll();
+        AkSoundEngine.PostEvent("Play_diary_open", gameObject);
         SceneManager.LoadScene("FelixDiaryEnd");
     }
 }

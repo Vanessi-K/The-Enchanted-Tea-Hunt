@@ -57,7 +57,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="speed" ID="{BC3D08D2-C91A-4452-8367-6A97A5D89662}"/>
-							<Value>0.497152619589977</Value>
+							<Value>1.5</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance" ID="{CD4E8A5E-F060-4AAD-B417-873A5B67C8C9}"/>
