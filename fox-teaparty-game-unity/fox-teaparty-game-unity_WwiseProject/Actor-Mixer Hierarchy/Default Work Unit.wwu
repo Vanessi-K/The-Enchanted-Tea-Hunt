@@ -2032,14 +2032,14 @@
 								</Sound>
 								<Sound Name="click_sound" ID="{78E31856-4FBC-4188-B163-B3050DD91741}" ShortID="951887359">
 									<PropertyList>
-										<Property Name="Pitch" Type="int32">
+										<Property Name="Highpass" Type="int16">
 											<ValueList>
-												<Value>100</Value>
+												<Value>50</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2059,10 +2059,17 @@
 												<MediaID ID="329438938"/>
 											</MediaIDList>
 										</AudioFileSource>
+										<AudioFileSource Name="clicky_button_3" ID="{28BD368E-57E0-4CD5-99DD-936A3EC5AEAA}">
+											<Language>SFX</Language>
+											<AudioFile>clicky_button_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="712627541"/>
+											</MediaIDList>
+										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="click_sound" ID="{BA9F5508-0CE4-4233-B3BF-0831861D3837}" Platform="Linked"/>
+										<ActiveSource Name="clicky_button_3" ID="{28BD368E-57E0-4CD5-99DD-936A3EC5AEAA}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

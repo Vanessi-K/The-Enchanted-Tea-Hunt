@@ -1,19 +1,16 @@
 Event	ID	Name			Wwise Object Path	Notes
 	15112985	Play_fox_steps_indoor			\Default Work Unit\Play_fox_steps_indoor	
 	295785890	Play_diary_close			\Default Work Unit\Play_diary_close	
-	311910498	Play_click			\Default Work Unit\Play_click	
 	441377128	Play_paper			\Default Work Unit\Play_paper	
 	526251383	Play_indoor_music			\Default Work Unit\Play_indoor_music	
 	528770715	Play_rustling_paper			\Default Work Unit\Play_rustling_paper	
 	543936919	Play_shimmer			\Default Work Unit\Play_shimmer	
-	594681878	Resume_fox_steps			\Default Work Unit\Resume_fox_steps	
 	625690868	Play_wall_hit			\Default Work Unit\Play_wall_hit	
 	864978166	Play_diary_open			\Default Work Unit\Play_diary_open	
 	1424658547	Stop_idle_berry			\Default Work Unit\Stop_idle_berry	
 	1698272256	Stop_birds			\Default Work Unit\Stop_birds	
 	1834107382	Play_bush_hit			\Default Work Unit\Play_bush_hit	
 	1958657586	Play_winning			\Default Work Unit\Play_winning	
-	2228153899	Play_menu_music			\Default Work Unit\Play_menu_music	
 	2263803406	Stop_shouts			\Default Work Unit\Stop_shouts	
 	2286352653	Play_idle_berry			\Default Work Unit\Play_idle_berry	
 	2337471648	Play_return			\Default Work Unit\Play_return	
@@ -28,12 +25,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	3507155921	Stop_shimmer			\Default Work Unit\Stop_shimmer	
 	3567508744	Play_activate_berry			\Default Work Unit\Play_activate_berry	
 	3591166290	Play_outdoor_music			\Default Work Unit\Play_outdoor_music	
-	3672395030	Stop_activate_berry			\Default Work Unit\Stop_activate_berry	
 	3689126666	Play_jump			\Default Work Unit\Play_jump	
 	3752586024	Stop_outdoor_music			\Default Work Unit\Stop_outdoor_music	
 	3860455926	Play_pickUp			\Default Work Unit\Play_pickUp	
 	3908278347	Play_pickUp_berry			\Default Work Unit\Play_pickUp_berry	
-	3927893303	Pause_fox_steps			\Default Work Unit\Pause_fox_steps	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1718617278	steps			\Default Work Unit\steps	
@@ -71,7 +66,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	324928788	Funny Cheering Shout (4)	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Funny Cheering Shout (4)_FCE3660C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mugs\Shouts\Funny Cheering Shout (4)		8896
 	325647169	pick_up_01	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\pick_up_01_FCE3660C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Items\pick_up_01		28160
 	326163336	jump_01	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\jump_01_FCE3660C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\jump_01		1198
-	329438938	click_sound	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\click_sound_FCE3660C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Ambience\click_sound		2806
 	348583262	Grassy_Footstep_01	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\Grassy_Footstep_01_FCE3660C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mugs\Steps\Grassy_Footstep_01		7756
 	355161123	ForestAmbience	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\ForestAmbience_DB524D76.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Ambience\ForestAmbience		71654
 	430290202	speed	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\ding ding_19FDB716.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Berry_Activation\speed		23074
@@ -104,7 +98,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1045806882	WallHit (1)	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\WallHit (1)_FCE3660C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Wall_hits\WallHit (1)		1645
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	286250885	menu-theme	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\telling-the-story-150614_94463614.wem	286250885.wem	\Actor-Mixer Hierarchy\Default Work Unit\Music\Themes\menu-theme	
 	355161123	ForestAmbience	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\ForestAmbience_DB524D76.wem	355161123.wem	\Actor-Mixer Hierarchy\Default Work Unit\Music\Ambience\ForestAmbience	
 	442238079	main-theme	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\main-theme_5C61E145.wem	442238079.wem	\Actor-Mixer Hierarchy\Default Work Unit\Music\Themes\main-theme	
 	967610578	indoor-theme	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\indoor-theme_6DB5A820.wem	967610578.wem	\Actor-Mixer Hierarchy\Default Work Unit\Music\Themes\indoor-theme	

@@ -122,20 +122,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Stop_activate_berry" ID="{8028C13A-51FE-4773-BE4B-03571E6F5406}">
-					<ChildrenList>
-						<Action Name="" ID="{4CAED304-A4F7-437A-9A56-EC95B2982CE8}" ShortID="637765584">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Berry_Activation" ID="{77E6F459-BB9C-417E-83EB-54924D938EE4}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_activate_berry" ID="{E5416E9A-ADA0-4A0B-BAB6-DF91943B5FD7}">
 					<ChildrenList>
 						<Action Name="" ID="{5DC193F2-AC87-46DF-A3DE-7FE482E3DF7D}" ShortID="242246843">
@@ -368,34 +354,6 @@
 				<Event Name="Play_fox_steps" ID="{62F0832F-6E9D-4FAB-9754-D00F4CA17587}">
 					<ChildrenList>
 						<Action Name="" ID="{A4CC034C-A71A-448D-A85D-4A6C414BEED0}" ShortID="797302301">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Steps_grass" ID="{8209B845-1BA8-4F37-ABCB-52F209B6D95C}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Pause_fox_steps" ID="{B8DF0F1C-42E7-447E-AC46-8F720F3D92B5}">
-					<ChildrenList>
-						<Action Name="" ID="{01BCA1E0-DD87-4B83-A63D-67F43B8BED1D}" ShortID="170662608">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="7"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Steps_grass" ID="{8209B845-1BA8-4F37-ABCB-52F209B6D95C}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Resume_fox_steps" ID="{758F453F-A09A-41AB-8F25-8992E7FD39E0}">
-					<ChildrenList>
-						<Action Name="" ID="{16B477B4-1926-467A-AFFA-6A7074034EE7}" ShortID="990704552">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="9"/>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Steps_grass" ID="{8209B845-1BA8-4F37-ABCB-52F209B6D95C}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>

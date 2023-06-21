@@ -13,7 +13,6 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PAUSE_FOX_STEPS = 3927893303U;
         static const AkUniqueID PLAY_ACTIVATE_BERRY = 3567508744U;
         static const AkUniqueID PLAY_BIRDS = 3025897706U;
         static const AkUniqueID PLAY_BUSH_HIT = 1834107382U;
@@ -40,8 +39,6 @@ namespace AK
         static const AkUniqueID PLAY_STEPS = 2600469463U;
         static const AkUniqueID PLAY_WALL_HIT = 625690868U;
         static const AkUniqueID PLAY_WINNING = 1958657586U;
-        static const AkUniqueID RESUME_FOX_STEPS = 594681878U;
-        static const AkUniqueID STOP_ACTIVATE_BERRY = 3672395030U;
         static const AkUniqueID STOP_BIRDS = 1698272256U;
         static const AkUniqueID STOP_IDLE_BERRY = 1424658547U;
         static const AkUniqueID STOP_OUTDOOR_MUSIC = 3752586024U;
@@ -87,6 +84,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID MENU = 2607556080U;
         static const AkUniqueID STANDARD = 3025917178U;
     } // namespace BANKS
 
