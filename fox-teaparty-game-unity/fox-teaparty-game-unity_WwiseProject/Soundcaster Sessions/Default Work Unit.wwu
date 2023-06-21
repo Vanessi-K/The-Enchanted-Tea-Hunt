@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7D7EBBC4-0C03-4535-BEDF-827C17267233}" SchemaVersion="103">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{7D7EBBC4-0C03-4535-BEDF-827C17267233}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{7D7EBBC4-0C03-4535-BEDF-827C17267233}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{1DE26578-D401-434E-B381-D41CC19E0F6E}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="shimmer_01" ID="{D8B6F194-A827-4246-BB59-0E0C5F3E421B}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="shimmer_02" ID="{9D49CEFB-3652-4325-B082-3B82A40FBF2D}" WorkUnitID="{32282789-8BED-4F36-B031-5A224AFEC4C6}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="distance" ID="{CD4E8A5E-F060-4AAD-B417-873A5B67C8C9}"/>
+							<Value>3.0751708428246</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Forest" ID="{AE8BC576-6D3C-4423-AD1A-8703EEB255EE}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

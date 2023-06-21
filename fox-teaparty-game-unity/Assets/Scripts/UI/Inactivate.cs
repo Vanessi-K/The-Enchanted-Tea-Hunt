@@ -9,5 +9,6 @@ public class Inactivate : MonoBehaviour
     {
         gameObject.SetActive(false);
         GameStats.Instance.IsPaused = false;
+        AkSoundEngine.PostEvent("Play_diary_close", gameObject);
     }
 }

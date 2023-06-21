@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Collectible
   - Booster
+  - BirdTree
   layers:
   - Default
   - TransparentFX
@@ -16,9 +17,9 @@ TagManager:
   - Forest
   - HouseInterior
   - Wall
-  - 
-  - 
-  - 
+  - Solid
+  - Bush
+  - Paper
   - 
   - 
   - 

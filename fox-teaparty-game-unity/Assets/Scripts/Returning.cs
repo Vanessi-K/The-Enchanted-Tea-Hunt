@@ -16,7 +16,8 @@ public class Returning : MonoBehaviour
     private bool _playerIsInside;
     private int _totalCollectibles;
     private CollectionState[] _collectibleStates;
-    private bool _firstTime = true;
+    private PlayerMovement _playerMovement;
+    public static bool FIRST_TIME = true;
     
     private void Start()
     {
@@ -31,12 +32,13 @@ public class Returning : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             _playerIsInside = true;
+            _playerMovement = other.GetComponent<PlayerMovement>();
             displayArea.material = activeMaterial;
 
-            if (_firstTime)
+            if (FIRST_TIME)
             {
                 gameObject.GetComponent<DialoguePopup>().ShowDialogue();
-                _firstTime = false;
+                FIRST_TIME = false;
             }
         }
     }
@@ -47,17 +49,25 @@ public class Returning : MonoBehaviour
         {
             _playerIsInside = false;
             displayArea.material = inactiveMaterial;
+            _playerMovement = null;
         }
     }
     
     private void OnReturn(InputValue value)
     {
         if (!_playerIsInside) return;
-        _backpack.ReturnCollectibles();
-        displayArea.material = activeAllItemsReturnedMaterial;
+        
+        if (_backpack.ReturnCollectibles())
+        {
+            displayArea.material = activeAllItemsReturnedMaterial;
+        }
+        
 
         if (_totalCollectibles == GameStats.Instance.NumberOfCollectibles(_collectibleStates))
         {
+            _playerMovement.Celebrate();
+            AkSoundEngine.PostEvent("Play_winning", gameObject);
+            _playerMovement.enabled = false;
             GameStats.Instance.IsPaused = true;
             celebrationConfetti.SetActive(true);
             StartCoroutine(WaitForEndSceneLoad());

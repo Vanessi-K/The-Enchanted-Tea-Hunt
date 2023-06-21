@@ -14,7 +14,12 @@ public class Collectible : MonoBehaviour
     {
         _backpack = GameStats.Instance.Backpack;
         TableRepresentation.SetActive(false);
-        AkSoundEngine.PostEvent("Play_shimmer", gameObject);
+
+
+        if (gameObject.activeSelf)
+        {
+            AkSoundEngine.PostEvent("Play_shimmer", gameObject);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -25,11 +30,20 @@ public class Collectible : MonoBehaviour
             {
                 _backpack.AddCollectible(this);
                 AkSoundEngine.PostEvent("Play_pickUp", gameObject);
-                AkSoundEngine.PostEvent("Stop_shimmer", gameObject);
-                AkSoundEngine.PostEvent("Stop_steps", gameObject);
-                AkSoundEngine.PostEvent("Stop_shouts", gameObject);
                 gameObject.SetActive(false);
             }
         }
+    }
+
+    private void OnEnable()
+    {
+        AkSoundEngine.PostEvent("Play_shimmer", gameObject);
+    }
+
+    private void OnDisable()
+    {
+        AkSoundEngine.PostEvent("Stop_shimmer", gameObject);
+        AkSoundEngine.PostEvent("Stop_steps", gameObject);
+        AkSoundEngine.PostEvent("Stop_shouts", gameObject);
     }
 }

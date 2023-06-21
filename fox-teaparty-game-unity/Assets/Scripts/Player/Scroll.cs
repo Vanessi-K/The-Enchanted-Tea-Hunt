@@ -67,6 +67,7 @@ namespace Player
             }
             
             scrollOverlay.SetActive(scrollState);
+            AkSoundEngine.PostEvent("Play_paper", gameObject);
             GameStats.Instance.IsPaused = scrollState;
         }
 

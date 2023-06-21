@@ -24,7 +24,9 @@ public class PlayerMovement : MonoBehaviour
         if (_walkingPressed)
         {
             float weightModifier = 1 - (_backpack.TotalWeight * _decreaseValuePerWeightUnit);
-            transform.Translate(Vector3.forward * (Time.deltaTime * _speed * weightModifier * _backpack.SpeedBoost));
+            float speedModifier = weightModifier * _backpack.SpeedBoost;
+            transform.Translate(Vector3.forward * (Time.deltaTime * _speed * speedModifier));
+            animator.SetFloat("speedModifier", speedModifier);
         }
 
         if(animator.GetBool("walking") != _walkingPressed)
@@ -36,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("jumping", _isJumpingOrFalling);
         }
-        
+
         if(_backpack.SpeedBoost > 1)
         {
             boostEffect.SetActive(true);
@@ -76,6 +78,32 @@ public class PlayerMovement : MonoBehaviour
     private void RotateHorizontal(float angle)
     {
         transform.Rotate(Vector3.up, angle);
+    }
+    
+    
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.layer == 9)
+        {
+            AkSoundEngine.PostEvent("Play_wall_hit", gameObject);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.layer == 10)
+        {
+            AkSoundEngine.PostEvent("Play_bush_hit", gameObject);
+        }
+        
+        if (other.gameObject.layer == 11)
+        {
+            AkSoundEngine.PostEvent("Play_rustling_paper", gameObject);
+        }
+    }
+    public void Celebrate()
+    {
+        animator.SetTrigger("celebrate");
     }
     
 }
