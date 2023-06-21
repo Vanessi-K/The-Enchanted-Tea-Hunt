@@ -17,7 +17,7 @@ public class Returning : MonoBehaviour
     private int _totalCollectibles;
     private CollectionState[] _collectibleStates;
     private PlayerMovement _playerMovement;
-    public static bool FIRST_TIME = true;
+    private static bool FIRST_TIME = true;
     
     private void Start()
     {
@@ -62,7 +62,6 @@ public class Returning : MonoBehaviour
             displayArea.material = activeAllItemsReturnedMaterial;
         }
         
-
         if (_totalCollectibles == GameStats.Instance.NumberOfCollectibles(_collectibleStates))
         {
             _playerMovement.Celebrate();
