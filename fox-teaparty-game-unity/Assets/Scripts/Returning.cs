@@ -77,6 +77,6 @@ public class Returning : MonoBehaviour
     private IEnumerator WaitForEndSceneLoad()
     {
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene("End");
+        SceneManager.LoadScene("FelixDiaryEnd");
     }
 }
