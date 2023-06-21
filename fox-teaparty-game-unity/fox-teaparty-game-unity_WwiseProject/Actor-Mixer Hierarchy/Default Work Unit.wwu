@@ -235,6 +235,41 @@
 								<ActiveSource Name="chimes" ID="{94065D68-8021-4308-862E-71BB2C8851B8}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="deny" ID="{20CD8504-5CA6-47E0-8483-62E13C23E8DE}" ShortID="683839208">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Sounds" ID="{56B05EF8-EB35-4610-9F53-CFAB8AF6FA0E}" WorkUnitID="{14627B04-D277-484C-83C4-B59E51DD2F9A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B4B26E64-854A-4F01-BDBE-BDE51CAFAF86}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="deny" ID="{33A53D79-CA1C-4A8B-A0C8-CB2963E4D87F}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.452924358369903"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>deny feel.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="650866966"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="deny" ID="{33A53D79-CA1C-4A8B-A0C8-CB2963E4D87F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Character" ID="{496C973A-20CA-46FB-B527-3E7835E40F72}" ShortID="228831077">
@@ -1789,7 +1824,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="menu-theme" ID="{6907A44A-987E-4A4C-873B-1527F32A5A27}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="10.0976914334605"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.67054562311808"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="6.37339004030849"/>
 												<Property Name="LoopBegin" Type="Real64" Value="1.31547444355386"/>
 												<Property Name="LoopEnd" Type="Real64" Value="98.7883885671028"/>
@@ -2039,7 +2074,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

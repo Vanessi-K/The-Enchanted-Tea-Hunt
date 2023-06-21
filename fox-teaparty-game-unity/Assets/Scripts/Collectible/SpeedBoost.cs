@@ -26,8 +26,11 @@ public class SpeedBoost : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if(GameStats.Instance.Backpack.HasSpeedBoost)
+            if (GameStats.Instance.Backpack.HasSpeedBoost)
+            {
+                AkSoundEngine.PostEvent("Play_deny", gameObject);
                 return;
+            }
 
             GameStats.Instance.Backpack.AddSpeedBoost(this);
             AkSoundEngine.PostEvent("Play_pickUp_berry", gameObject);

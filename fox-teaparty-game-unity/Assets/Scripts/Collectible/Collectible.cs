@@ -32,6 +32,10 @@ public class Collectible : MonoBehaviour
                 AkSoundEngine.PostEvent("Play_pickUp", gameObject);
                 gameObject.SetActive(false);
             }
+            else
+            {
+                AkSoundEngine.PostEvent("Play_deny", gameObject);
+            }
         }
     }
 

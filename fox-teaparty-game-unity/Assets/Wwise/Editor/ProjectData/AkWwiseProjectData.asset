@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 188a79ae620ca947895fe52a9330fa7e
     GuidInternal: 
-    m_lastTime: -8585142614520620912
+    m_lastTime: -8585142558864199857
     List:
     - name: Menu
       guid: 5e66eb0058498b4fb190eb8a1b49afbf
@@ -108,7 +108,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ea3ac9f74106a1478d57dc01acff8772
     GuidInternal: 
-    m_lastTime: -8585142658632328641
+    m_lastTime: -8585142558864169930
     List:
     - name: Play_activate_berry
       guid: 9a6e41e5a0ad0b4abab6df91943b5fd7
@@ -178,6 +178,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.062472
       minDuration: 0.062472
+    - name: Play_deny
+      guid: efaf74cefff67146844578c1b23ff540
+      id: 2026541852
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ea3ac9f74106a1478d57dc01acff8772
+      - ElementName: Play_deny
+        ObjectType: 3
+        guid: efaf74cefff67146844578c1b23ff540
+      Path: Events\Default Work Unit\Play_deny
+      maxAttenuation: 0
+      maxDuration: 0.427504
+      minDuration: 0.427504
     - name: Play_diary_close
       guid: f382386b7e5c684797c778257d7fabb9
       id: 295785890
@@ -666,7 +683,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 92fb8812cd21db41917d7468c5ab7840
     GuidInternal: 
-    m_lastTime: -8585142703555834403
+    m_lastTime: -8585142590282471396
     List:
     - name: distance
       guid: 5e8a4ecd60f0ad4ab417873a5b67c8c9
@@ -708,7 +725,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: ad14d71c15c0c7479dff6ad83094e67d
     GuidInternal: 
-    m_lastTime: -8585142678510491788
+    m_lastTime: -8585142590282067751
     List:
     - name: music
       guid: 827c644fc142e646ac2af037fb3cb919
@@ -871,7 +888,7 @@ MonoBehaviour:
     m_lastTime: -8585143582041016053
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000002b0000002c0000002d000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

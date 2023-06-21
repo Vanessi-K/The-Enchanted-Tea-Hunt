@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID PLAY_BIRDS = 3025897706U;
         static const AkUniqueID PLAY_BUSH_HIT = 1834107382U;
         static const AkUniqueID PLAY_CLICK = 311910498U;
+        static const AkUniqueID PLAY_DENY = 2026541852U;
         static const AkUniqueID PLAY_DIARY_CLOSE = 295785890U;
         static const AkUniqueID PLAY_DIARY_OPEN = 864978166U;
         static const AkUniqueID PLAY_DOOR = 2547633870U;
