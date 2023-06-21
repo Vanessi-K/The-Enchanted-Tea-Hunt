@@ -752,22 +752,42 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-526</YPos>
+														<YPos>-1169</YPos>
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>0.50171</XPos>
-														<YPos>-526</YPos>
+														<XPos>0.5</XPos>
+														<YPos>-900</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.6</XPos>
+														<YPos>-800</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.7</XPos>
+														<YPos>-700</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.8</XPos>
+														<YPos>-600</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.90171</XPos>
+														<YPos>-500</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
 														<XPos>1</XPos>
-														<YPos>0</YPos>
+														<YPos>-450</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
 														<XPos>1.5</XPos>
-														<YPos>528</YPos>
+														<YPos>300</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -776,7 +796,51 @@
 									</RTPCList>
 								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0">
+									<RTPCList>
+										<RTPC Name="" ID="{DCBABF77-554B-453F-9C14-DE1AC2A7C95E}" ShortID="980962651">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="speed" ID="{BC3D08D2-C91A-4452-8367-6A97A5D89662}" WorkUnitID="{1288FB92-21CD-41DB-917D-7468C5AB7840}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{674D8A0E-CF28-4D59-AACF-C211921BCAB1}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.01</XPos>
+														<YPos>-90</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.50057</XPos>
+														<YPos>-1</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.99828</XPos>
+														<YPos>-4.3</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1.5</XPos>
+														<YPos>-100</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 								<Property Name="Volume" Type="Real64">
@@ -955,41 +1019,66 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Steps_floor" ID="{A114EEBD-AA4F-443A-9791-23F73C4EF65C}" ShortID="773426719">
 							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.05</Value>
+									</ValueList>
+								</Property>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>400</Value>
 									</ValueList>
 									<RTPCList>
-										<RTPC Name="" ID="{D71AF796-FF49-481E-A9E0-C8ADB5F900DF}" ShortID="497199001">
+										<RTPC Name="" ID="{87617482-1CC3-48A9-B62A-5665BD009660}" ShortID="921277858">
 											<ReferenceList>
 												<Reference Name="ControlInput">
 													<ObjectRef Name="speed" ID="{BC3D08D2-C91A-4452-8367-6A97A5D89662}" WorkUnitID="{1288FB92-21CD-41DB-917D-7468C5AB7840}"/>
 												</Reference>
 											</ReferenceList>
-											<Curve Name="" ID="{36F4E878-8751-4FAF-BA61-712AC4C32C94}">
+											<Curve Name="" ID="{057D0DBD-BB89-46D6-9B38-6F3583E5E51B}">
 												<PropertyList>
 													<Property Name="Flags" Type="int32" Value="65537"/>
 												</PropertyList>
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-526</YPos>
+														<YPos>-1169</YPos>
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>0.50171</XPos>
-														<YPos>-526</YPos>
+														<XPos>0.5</XPos>
+														<YPos>-900</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.6</XPos>
+														<YPos>-800</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.7</XPos>
+														<YPos>-700</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.8</XPos>
+														<YPos>-600</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.90171</XPos>
+														<YPos>-500</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
 														<XPos>1</XPos>
-														<YPos>0</YPos>
+														<YPos>-450</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
 														<XPos>1.5</XPos>
-														<YPos>528</YPos>
+														<YPos>300</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -998,13 +1087,55 @@
 									</RTPCList>
 								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0">
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{0C2AC828-EAAF-40FF-A21B-BE88D48DCF2F}"/>
 										</ModifierInfo>
 									</ModifierList>
+									<RTPCList>
+										<RTPC Name="" ID="{3B713018-9E75-4A21-8788-B7E04EF19B22}" ShortID="636486039">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="speed" ID="{BC3D08D2-C91A-4452-8367-6A97A5D89662}" WorkUnitID="{1288FB92-21CD-41DB-917D-7468C5AB7840}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{6BC318C9-DE55-46FB-88A4-14D40A02D1BE}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.01</XPos>
+														<YPos>-90</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.50057</XPos>
+														<YPos>-1</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.99828</XPos>
+														<YPos>-4.30000000000018</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1.5</XPos>
+														<YPos>-100</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
 								</Property>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
@@ -1013,13 +1144,13 @@
 										<Value>1</Value>
 									</ValueList>
 									<RTPCList>
-										<RTPC Name="" ID="{ED04F29B-F419-413A-950F-91BAD7C83463}" ShortID="803203730">
+										<RTPC Name="" ID="{CB52C50D-92C9-4046-8408-15A7F502C682}" ShortID="77839769">
 											<ReferenceList>
 												<Reference Name="ControlInput">
 													<ObjectRef Name="speed" ID="{BC3D08D2-C91A-4452-8367-6A97A5D89662}" WorkUnitID="{1288FB92-21CD-41DB-917D-7468C5AB7840}"/>
 												</Reference>
 											</ReferenceList>
-											<Curve Name="" ID="{C8766742-05EE-4045-BEAA-E683151F316C}">
+											<Curve Name="" ID="{903B91FB-55C4-40BD-BA98-995CBF6B5B0A}">
 												<PropertyList>
 													<Property Name="Flags" Type="int32" Value="3"/>
 												</PropertyList>
@@ -1030,8 +1161,8 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>0.01</XPos>
-														<YPos>-0.21448</YPos>
+														<XPos>0.001</XPos>
+														<YPos>0</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
