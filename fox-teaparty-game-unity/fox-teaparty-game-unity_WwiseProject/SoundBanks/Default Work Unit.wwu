@@ -9,10 +9,8 @@
 						<ObjectRef Name="Play_shouts" ID="{90F8F43D-A295-4153-A314-9D757F6DC958}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_steps" ID="{5AE9FC76-F44E-4466-B4D6-C45EBD4B03DF}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_door" ID="{88BDF517-3A2A-4499-BA4A-F145C3ED505F}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_click" ID="{78AD7E2A-9D90-456F-85EB-1A4DB1DCA858}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_winning" ID="{40897397-4E4B-45D6-A2CD-D1E82156EE3E}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_diary_close" ID="{6B3882F3-5C7E-4768-97C7-78257D7FABB9}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_activate_berry" ID="{8028C13A-51FE-4773-BE4B-03571E6F5406}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_owl" ID="{C6ECD1FC-C289-479B-98E8-42601677A550}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_paper" ID="{12CE9DE9-3FD2-47B7-9477-77E2C68983ED}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_diary_open" ID="{F2479007-7EC5-47C3-A95B-841652260FED}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
@@ -27,15 +25,24 @@
 						<ObjectRef Name="Play_bush_hit" ID="{81E6FD35-7905-4AC0-B222-351E8447CC9A}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_jump" ID="{BF23232A-B7C6-4ACD-8B1E-0666E015E462}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_birds" ID="{4AC82195-C36F-4B7F-AEFC-E460A3A40856}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="play_pickUp_berry" ID="{E8AD4FBC-1F42-4C00-93A8-AA77963D13D5}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_pickUp_berry" ID="{E8AD4FBC-1F42-4C00-93A8-AA77963D13D5}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_shimmer" ID="{C0316E6B-6281-4D03-98F4-A4F03CC9E589}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_indoor_music" ID="{2CC495C2-8048-4D7C-92DD-1F10F02410D7}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_idle_berry" ID="{45A2127F-4A7B-4DC2-BC71-3D2F798A1645}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_fox_steps_indoor" ID="{8E4635CA-BDE8-4DE7-957D-F5E81BBFD172}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_shouts" ID="{26B1B9E8-2389-4DF1-B8D5-7833575CE24E}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_birds" ID="{B541037E-01A7-4E20-B123-15844CF94347}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_menu_music" ID="{BB76C9EE-584D-4EB3-B282-BD8834FB1842}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_wall_hit" ID="{B501D883-DF16-4FA5-AD32-99E33AA1E708}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_fox_steps" ID="{62F0832F-6E9D-4FAB-9754-D00F4CA17587}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_idle_berry" ID="{EF741002-EE1A-4FB9-9410-46FEBBCC910F}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Menu" ID="{00EB665E-4958-4F8B-B190-EB8A1B49AFBF}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_click" ID="{78AD7E2A-9D90-456F-85EB-1A4DB1DCA858}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_menu_music" ID="{BB76C9EE-584D-4EB3-B282-BD8834FB1842}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

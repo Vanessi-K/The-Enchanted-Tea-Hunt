@@ -29,7 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FelixDiaryEnd.unity
     guid: 649a8a7e2f36798488c1598e81bc7822
+  - enabled: 0
+    path: Assets/Scenes/FelixDiaryEnd.unity
+    guid: 649a8a7e2f36798488c1598e81bc7822
   - enabled: 1
     path: Assets/Scenes/FelixDiaryStart.unity
-    guid: 85e5648fdb1120b4ebd222091dc47bcf
+    guid: 836165bd4942f5745a3af4cdff31f446
   m_configObjects: {}
