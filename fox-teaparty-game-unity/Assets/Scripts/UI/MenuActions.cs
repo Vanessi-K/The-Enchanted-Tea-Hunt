@@ -12,20 +12,20 @@ public class MenuActions : MonoBehaviour
     {
         SceneManager.LoadScene("End");
     }
+
+    public void LoadStartDiary()
+    {
+        SceneManager.LoadScene("FelixDiaryStart");
+    }
+    
+    public void LoadEndDiary()
+    {
+        SceneManager.LoadScene("FelixDiaryEnd");
+    }
     
     public void LoadControls()
     {
         SceneManager.LoadScene("Controls");
-    }
-    
-    public void LoadStory()
-    {
-        SceneManager.LoadScene("Story");
-    }
-    
-    public void LoadLeaderboard()
-    {
-        SceneManager.LoadScene("Leaderboard");
     }
     
     public void LoadGame()

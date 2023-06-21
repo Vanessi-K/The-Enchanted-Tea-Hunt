@@ -170,4 +170,10 @@ public class GameStats : MonoBehaviour
     {
         return Collectibles().Count(collectible => states.Contains(collectible.GetComponent<CollectionStateManager>().State));
     }
+
+    public static void DestroyInstance()
+    {
+        Destroy(Instance.gameObject);
+        Instance = null;
+    }
 }
