@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 188a79ae620ca947895fe52a9330fa7e
     GuidInternal: 
-    m_lastTime: -8585143334130007602
+    m_lastTime: -8585142703555954246
     List:
     - name: Standard
       guid: eb86d49d0ecd0546a84cf3c4ac5e4d05
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ea3ac9f74106a1478d57dc01acff8772
     GuidInternal: 
-    m_lastTime: -8585143334130230812
+    m_lastTime: -8585142703555904630
     List:
+    - name: Pause_fox_steps
+      guid: 1c0fdfb8e7427e44ac468f720f3d92b5
+      id: 3927893303
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ea3ac9f74106a1478d57dc01acff8772
+      - ElementName: Pause_fox_steps
+        ObjectType: 3
+        guid: 1c0fdfb8e7427e44ac468f720f3d92b5
+      Path: Events\Default Work Unit\Pause_fox_steps
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Play_activate_berry
       guid: 9a6e41e5a0ad0b4abab6df91943b5fd7
       id: 3567508744
@@ -111,8 +128,8 @@ MonoBehaviour:
         guid: 9a6e41e5a0ad0b4abab6df91943b5fd7
       Path: Events\Default Work Unit\Play_activate_berry
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 7.058854
+      minDuration: 7.058854
     - name: Play_birds
       guid: 9521c84a6fc37f4baefce460a3a40856
       id: 3025897706
@@ -232,6 +249,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.259797
       minDuration: 0.259797
+    - name: Play_fox_steps
+      guid: 2f83f0629d6eab4f9754d00f4ca17587
+      id: 2487535873
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ea3ac9f74106a1478d57dc01acff8772
+      - ElementName: Play_fox_steps
+        ObjectType: 3
+        guid: 2f83f0629d6eab4f9754d00f4ca17587
+      Path: Events\Default Work Unit\Play_fox_steps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_idle_berry
       guid: 021074ef1aeeb94f941046febbcc910f
       id: 2286352653
@@ -368,7 +402,7 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.5
       minDuration: 1.5
-    - name: play_pickUp_berry
+    - name: Play_pickUp_berry
       guid: bc4fade8421f004c93a8aa77963d13d5
       id: 3908278347
       PathAndIcons:
@@ -378,10 +412,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: ea3ac9f74106a1478d57dc01acff8772
-      - ElementName: play_pickUp_berry
+      - ElementName: Play_pickUp_berry
         ObjectType: 3
         guid: bc4fade8421f004c93a8aa77963d13d5
-      Path: Events\Default Work Unit\play_pickUp_berry
+      Path: Events\Default Work Unit\Play_pickUp_berry
       maxAttenuation: 0
       maxDuration: 1.15898
       minDuration: 1.15898
@@ -451,8 +485,8 @@ MonoBehaviour:
         guid: 3df4f89095a25341a3149d757f6dc958
       Path: Events\Default Work Unit\Play_shouts
       maxAttenuation: 0
-      maxDuration: 1.069918
-      minDuration: 0.9865
+      maxDuration: -1
+      minDuration: -1
     - name: Play_steps
       guid: 8865c188cac4ce47860dc7e1f6065a06
       id: 2600469463
@@ -504,6 +538,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 4
       minDuration: 4
+    - name: Resume_fox_steps
+      guid: 3f458f759aa0ab418f258992e7fd39e0
+      id: 594681878
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ea3ac9f74106a1478d57dc01acff8772
+      - ElementName: Resume_fox_steps
+        ObjectType: 3
+        guid: 3f458f759aa0ab418f258992e7fd39e0
+      Path: Events\Default Work Unit\Resume_fox_steps
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_activate_berry
       guid: 3ac12880fe517347be4b03571e6f5406
       id: 3672395030
@@ -635,7 +686,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 92fb8812cd21db41917d7468c5ab7840
     GuidInternal: 
-    m_lastTime: -8585143582041255737
+    m_lastTime: -8585142703555834403
     List:
     - name: distance
       guid: 5e8a4ecd60f0ad4ab417873a5b67c8c9
@@ -651,6 +702,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 5e8a4ecd60f0ad4ab417873a5b67c8c9
       Path: Game Parameters\Default Work Unit\distance
+    - name: speed
+      guid: d2083dbc1ac9524483676a97a5d89662
+      id: 640949982
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 92fb8812cd21db41917d7468c5ab7840
+      - ElementName: speed
+        ObjectType: 13
+        guid: d2083dbc1ac9524483676a97a5d89662
+      Path: Game Parameters\Default Work Unit\speed
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -760,7 +825,7 @@ MonoBehaviour:
     m_lastTime: -8585143582041016053
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 01000000050000000600000007000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

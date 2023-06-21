@@ -615,6 +615,8 @@
 											</ValueList>
 										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+										<Property Name="LoopCount" Type="int32" Value="3"/>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
 												<Value>20</Value>
@@ -701,14 +703,82 @@
 									<ValueList>
 										<Value>300</Value>
 									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{C7768570-8264-4073-9CA0-D930732F483B}" ShortID="9855394">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="speed" ID="{BC3D08D2-C91A-4452-8367-6A97A5D89662}" WorkUnitID="{1288FB92-21CD-41DB-917D-7468C5AB7840}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{323FD5AC-F068-48E9-A055-48CD99C5530B}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-526</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.50171</XPos>
+														<YPos>-526</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1.5</XPos>
+														<YPos>528</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
 								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>12</Value>
 									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{74EA7F8F-E81F-4C0B-80A6-498154AAD73F}" ShortID="609594885">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="speed" ID="{BC3D08D2-C91A-4452-8367-6A97A5D89662}" WorkUnitID="{1288FB92-21CD-41DB-917D-7468C5AB7840}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{C9F3A040-83BA-4179-929B-9C1948219BA4}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.001</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1.5</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -825,6 +895,23 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="steps" ID="{F6CF46EF-9735-45B2-8922-1C31CA4E59FA}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="indoor" ID="{CBA34F6B-1998-4605-B177-A1390B39306A}"/>
+										<CustomState Name="" ID="{4916F8C0-45D3-4E07-8C3B-54D726465A4B}" ShortID="55766521"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="outdoor" ID="{81BBCC45-B0AC-4DB1-84EC-09105A6DC4F4}"/>
+										<CustomState Name="" ID="{B67F6001-169A-442C-B832-40AF38411728}" ShortID="380795963"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists/>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Steps_floor" ID="{A114EEBD-AA4F-443A-9791-23F73C4EF65C}" ShortID="773426719">
@@ -834,9 +921,90 @@
 									<ValueList>
 										<Value>400</Value>
 									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{D71AF796-FF49-481E-A9E0-C8ADB5F900DF}" ShortID="497199001">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="speed" ID="{BC3D08D2-C91A-4452-8367-6A97A5D89662}" WorkUnitID="{1288FB92-21CD-41DB-917D-7468C5AB7840}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{36F4E878-8751-4FAF-BA61-712AC4C32C94}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-526</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.50171</XPos>
+														<YPos>-526</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1.5</XPos>
+														<YPos>528</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
 								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0C2AC828-EAAF-40FF-A21B-BE88D48DCF2F}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{ED04F29B-F419-413A-950F-91BAD7C83463}" ShortID="803203730">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="speed" ID="{BC3D08D2-C91A-4452-8367-6A97A5D89662}" WorkUnitID="{1288FB92-21CD-41DB-917D-7468C5AB7840}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{C8766742-05EE-4045-BEAA-E683151F316C}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.01</XPos>
+														<YPos>-0.21448</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1.5</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -917,6 +1085,23 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="steps" ID="{F6CF46EF-9735-45B2-8922-1C31CA4E59FA}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="indoor" ID="{CBA34F6B-1998-4605-B177-A1390B39306A}"/>
+										<CustomState Name="" ID="{B5305F76-F6AA-49D1-BC76-AFC042921345}" ShortID="101106485"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="outdoor" ID="{81BBCC45-B0AC-4DB1-84EC-09105A6DC4F4}"/>
+										<CustomState Name="" ID="{2F13E0F6-AA4A-4B9D-B05E-936F199134D9}" ShortID="743662092"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists/>
 						</RandomSequenceContainer>
 					</ChildrenList>
@@ -1116,6 +1301,11 @@
 										<Value>40</Value>
 									</ValueList>
 								</Property>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
@@ -1123,6 +1313,10 @@
 									</ValueList>
 								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -1434,6 +1628,11 @@
 							<ChildrenList>
 								<Sound Name="indoor-theme" ID="{69AB3588-E3AE-4B7F-85C0-97900066B669}" ShortID="656007671">
 									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="IsStreamingEnabled" Type="bool">
 											<ValueList>
@@ -1584,7 +1783,8 @@
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="10.0976914334605"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="6.37339004030849"/>
-												<Property Name="LoopEnd" Type="Real64" Value="99.7169587625526"/>
+												<Property Name="LoopBegin" Type="Real64" Value="1.31547444355386"/>
+												<Property Name="LoopEnd" Type="Real64" Value="98.7883885671028"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 											</PropertyList>
 											<Language>SFX</Language>
@@ -1708,6 +1908,11 @@
 												<Value>100</Value>
 											</ValueList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1822,6 +2027,11 @@
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
 												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

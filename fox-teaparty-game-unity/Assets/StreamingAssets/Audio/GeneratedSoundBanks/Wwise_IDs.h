@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PAUSE_FOX_STEPS = 3927893303U;
         static const AkUniqueID PLAY_ACTIVATE_BERRY = 3567508744U;
         static const AkUniqueID PLAY_BIRDS = 3025897706U;
         static const AkUniqueID PLAY_BUSH_HIT = 1834107382U;
@@ -21,6 +22,7 @@ namespace AK
         static const AkUniqueID PLAY_DIARY_OPEN = 864978166U;
         static const AkUniqueID PLAY_DOOR = 2547633870U;
         static const AkUniqueID PLAY_FOX = 2991955701U;
+        static const AkUniqueID PLAY_FOX_STEPS = 2487535873U;
         static const AkUniqueID PLAY_IDLE_BERRY = 2286352653U;
         static const AkUniqueID PLAY_INDOOR_MUSIC = 526251383U;
         static const AkUniqueID PLAY_JUMP = 3689126666U;
@@ -37,6 +39,7 @@ namespace AK
         static const AkUniqueID PLAY_STEPS = 2600469463U;
         static const AkUniqueID PLAY_WALL_HIT = 625690868U;
         static const AkUniqueID PLAY_WINNING = 1958657586U;
+        static const AkUniqueID RESUME_FOX_STEPS = 594681878U;
         static const AkUniqueID STOP_ACTIVATE_BERRY = 3672395030U;
         static const AkUniqueID STOP_BIRDS = 1698272256U;
         static const AkUniqueID STOP_IDLE_BERRY = 1424658547U;
@@ -60,11 +63,24 @@ namespace AK
             } // namespace STATE
         } // namespace MUSIC
 
+        namespace STEPS
+        {
+            static const AkUniqueID GROUP = 1718617278U;
+
+            namespace STATE
+            {
+                static const AkUniqueID INDOOR = 340398852U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OUTDOOR = 144697359U;
+            } // namespace STATE
+        } // namespace STEPS
+
     } // namespace STATES
 
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID DISTANCE = 1240670792U;
+        static const AkUniqueID SPEED = 640949982U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

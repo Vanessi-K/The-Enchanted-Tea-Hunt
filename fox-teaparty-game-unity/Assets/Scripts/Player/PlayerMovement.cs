@@ -16,17 +16,25 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         _backpack = GameStats.Instance.Backpack;
+        AkSoundEngine.SetRTPCValue("speed", 0);
     }
     
     private void Update()
     {
         _isJumpingOrFalling = GetComponent<Rigidbody>().velocity.y < -.035 || GetComponent<Rigidbody>().velocity.y > 0.00001;
+
         if (_walkingPressed)
         {
             float weightModifier = 1 - (_backpack.TotalWeight * _decreaseValuePerWeightUnit);
             float speedModifier = weightModifier * _backpack.SpeedBoost;
             transform.Translate(Vector3.forward * (Time.deltaTime * _speed * speedModifier));
             animator.SetFloat("speedModifier", speedModifier);
+            
+            AkSoundEngine.SetRTPCValue("speed", speedModifier);
+        } 
+        else
+        {
+            AkSoundEngine.SetRTPCValue("speed", 0);
         }
 
         if(animator.GetBool("walking") != _walkingPressed)
@@ -46,7 +54,6 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             boostEffect.SetActive(false);
-            AkSoundEngine.PostEvent("Stop_activate_berry", gameObject);
         }
     }
 

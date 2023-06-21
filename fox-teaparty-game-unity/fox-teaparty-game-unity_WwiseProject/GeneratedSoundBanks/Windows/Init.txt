@@ -1,7 +1,11 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	1718617278	steps			\Default Work Unit\steps	
 	3991942870	music			\Default Work Unit\music	
 
 State	ID	Name	State Group			Notes
+	144697359	outdoor	steps			
+	340398852	indoor	steps			
+	748895195	None	steps			
 	491961918	Forest	music			
 	748895195	None	music			
 	3332917963	HouseInterior	music			
