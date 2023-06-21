@@ -43,6 +43,7 @@
 				<SoundBank Name="Menu" ID="{00EB665E-4958-4F8B-B190-EB8A1B49AFBF}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_click" ID="{78AD7E2A-9D90-456F-85EB-1A4DB1DCA858}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_diary_open" ID="{F2479007-7EC5-47C3-A95B-841652260FED}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_menu_music" ID="{BB76C9EE-584D-4EB3-B282-BD8834FB1842}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
