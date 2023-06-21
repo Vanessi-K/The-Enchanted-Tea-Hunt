@@ -17,6 +17,7 @@ public class SwitchScene : MonoBehaviour
             SceneManager.LoadScene(scene);
             GameStats.Instance.LoadSceneCollectibles(scene);
             AkSoundEngine.SetState("music", scene);
+            AkSoundEngine.SetState("steps", scene);
         }
     }
 }

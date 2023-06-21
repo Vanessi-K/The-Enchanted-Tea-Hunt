@@ -23,6 +23,7 @@ namespace AK
         static const AkUniqueID PLAY_DOOR = 2547633870U;
         static const AkUniqueID PLAY_FOX = 2991955701U;
         static const AkUniqueID PLAY_FOX_STEPS = 2487535873U;
+        static const AkUniqueID PLAY_FOX_STEPS_INDOOR = 15112985U;
         static const AkUniqueID PLAY_IDLE_BERRY = 2286352653U;
         static const AkUniqueID PLAY_INDOOR_MUSIC = 526251383U;
         static const AkUniqueID PLAY_JUMP = 3689126666U;
@@ -69,9 +70,9 @@ namespace AK
 
             namespace STATE
             {
-                static const AkUniqueID INDOOR = 340398852U;
+                static const AkUniqueID FOREST = 491961918U;
+                static const AkUniqueID HOUSEINTERIOR = 3332917963U;
                 static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID OUTDOOR = 144697359U;
             } // namespace STATE
         } // namespace STEPS
 

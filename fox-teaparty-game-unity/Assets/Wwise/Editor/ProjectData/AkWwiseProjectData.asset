@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ea3ac9f74106a1478d57dc01acff8772
     GuidInternal: 
-    m_lastTime: -8585142703555904630
+    m_lastTime: -8585142685931722973
     List:
     - name: Pause_fox_steps
       guid: 1c0fdfb8e7427e44ac468f720f3d92b5
@@ -263,6 +263,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2f83f0629d6eab4f9754d00f4ca17587
       Path: Events\Default Work Unit\Play_fox_steps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_fox_steps_indoor
+      guid: ca35468ee8bde74d957df5e81bbfd172
+      id: 15112985
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ea3ac9f74106a1478d57dc01acff8772
+      - ElementName: Play_fox_steps_indoor
+        ObjectType: 3
+        guid: ca35468ee8bde74d957df5e81bbfd172
+      Path: Events\Default Work Unit\Play_fox_steps_indoor
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -728,7 +745,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: ad14d71c15c0c7479dff6ad83094e67d
     GuidInternal: 
-    m_lastTime: -8585143338276352912
+    m_lastTime: -8585142683304501346
     List:
     - name: music
       guid: 827c644fc142e646ac2af037fb3cb919
@@ -796,6 +813,72 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: steps
+      guid: ef46cff63597b24589221c31ca4e59fa
+      id: 1718617278
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ad14d71c15c0c7479dff6ad83094e67d
+      - ElementName: steps
+        ObjectType: 9
+        guid: ef46cff63597b24589221c31ca4e59fa
+      Path: States\Default Work Unit\steps
+      values:
+      - name: indoor
+        guid: 6b4fa3cb98190546b177a1390b39306a
+        id: 340398852
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ad14d71c15c0c7479dff6ad83094e67d
+        - ElementName: steps
+          ObjectType: 9
+          guid: ef46cff63597b24589221c31ca4e59fa
+        - ElementName: indoor
+          ObjectType: 8
+          guid: 6b4fa3cb98190546b177a1390b39306a
+      - name: None
+        guid: 75ce6bb847bf08408c9372d214af874c
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ad14d71c15c0c7479dff6ad83094e67d
+        - ElementName: steps
+          ObjectType: 9
+          guid: ef46cff63597b24589221c31ca4e59fa
+        - ElementName: None
+          ObjectType: 8
+          guid: 75ce6bb847bf08408c9372d214af874c
+      - name: outdoor
+        guid: 45ccbb81acb0b14d84ec09105a6dc4f4
+        id: 144697359
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ad14d71c15c0c7479dff6ad83094e67d
+        - ElementName: steps
+          ObjectType: 9
+          guid: ef46cff63597b24589221c31ca4e59fa
+        - ElementName: outdoor
+          ObjectType: 8
+          guid: 45ccbb81acb0b14d84ec09105a6dc4f4
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -825,7 +908,7 @@ MonoBehaviour:
     m_lastTime: -8585143582041016053
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000050000000600000007000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000002a0000002b0000002d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

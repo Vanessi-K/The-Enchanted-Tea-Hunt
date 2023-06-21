@@ -24,9 +24,17 @@
 				<StateGroup Name="steps" ID="{F6CF46EF-9735-45B2-8922-1C31CA4E59FA}">
 					<ChildrenList>
 						<State Name="None" ID="{B86BCE75-BF47-4008-8C93-72D214AF874C}"/>
-						<State Name="outdoor" ID="{81BBCC45-B0AC-4DB1-84EC-09105A6DC4F4}"/>
-						<State Name="indoor" ID="{CBA34F6B-1998-4605-B177-A1390B39306A}"/>
+						<State Name="Forest" ID="{81BBCC45-B0AC-4DB1-84EC-09105A6DC4F4}"/>
+						<State Name="HouseInterior" ID="{CBA34F6B-1998-4605-B177-A1390B39306A}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Forest" ID="{81BBCC45-B0AC-4DB1-84EC-09105A6DC4F4}"/>
+							<EndState Name="HouseInterior" ID="{CBA34F6B-1998-4605-B177-A1390B39306A}"/>
+							<Time>0</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>

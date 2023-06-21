@@ -33,6 +33,7 @@
 						<ObjectRef Name="Stop_shimmer" ID="{C0316E6B-6281-4D03-98F4-A4F03CC9E589}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_indoor_music" ID="{2CC495C2-8048-4D7C-92DD-1F10F02410D7}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_idle_berry" ID="{45A2127F-4A7B-4DC2-BC71-3D2F798A1645}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_fox_steps_indoor" ID="{8E4635CA-BDE8-4DE7-957D-F5E81BBFD172}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_shouts" ID="{26B1B9E8-2389-4DF1-B8D5-7833575CE24E}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_birds" ID="{B541037E-01A7-4E20-B123-15844CF94347}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_menu_music" ID="{BB76C9EE-584D-4EB3-B282-BD8834FB1842}" WorkUnitID="{F7C93AEA-0641-47A1-8D57-DC01ACFF8772}" Origin="Manual" Filter="7"/>

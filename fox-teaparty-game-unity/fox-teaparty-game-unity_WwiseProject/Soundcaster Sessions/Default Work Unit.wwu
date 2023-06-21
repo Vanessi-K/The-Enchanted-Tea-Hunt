@@ -65,6 +65,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="HouseInterior" ID="{CBA34F6B-1998-4605-B177-A1390B39306A}"/>
 						<CurrentStateRef Name="Forest" ID="{AE8BC576-6D3C-4423-AD1A-8703EEB255EE}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>

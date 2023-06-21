@@ -903,11 +903,15 @@
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
-										<StateRef Name="indoor" ID="{CBA34F6B-1998-4605-B177-A1390B39306A}"/>
-										<CustomState Name="" ID="{4916F8C0-45D3-4E07-8C3B-54D726465A4B}" ShortID="55766521"/>
+										<StateRef Name="HouseInterior" ID="{CBA34F6B-1998-4605-B177-A1390B39306A}"/>
+										<CustomState Name="" ID="{4916F8C0-45D3-4E07-8C3B-54D726465A4B}" ShortID="55766521">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-200"/>
+											</PropertyList>
+										</CustomState>
 									</CustomState>
 									<CustomState>
-										<StateRef Name="outdoor" ID="{81BBCC45-B0AC-4DB1-84EC-09105A6DC4F4}"/>
+										<StateRef Name="Forest" ID="{81BBCC45-B0AC-4DB1-84EC-09105A6DC4F4}"/>
 										<CustomState Name="" ID="{B67F6001-169A-442C-B832-40AF38411728}" ShortID="380795963"/>
 									</CustomState>
 								</CustomStateList>
@@ -1093,12 +1097,16 @@
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
-										<StateRef Name="indoor" ID="{CBA34F6B-1998-4605-B177-A1390B39306A}"/>
+										<StateRef Name="HouseInterior" ID="{CBA34F6B-1998-4605-B177-A1390B39306A}"/>
 										<CustomState Name="" ID="{B5305F76-F6AA-49D1-BC76-AFC042921345}" ShortID="101106485"/>
 									</CustomState>
 									<CustomState>
-										<StateRef Name="outdoor" ID="{81BBCC45-B0AC-4DB1-84EC-09105A6DC4F4}"/>
-										<CustomState Name="" ID="{2F13E0F6-AA4A-4B9D-B05E-936F199134D9}" ShortID="743662092"/>
+										<StateRef Name="Forest" ID="{81BBCC45-B0AC-4DB1-84EC-09105A6DC4F4}"/>
+										<CustomState Name="" ID="{2F13E0F6-AA4A-4B9D-B05E-936F199134D9}" ShortID="743662092">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-200"/>
+											</PropertyList>
+										</CustomState>
 									</CustomState>
 								</CustomStateList>
 							</StateInfo>
