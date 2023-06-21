@@ -77,6 +77,7 @@ public class Returning : MonoBehaviour
     private IEnumerator WaitForEndSceneLoad()
     {
         yield return new WaitForSeconds(3);
+        AkSoundEngine.StopAll();
         SceneManager.LoadScene("FelixDiaryEnd");
     }
 }
