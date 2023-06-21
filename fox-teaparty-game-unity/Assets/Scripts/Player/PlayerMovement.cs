@@ -85,8 +85,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnActivateBoost(InputValue inputValue)
     {
-        _backpack.UseSpeedBoost();
-        AkSoundEngine.PostEvent("Play_activate_berry", gameObject);
+        if (_backpack.UseSpeedBoost())
+        {
+            AkSoundEngine.PostEvent("Play_activate_berry", gameObject);
+        }
     }
 
     private void RotateHorizontal(float angle)

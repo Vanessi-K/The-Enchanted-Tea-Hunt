@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuActions : MonoBehaviour
 {
+    private MenuMusic _menuMusic;
     public void LoadStart()
     {
         PlayClickSound();
@@ -48,6 +49,7 @@ public class MenuActions : MonoBehaviour
     {
         yield return new WaitForSeconds(0.05f);
         AkSoundEngine.StopAll();
+        Destroy(MenuMusic.Instance.gameObject);
         SceneManager.LoadScene("Forest");
     }
 }
