@@ -1,10 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
 	311910498	Play_click			\Default Work Unit\Play_click	
+	864978166	Play_diary_open			\Default Work Unit\Play_diary_open	
 	2228153899	Play_menu_music			\Default Work Unit\Play_menu_music	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	712627541	click_sound	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\clicky_button_3_FCE3660C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Ambience\click_sound		1302
+	1001247048	diary_open	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\diary_open_FCE3660C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Ambience\diary_open		8721
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	286250885	menu-theme	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\telling-the-story-150614_94463614.wem	286250885.wem	\Actor-Mixer Hierarchy\Default Work Unit\Music\Themes\menu-theme	
+	286250885	menu-theme	C:\Users\A_Bla\Desktop\FH\CCL4\fox-teaparty-game\fox-teaparty-game-unity\fox-teaparty-game-unity_WwiseProject\.cache\Mac\SFX\telling-the-story-150614_ED37B23B.wem	286250885.wem	\Actor-Mixer Hierarchy\Default Work Unit\Music\Themes\menu-theme	
 

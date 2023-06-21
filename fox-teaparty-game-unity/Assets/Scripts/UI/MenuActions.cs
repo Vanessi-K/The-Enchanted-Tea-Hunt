@@ -20,6 +20,7 @@ public class MenuActions : MonoBehaviour
     public void LoadStartDiary()
     {
         PlayClickSound();
+        AkSoundEngine.PostEvent("Play_diary_open", gameObject);
         SceneManager.LoadScene("FelixDiaryStart");
     }
 
